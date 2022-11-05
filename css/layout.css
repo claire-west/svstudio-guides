@@ -44,7 +44,7 @@ hr {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 h3 {
@@ -197,7 +197,13 @@ a {
 
 /* small format */
 @media screen and (max-width: 640px) {
+    h1 {
+        font-size: 1.25rem;
+    }
 
+    .app.row {
+        padding-top: 0rem;
+    }
 }
 
 .text-center {
