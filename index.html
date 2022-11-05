@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Claire's SynthV Studio Resources & Guides</title>
+    <meta property="og:site_name" content="Generic Media Tracker">
+    <meta property="og:type" content="website">
+    <!--  <meta property="og:title" content="{{heading}}">
+    <meta property="og:description" content="{{preview}}">
+    <meta property="og:image" content="{{image}}"> -->
+
+    <link id="favicon" rel="icon" href="https://claire-west.ca/favicon.ico" />
+    <link href="https://lib.claire-west.ca/vend/fonts/fontawesome-all.min.css" rel="stylesheet" />
+    <link href="/css/layout.css" rel="stylesheet"></link>
+    <link href="/css/style.css" rel="stylesheet"></link>
+</head>
+<body>
+<div class="top-bar">
+    <nav class="top-bar-nav">
+        <div>
+            <div class="top-bar-left">
+                <a href="/">
+                    <h2>Claire's SynthV Studio Resources & Guides</h2>
+                </a>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="top-bar-spacer"></div>
+
+<section id="app-app" data-app="SynthV Guides" class="app defaultApp row" hidden></section>
+
+<footer>
+    <div class="row">
+        <div class="col">
+            <hr />
+        </div>
+    </div>
+</footer>
+
+<div class="modal" hidden><div class="dialog"></div></div>
+
+<script src="https://lib.claire-west.ca/vend/js/jquery.min.js"></script>
+<script
+    src="https://lib.claire-west.ca/core/js/dynCore.js"
+    data-res='{
+        "url": "https://synthv.moonlitclaire.com"
+    }'
+    data-ns='{
+        "app": "/"
+    }'></script>
+<script>
+    (function(dynCore) {
+        dynCore.ready(function(modules) {
+            dynCore.require([
+                'app.container'
+            ]);
+        });
+    })(window.dynCore);
+</script>
+</body>
+</html>

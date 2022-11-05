@@ -1,0 +1,223 @@
+[type=color], [type=date], [type=datetime-local], [type=datetime], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=time], [type=url], [type=week], textarea, select, option {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.4375rem;
+    padding: .5rem;
+    border: 1px solid #333;
+    margin: 0 0 1rem;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: hsla(218,5%,47%,.3);
+    box-shadow: inset 0 1px 2px hsla(0,0%,4%,.1);
+    border-radius: 0;
+    transition: box-shadow .5s,border-color .25s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+label.inline {
+    display: flex;
+    align-items: center;
+    margin: 0.25rem;
+}
+
+label.inline input {
+    width: auto;
+}
+
+label.inline > *:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+.checkbox {
+    line-height: 2rem;
+    display: flex;
+    margin: 0.25rem;
+}
+
+.checkbox > label {
+    display: flex;
+}
+
+.checkbox [type=checkbox] {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.checkbox [type=checkbox] + span {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+i.help,
+i.warn {
+    line-height: inherit;
+    cursor: pointer;
+}
+
+i.help:hover {
+    color: #1b95e0;
+}
+
+i.warn:hover {
+    color: #cc4b37;
+}
+
+option {
+    background-color: #202225;
+}
+
+button, optgroup, select {
+    color: inherit;
+}
+
+input, textarea {
+    color: #2f3136;
+    font: inherit;
+}
+
+input {
+    line-height: normal;
+}
+
+textarea {
+    resize: vertical;
+    height: auto;
+}
+
+button {
+    display: inline-block;
+    text-align: center;
+    line-height: 1;
+    cursor: pointer;
+    -webkit-appearance: none;
+    transition: background-color .25s ease-out,color .25s ease-out;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    border-radius: 0;
+    padding: .85em 1em;
+    margin: 0 0 1rem;
+    font-size: .9rem;
+    background-color: hsla(218,5%,47%,.3);
+}
+button:focus, button:hover {
+    background-color: hsla(218,5%,47%,.6);
+}
+
+a {
+    color: #7db235;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #85BC38;
+    cursor: pointer;
+}
+
+.error {
+    border: 1px solid #A30303;
+}
+
+.redText {
+    color: #8A0407;
+}
+
+.confirm {
+    border: 1px solid #048a87;
+}
+
+.darkBackground {
+    background-color: #202225;
+}
+
+.expand {
+    width: 100%;
+}
+
+.hidden, [hidden] {
+    display: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.twitter-timeline {
+    max-height: 100rem;
+}
+
+.app {
+    min-height: 815px;
+}
+
+.modal {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255,.7);
+    z-index: 9999;
+}
+
+.modal .dialog {
+    background: #2f3136;
+    width: 97.5%;
+    max-width: 40rem;
+    position: relative;
+    top: 30%;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4.375rem;
+}
+
+.modal .dialog h4 {
+    text-align: center
+}
+
+.modal .dialog label {
+    display: block;
+}
+
+.modal .dialog .options {
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.modal .dialog .options button {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.cookie-indicator {
+    width: 100%;
+    height: 2.5rem;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    background-color: #202225;
+}
+
+.cookie-indicator p {
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
