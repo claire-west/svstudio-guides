@@ -20,6 +20,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+body.light {
+    color: #4d4e53;
+    background: white;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
     font-weight: 400;
@@ -57,6 +62,11 @@ h4 {
 
 ul, ol, dl {
     padding-left: 2rem;
+}
+
+dt {
+    padding-top: 0.75rem;
+    font-weight: bold;
 }
 
 p {
@@ -188,6 +198,18 @@ a {
 .top-bar img {
     height: 100%;
     width: auto;
+}
+
+.breadcrumb {
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
+}
+.breadcrumb *+*:before {
+  padding: 0.5rem;
+  content: "/\00a0";
+}
+.breadcrumb+hr {
+    margin-bottom: -0.5rem;
 }
 
 /* medium format */

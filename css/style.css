@@ -115,6 +115,25 @@ a:hover {
     cursor: pointer;
 }
 
+body.light a {
+    color: #606;
+    border-bottom: 1px solid #ddd;
+}
+
+body.light a:hover {
+    color: #606;
+    border-bottom-color: #222;
+}
+
+body.light .top-bar a {
+    color: hsla(0,0%,100%,.85);
+    border-bottom: none;
+}
+
+body.light .top-bar a:hover {
+    color: hsla(0,0%,100%,.85);
+}
+
 .error {
     border: 1px solid #A30303;
 }

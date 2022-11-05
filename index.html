@@ -20,8 +20,13 @@
     <nav class="top-bar-nav">
         <div>
             <div class="top-bar-left">
-                <a href="/">
-                    <h1>Claire's SynthV Resources</h1>
+                <a href="#">
+                    <h1>SynthV Resources & Guides</h1>
+                </a>
+            </div>
+            <div class="top-bar-right">
+                <a class="button" z--click="onToggleTheme">
+                    <i class="far fa-lightbulb" title="Toggle Theme"></i>
                 </a>
             </div>
         </div>
@@ -29,7 +34,8 @@
 </div>
 <div class="top-bar-spacer"></div>
 
-<section id="app-app" data-app="SynthV Resources & Guides" class="app defaultApp row" hidden></section>
+<section id="app-home" data-app="SynthV Resources & Guides" class="app defaultApp row" hidden></section>
+<section id="app-glossary" data-app="Glossary of Terms" class="app row" hidden></section>
 
 <footer>
     <div class="row">
@@ -42,6 +48,13 @@
 <div class="modal" hidden><div class="dialog"></div></div>
 
 <script src="https://lib.claire-west.ca/vend/js/jquery.min.js"></script>
+<script>
+    var theme = localStorage.getItem('theme');
+    if (theme) {
+        var $body = $('body');
+        $body.addClass(theme);
+    }
+</script>
 <script
     src="https://lib.claire-west.ca/core/js/dynCore.js"
     data-res='{

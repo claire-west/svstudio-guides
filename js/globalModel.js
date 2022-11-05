@@ -4,13 +4,14 @@
         'lib.fragment',
         'lib.globalModel'
     ]), (modules, bind, fragment, globalModel) => {
-
-        globalModel._set('year', new Date().getFullYear());
-
-        globalModel._set('cookieAcknowledge', localStorage.getItem('cookieAcknowledge'));
-        globalModel._set('onCookieAcknowledge', () => {
-            localStorage.setItem('cookieAcknowledge', 'true');
-            globalModel._set('cookieAcknowledge', localStorage.getItem('cookieAcknowledge'));
+        globalModel._set('onToggleTheme', () => {
+            var $body = $('body');
+            $body.toggleClass('light');
+            if ($body.hasClass('light')) {
+                localStorage.setItem('theme', 'light');
+            } else {
+                localStorage.removeItem('theme');
+            }
         });
 
         // track loaded modal fragments for reuse if opened more than once
