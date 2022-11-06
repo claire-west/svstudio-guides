@@ -44,18 +44,6 @@
             }
         };
 
-        $(window).scroll(() => {
-            localStorage.setItem('scrollY', window.pageYOffset);
-            localStorage.setItem('currentHash', window.location.hash);
-
-            // var $header = $('div.top-bar, div.top-bar-spacer');
-            // if ($(document).scrollTop() > 0) {
-            //     $header.addClass('shrink');
-            // } else {
-            //     $header.removeClass('shrink');
-            // }
-        });
-
         globalModel._set('onAboutPress', () => {
             globalModel.openModal('about');
         });

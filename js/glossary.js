@@ -1,5 +1,12 @@
 ((dynCore) => {
-    dynCore.when(dynCore.require('app.container')).done((modules, container) => {
-        container('glossary');
+    dynCore.when(dynCore.require([
+        'app.container',
+        'app.maintainScrollPos'
+    ])).done((modules, container, maintainScrollPos) => {
+        container('glossary', {
+            onInit: function() {
+                maintainScrollPos();
+            }
+        });
     });
 })(window.dynCore);

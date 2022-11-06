@@ -5,10 +5,6 @@
         'lib.globalModel',
         'lib.isMobile'
     ]), (modules, bind, fragment, globalModel, isMobile) => {
-        if (localStorage.getItem('currentHash') === window.location.hash) {
-            globalModel._set('scrollY', localStorage.getItem('scrollY'));
-        }
-
         globalModel._set('onToggleTheme', () => {
             var $body = $('body');
             $body.toggleClass('light');
