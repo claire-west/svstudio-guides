@@ -15,7 +15,8 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color: hsla(0,0%,100%,.85);
-    background: #2f3136;
+    /*background: #2f3136;*/
+    background: #2a2a2a;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -109,10 +110,10 @@ code {
     font-size: 1rem;
     display: block;
     padding: 0.25rem 0.75rem;
-    background: #202225;
+    background: #333;
 }
 
-code.inline {
+p code, li code {
     display: inline-block;
     padding: 0;
     white-space: initial;
@@ -165,8 +166,12 @@ img {
     position: absolute;
     padding: 0;
     /*background: linear-gradient(#000, transparent);*/
-    background-color: #202225;
+    /*background-color: #202225;*/
+    background-color: #1d1d1d;
     z-index: 9998;
+}
+body.light .top-bar .top-bar-nav {
+    background-color: #2f3136;
 }
 .top-bar .top-bar-nav div {
     height: 100%;
@@ -215,7 +220,12 @@ img {
 }
 .top-bar .top-bar-nav a.button:hover,
 .top-bar .top-bar-nav a.button.active {
-    background-color: #2f3136;
+    /*background-color: #2f3136;*/
+    background-color: #2a2a2a;
+}
+body.light .top-bar .top-bar-nav a.button:hover,
+body.light .top-bar .top-bar-nav a.button.active {
+    background-color: #1d1d1d;
 }
 
 .top-bar .top-bar-nav a.button.active:hover {

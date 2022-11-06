@@ -1,0 +1,448 @@
+<div z--controller="frag.common">
+    <div class="row">
+        <div class="col">
+            <p class="breadcrumb">
+                <a href="#">Home</a>
+                <span>Guides</span>
+                <span>Phonemes</span>
+            </p>
+            <hr/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h2>Entering lyrics & phonemes for better pronounciation & timing, and how to use dictionaries</h2>
+            <p class="small"><i>2022/08/06</i></p>
+            <p>This article was originally written on the <a href="https://forum.synthesizerv.com/t/topic/6320">official forums</a>.</p>
+            <p>This guide is intended to help users achieve better pronounciation and vocal timing, and better understand the phonemes used to generate synthesized vocals.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h3>Table of Contents</h3>
+            <ol class="toc">
+                <li>
+                    <span>Introduction</span>
+                    <ol>
+                        <li><a href="#guide-phonemes/1.1">An overview of concepts and terms</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <span>Phoneme Lists</span>
+                    <ol>
+                        <li><a href="#guide-phonemes/2.1">English phonemes (arpabet)</a></li>
+                        <li><a href="#guide-phonemes/2.2">Japanese phonemes (romaji)</a></li>
+                        <li><a href="#guide-phonemes/2.3">Mandarin Chinese phonemes (x-sampa)</a></li>
+                        <li><a href="#guide-phonemes/2.4">Special phonemes and symbols</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <span>Entering Lyrics and Phonemes</span>
+                    <ol>
+                        <li><a href="#guide-phonemes/3.1">Entering words/lyrics</a></li>
+                        <li><a href="#guide-phonemes/3.2">Entering or adjusting phonemes manually</a></li>
+                        <li><a href="#guide-phonemes/3.3">Extending a word or phoneme across multiple notes</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <span>Additional Topics</span>
+                    <ol>
+                        <li><a href="#guide-phonemes/4.1">Using dictionaries</a></li>
+                        <li><a href="#guide-phonemes/4.2">Phoneme timing</a></li>
+                        <li><a href="#guide-phonemes/4.3">Alternate phonemes and expression groups (Standard voices only)</a></li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col flex">
+            <span>1.1</span><h3 id="guide-phonemes/1.1">An overview of concepts and terms</h3>
+        </div>
+        <div class="col">
+            <p>A <i><b>phoneme</b></i> is an individual sound that Synthesizer V Studio is capable of producing. The available list of phonemes is based on the language being used, and represents a list of all sounds a voice database is capable of producing (including transition sounds between each phoneme).</p>
+
+            <p>Cross-lingual synthesis is a feature available to AI voices that allows them access to the phoneme lists for English, Japanese, and Mandarin Chinese, regardless of what their default language is. It is important to keep in mind that AI voices still have a “native” language, and it is normal for them to have an accent when using cross-lingual synthesis.</p>
+
+            <p>Standard voices cannot use cross-lingual synthesis and are limited to the phoneme list for their native language.</p>
+            <br/>
+            <div class="callout">
+                <h4 class="flex align-center"><i class="bi bi-info-circle"></i>Regarding Unsupported Languages</h4>
+                <p>Each voice database product has a native language (English, Japanese, or Mandarin Chinese). AI voices using cross-lingual synthesis are able to access any of these supported languages.</p>
+
+                <p>Some users may use a large number of manual phoneme changes to make a voice database sing in a language it normally cannot sing in, however this is done by using the existing phoneme list to create a <b>rough approximation</b> of a different language, and certain pronounciations will be impossible when doing this simply because the voice database often cannot produce the necessary sounds for a language it does not support.</p>
+
+                <p>Put simply, the sounds a voice database can produce are limited by the phoneme lists it has access to.</p>
+            </div>
+            <br/>
+            <p>A <i><b>lyric</b></i> or <i><b>word</b></i> is the actual term represented by a sequence of phonemes. In Synthesizer V Studio, words do not directly affect the synthesized output. You could technically never enter the original lyrics or words and only ever enter the exact phonemes manually, and the resulting sound would not be any different. Realistically most users don’t actually do that, because words are much easier to work with and taking advantage of the word-to-phoneme mapping allows for better workflow.</p>
+
+            <p>To be clear, <b>words</b> are a useful workflow tool, but <b>phonemes</b> are what actually influences the rendered output.</p>
+            <br/>
+            <p>A <i><b>dictionary</b></i> is used to customize the mapping between words and phonemes. For example, by default “hello” is represented as <code>hh ax l ow</code>, but you may prefer it to be pronounced as <code>hh eh l ow</code>. Dictionaries are another workflow tool, and can save a lot of time if used effectively. Similar to words, there is nothing dictionaries can do that cannot also be accomplished by manually entering the phonemes for every note, it’s just a tool we have at our disposal to make that process significantly faster and easier.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col flex">
+            <span>2.1</span><h3 id="guide-phonemes/2.1">English phonemes (arpabet)</h3>
+            <a class="flex-right" href="#guide-phonemes">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <p>This list is from the english-arpabet-phones.txt file found in Synthesizer V Studio’s installation directory.</p>
+            <dl>
+                <dd>aa vowel</dd>
+                <dd>ae vowel</dd>
+                <dd>ah vowel</dd>
+                <dd>ao vowel</dd>
+                <dd>aw diphthong</dd>
+                <dd>ax vowel</dd>
+                <dd>ay diphthong</dd>
+                <dd>b stop</dd>
+                <dd>ch affricate</dd>
+                <dd>d stop</dd>
+                <dd>dx stop</dd>
+                <dd>dr affricate</dd>
+                <dd>dh fricative</dd>
+                <dd>eh vowel</dd>
+                <dd>er vowel</dd>
+                <dd>ey diphthong</dd>
+                <dd>f fricative</dd>
+                <dd>g stop</dd>
+                <dd>hh aspirate</dd>
+                <dd>ih vowel</dd>
+                <dd>iy vowel</dd>
+                <dd>jh affricate</dd>
+                <dd>k stop</dd>
+                <dd>l liquid</dd>
+                <dd>m nasal</dd>
+                <dd>n nasal</dd>
+                <dd>ng nasal</dd>
+                <dd>ow diphthong</dd>
+                <dd>oy diphthong</dd>
+                <dd>p stop</dd>
+                <dd>q stop (not implemented for most voices, use cl instead)</dd>
+                <dd>r semivowel</dd>
+                <dd>s fricative</dd>
+                <dd>sh fricative</dd>
+                <dd>t stop</dd>
+                <dd>tr affricate</dd>
+                <dd>th fricative</dd>
+                <dd>uh vowel</dd>
+                <dd>uw vowel</dd>
+                <dd>v fricative</dd>
+                <dd>w semivowel</dd>
+                <dd>y semivowel</dd>
+                <dd>z fricative</dd>
+                <dd>zh fricative</dd>
+                <dd>pau silence</dd>
+                <dd>sil silence</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col flex">
+            <span>2.2</span><h3 id="guide-phonemes/2.2">Japanese phonemes (romaji)</h3>
+            <a class="flex-right" href="#guide-phonemes">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <p>This list is from the japanese-romaji-phones.txt file found in Synthesizer V Studio’s installation directory.</p>
+            <dl>
+                <dd>a vowel</dd>
+                <dd>i vowel</dd>
+                <dd>u vowel</dd>
+                <dd>e vowel</dd>
+                <dd>o vowel</dd>
+                <dd>N vowel</dd>
+                <dd>cl stop</dd>
+                <dd>t stop</dd>
+                <dd>d stop</dd>
+                <dd>s fricative</dd>
+                <dd>sh fricative</dd>
+                <dd>j affricate</dd>
+                <dd>z affricate</dd>
+                <dd>ts affricate</dd>
+                <dd>k stop</dd>
+                <dd>kw stop (not implemented for most voices)</dd>
+                <dd>g stop</dd>
+                <dd>gw stop (not implemented for most voices)</dd>
+                <dd>h aspirate</dd>
+                <dd>b stop</dd>
+                <dd>p stop</dd>
+                <dd>f fricative</dd>
+                <dd>ch affricate</dd>
+                <dd>ry liquid</dd>
+                <dd>ky stop</dd>
+                <dd>py stop</dd>
+                <dd>dy stop</dd>
+                <dd>ty stop</dd>
+                <dd>ny nasal</dd>
+                <dd>hy aspirate</dd>
+                <dd>my nasal</dd>
+                <dd>gy stop</dd>
+                <dd>by stop</dd>
+                <dd>n nasal</dd>
+                <dd>m nasal</dd>
+                <dd>r liquid</dd>
+                <dd>w semivowel</dd>
+                <dd>v semivowel</dd>
+                <dd>y semivowel</dd>
+                <dd>pau silence</dd>
+                <dd>sil silence</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col flex">
+            <span>2.3</span><h3 id="guide-phonemes/2.3">Mandarin Chinese phonemes (x-sampa)</h3>
+            <a class="flex-right" href="#guide-phonemes">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <p>This list is from the mandarin-xsampa-phones.txt file found in Synthesizer V Studio’s installation directory.</p>
+            <dl>
+                <dd>a vowel</dd>
+                <dd>A vowel</dd>
+                <dd>o vowel</dd>
+                <dd>@ vowel</dd>
+                <dd>e vowel</dd>
+                <dd>7 vowel</dd>
+                <dd>U vowel</dd>
+                <dd>u vowel</dd>
+                <dd>i vowel</dd>
+                <dd>i\ vowel</dd>
+                <dd>i` vowel</dd>
+                <dd>y vowel</dd>
+                <dd>AU diphthong</dd>
+                <dd>@U diphthong</dd>
+                <dd>ia diphthong</dd>
+                <dd>iA diphthong</dd>
+                <dd>iAU diphthong</dd>
+                <dd>ie diphthong</dd>
+                <dd>iE diphthong</dd>
+                <dd>iU diphthong</dd>
+                <dd>i@U diphthong</dd>
+                <dd>y{ diphthong</dd>
+                <dd>yE diphthong</dd>
+                <dd>ua diphthong</dd>
+                <dd>uA diphthong</dd>
+                <dd>u@ diphthong</dd>
+                <dd>ue diphthong</dd>
+                <dd>uo diphthong</dd>
+                <dd>:\i coda</dd>
+                <dd>r` coda</dd>
+                <dd>:n coda</dd>
+                <dd>N coda</dd>
+                <dd>p stop</dd>
+                <dd>ph stop</dd>
+                <dd>t stop</dd>
+                <dd>th stop</dd>
+                <dd>k stop</dd>
+                <dd>kh stop</dd>
+                <dd>ts\ affricate</dd>
+                <dd>ts affricate</dd>
+                <dd>tsh affricate</dd>
+                <dd>ts` affricate</dd>
+                <dd>ts`h affricate</dd>
+                <dd>x aspirate</dd>
+                <dd>f fricative</dd>
+                <dd>s fricative</dd>
+                <dd>s` fricative</dd>
+                <dd>ts\h fricative</dd>
+                <dd>s\ fricative</dd>
+                <dd>m nasal</dd>
+                <dd>n nasal</dd>
+                <dd>l liquid</dd>
+                <dd>z` semivowel</dd>
+                <dd>w semivowel</dd>
+                <dd>j semivowel</dd>
+                <dd>pau silence</dd>
+                <dd>sil silence</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col flex">
+            <span>2.4</span><h3 id="guide-phonemes/2.4">Special phonemes and symbols</h3>
+            <a class="flex-right" href="#guide-phonemes">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <p>These phonemes and symbols are not language-specific, or only exist for certain voices.</p>
+
+            <p><code>cl</code> glottal stop</p>
+            <p><code>br</code> inserts a breath using the AI engine, and only works with AI voices.</p>
+            <p><code>br1</code>, <code>br2</code>, etc. and <code>brl1</code>, <code>brl2</code>, etc. are only implemented for a small number of Standard (non-AI) voices, specifically the Quadimension Standard voices and Saki Standard (and maybe more that I’m unaware of). These do not use the synthesis engine, but rather insert actual .wav breath samples. Each number represents a different .wav file, so each voice may have a different number of special breath phonemes based on the number of breath sounds included.</p>
+
+            <p><code>-</code>, <code>+</code>, and <code>++</code> are technically not phonemes because you enter them within the note rather than above it, but see <i><a href="#guide-phonemes/3.3">Extending a word or phoneme across multiple notes</a></i> below for more about these special characters.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col flex">
+            <span>3.1</span><h3 id="guide-phonemes/3.1">Entering words/lyrics</h3>
+            <a class="flex-right" href="#guide-phonemes">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <p>Once you have your notes in the piano roll, the next thing to do is enter the lyrics for the track. Some users will enter all of the notes first, then enter the lyrics, others will enter lyrics as they go.</p>
+
+            <p>Words can be entered by double-clicking a note and typing the word, then proceeding to the next note by double-clicking it or pressing the <code>tab</code> key. You can use <code>ctrl</code>+<code>tab</code> to go to the previous note instead of the next one.</p>
+
+            <p>A word entered into a note will look like this, with the word shown within the note and the phoneme sequence shown above the note in white text.</p>
+            <img src="/img/note-with-lyric.png" alt="A note in the piano roll with the word hello as its lyric" />
+
+            <p>Once you have all the lyrics entered as words, the default phoneme mapping will provide you with a good starting point. It is normal to need some manual adjustment after this point, but you can listen through the song and it should sound pretty close to correct.</p>
+
+            <p>There is also a batch “Insert Lyrics” function (<code>ctrl</code>+<code>L</code>) under the “Modify” menu. This will assign one word to each note selected from the piano roll. This method is not entirely reliable if you have situations where a single word extends across multiple notes, since there may not be the same number of words and notes. See <i><a href="#guide-phonemes/3.3">Extending a word or phoneme across multiple notes</a></i> below for some methods of addressing this.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col flex">
+            <span>3.2</span><h3 id="guide-phonemes/3.2">Entering or adjusting phonemes manually</h3>
+            <a class="flex-right" href="#guide-phonemes">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <p>As mentioned above, words are a convenient way of getting most of the pronounciation to be correct, but the phonemes themselves are what dictates the synthesized output. It is normal that the default phoneme mapping for your lyrics will not be exactly what you want.</p>
+
+            <p>You can change the phoneme sequence for a note by double-clicking on the phoneme text above the note. When the phonemes have been manually modified the text will turn green instead of white.</p>
+            <img src="/img/note-with-manual-phonemes.png" alt="A note in the piano roll with phonemes entered manually" />
+
+            <p>When phonemes have been entered manually the word/lyric entered for the note no longer has any effect on the rendered output. You can even remove it entirely and nothing will change, because the phonemes are the only thing that matters, and they are no longer dependent on the word since you entered them manually.</p>
+            <img src="/img/note-with-phonemes-no-lyric.png" alt="Manual phoneme entry works independently of the note's content, even if the word is blank" />
+
+            <p>If you want to remove the manual phonemes and revert to word-based mapping, double-click on the green phoneme text and delete it. Upon doing so the phonemes will revert to the original word-based sequence.</p>
+
+            <p>You can also enter phonemes manually in the note rather than above by prefixing the “word” with a <code>.</code> as shown below. Using the <code>.</code> prefix means that the note content is used as the literal phoneme sequence and no word-based mapping is done.</p>
+            <img src="/img/note-with-phonemes-in-note.png" alt="Using the dot syntax to enter phonemes within a note" />
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col flex">
+            <span>3.3</span><h3 id="guide-phonemes/3.3">Extending a word or phoneme across multiple notes</h3>
+            <a class="flex-right" href="#guide-phonemes">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <p>There are many situations in which you might want to extend a word or phoneme across multiple notes. We can use the special characters <code>-</code> and <code>+</code> (and <code>++</code>, though that one’s not as useful) to accomplish this.</p>
+
+            <p><code>-</code> is used to sustain a sound across multiple notes:</p>
+            <img src="/img/extend-phoneme-dash.png" alt="Using - to extend a tone across two notes" />
+
+            <p>You can sustain the sound across many notes, it doesn’t have to be just two:</p>
+            <img src="/img/extend-phoneme-dash-multiple.png" alt="Using - to extend a tone across many pitches" />
+            <br/>
+
+            <p><code>+</code> is used to assign the next syllable of the preceding word to a note</p>
+
+            <p>In this example, a multi-syllable word is entered as a single note. The engine has attempted to produce a reasonable syllable timing or cadence when pronouncing the word, but in many cases we would want to specify the syllable timing ourselves. We can accomplish this by using the <code>+</code> special character to extend the second syllable to a second note, giving each syllable equal timing that is slightly different from the default.</p>
+            <img src="/img/next-syllable-plus.png" alt="+ being used to adjust the timing of the second syllable" />
+
+            <p>You can of course also do this across multiple pitches, rather than for pure timing reasons:</p>
+            <img src="/img/next-syllable-plus2.png" alt="+ being used to transition the second syllable to a different pitch" />
+
+            <p>Keep in mind that the rendered output is dictated by phonemes, not words. <code>+</code> is a convenience tool and produces the exact same result as entering the phonemes directly on their respective notes. This can be especially helpful to know, since SynthV Studio may not always correctly infer where the syllable breaks are in a word.</p>
+            <img src="/img/plus-vs-manual-phonemes.png" alt="Splitting a word with + is the same as assigning the phonemes manually across two notes" />
+
+            <p><code>-</code> and <code>+</code> can be easily combined, such as in this example:</p>
+            <img src="/img/plus-and-dash.png" alt="Using + and - for the same word" />
+            <br/>
+
+            <p><code>++</code> is used to complete a word that spans three or more notes and has multiple syllables remaining. It is rare that this will be useful because it has such specific requirements, but it is an option.</p>
+            <img src="/img/double-plus.png" alt="An example of the ++ symbol being used to complete a word" />
+            <br/>
+
+            <p>When using batch lyric entry, you can use - and + to distribute the lyrics correctly across a number of notes that does not match the number of words. This process can get a bit unwieldy, but if done one phrase/verse at a time might be quicker than entering the lyrics note-by-note.</p>
+            <img src="/img/batch-lyrics-dialog.png" alt="The batch lyric entry dialog" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col flex">
+            <span>4.1</span><h3 id="guide-phonemes/4.1">Using dictionaries</h3>
+            <a class="flex-right" href="#guide-phonemes">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <p>Dictionaries are a powerful workflow tool that can streamline phoneme entry. Put simply, a user dictionary lets the user change how the software maps words to phonemes. This means that you don’t need to find every instance of a word to repeatedly apply the same change. This is especially useful for words with multiple common pronounciations, such as “the” which is often pronounced as either “thuh” (<code>dh ax</code>) or “thee” (<code>dh iy</code>). Some voice databases such as Solaria actually come with a special dictionary that adjusts certain pronounciations and is tailored to the specific voice database.</p>
+
+            <p>To be clear, there is nothing that dictionaries can do that cannot also be achieved with manual phoneme entry, but they can help save a lot of time compared to entering phonemes note-by-note.</p>
+
+            <div class="callout">
+                <h4 class="flex align-center"><i class="bi bi-info-circle"></i>Using dictionaries in conjunction with cross-lingual synthesis</h4>
+                <p>Voice databases use dictionaries based on their native language. For example even if Solaria is singing in Japanese, the dictionary list will only show the list of English dictionaries. This means you might have some dictionaries that are “for English voices singing in English” and some that are “for Japanese voices singing in English”.</p>
+
+                <p>If you have a dictionary for a specific language that you want to use with a voice that has a different “native” language, navigate to <code>Documents\Dreamtonics\Synthesizer V Studio\dicts</code> (on Windows) and copy the dictionary from one language’s folder to a different one.</p>
+
+                <p>For example, to use Solaria’s English dictionary with Saki AI (a Japanese voice that can use cross-lingual synthesis to sing in English) you would copy <code>SOLARIA_1.0.json</code> from <code>english-arpabet</code> to <code>japanese-romaji</code>, allowing Solaria’s dictionary to show up in the list when using Saki AI.</p>
+            </div>
+
+            <p>To create a dictionary, open the Dictionary panel and click “New”. You can then enter custom word-to-phoneme mappings. These new mappings will apply to all instances of the word in the tracks or groups that are using the dictionary, but will not replace phonemes that were entered manually on individual notes (the ones with green text).</p>
+
+            <p>If modifying a dictionary used for a previous project, consider making a copy of it before making changes so you don’t accidentally overwrite mappings that your other projects rely on. Dictionaries are found in the <code>Documents\Dreamtonics\Synthesizer V Studio\dicts</code> folder on Windows.</p>
+
+            <img src="/img/dictionary-simple.png" alt="A simple dictionary mapping hello to hh eh l ow" />
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col flex">
+            <span>4.2</span><h3 id="guide-phonemes/4.2">Phoneme timing</h3>
+            <a class="flex-right" href="#guide-phonemes">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <p>Aside from assigning individual syllables to notes (see <i><a href="#guide-phonemes/3.3">Extending a word or phoneme across multiple notes</a></i> above), there are additional options to adjust individual phoneme timing.</p>
+
+            <p>At the bottom of the Note Properties panel are sliders for note offset and phoneme duration. The note offset slider simply shifts the sound associated with the note forward or backward. The phoneme duration sliders can be adjusted to shorten or lengthen each individual phoneme relative to the others. AI voices also have a set of “Phoneme Strength” sliders which can be used to add emphasis.</p>
+
+            <p>Phoneme timing affects not just the timing of phonemes within the same note, but <b>also the transitions with the previous and next note</b>. For example, this is the default timing for the word “hello” split across two equal-length notes. You can see how the <code>l</code> phoneme is actually placed prior to the note that it is associated with, because this more closely mimics how a real human would sing.</p>
+            <img src="/img/phoneme-timing-1.png" alt="Default phoneme timings for the word hello" />
+
+            <p>A side-effect of this is that the <code>ax</code> phoneme is shorter than we might expect. By reducing the <code>l</code> phoneme timing, we can have it intrude less on the previous note:</p>
+            <img src="/img/phoneme-timing-2.png" alt="Phoneme timings for the word hello have been adjusted" />
+
+            <p>I would usually recommend not including too many phonemes within the same note, but for the sake of demonstration it’s likely quite clear how much fine-tuning could be done in this example:</p>
+            <img src="/img/phoneme-timing-3.png" alt="Phoneme timing options for a word with many syllables" />
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col flex">
+            <span>4.3</span><h3 id="guide-phonemes/4.3">Alternate phonemes and expression groups (Standard voices only)</h3>
+            <a class="flex-right" href="#guide-phonemes">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <p>Since Standard voices are based on individual phoneme samples, you can control exactly which samples are used during synthesis.</p>
+
+            <p>This includes alternate phonemes and expression groups, found at the bottom of the Note Properties panel. Keep in mind these settings apply only to the note or notes you have selected at the time.</p>
+            <img src="/img/expression-group-highlighted.png" alt="The alternate phoneme buttons and expression groups in the Note Properties panel" />
+
+            <p>Cycling through <b>alternate phonemes</b> will cause the engine to use a different recorded sample for that specific sound. This can be useful if your lyrics have many of the same phoneme and you don’t want them to all sound the same, or if the default sample has a harsher consonant sound and you’d prefer a softer one, for example. This will vary wildly between voice databases since it is based entirely on how many takes of each phoneme were recorded, and how different they are from one another.</p>
+
+            <p>When a Standard voice is being recorded, the various samples are all recorded at multiple pitches. <b>Expression groups</b> represent the different pitches and tone variations of recorded samples. By default Synthesizer V Studio will select the most suitable expression group for the notes you have entered, but you also have the option to manually change this. This is useful if you want to force the engine to use soft or falsetto samples, or prevent it from doing so. Pictured below is the list of expression groups included with Genbu.</p>
+            <img src="/img/expression-group-dropdown-genbu.png" alt="The list of expression groups for Genbu" />
+
+            <p>Since AI voices are based on a machine-generated profile rather than discrete samples, there are no expression groups to pick from and this is a feature specific to Standard voices.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col flex">
+            <a class="flex-right" href="#guide-phonemes">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+    </div>
+</div>
