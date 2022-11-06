@@ -194,7 +194,7 @@ body.light .top-bar a:hover {
 }
 
 .modal {
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
     top: 0;
@@ -255,4 +255,11 @@ body.light .top-bar a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* small format */
+@media screen and (max-width: 640px) {
+    .modal .dialog {
+        top: 0.5rem;
+    }
 }
