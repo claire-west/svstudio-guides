@@ -61,7 +61,7 @@
         });
 
         globalModel._set('onGoogleAnalyticsPress', () => {
-            globalModel.openModal('googleAnalytics');
+            globalModel.openModal('googleanalytics');
         });
 
         hashNav.bindNavApp((app, section, args) => {
