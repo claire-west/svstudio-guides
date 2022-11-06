@@ -1,0 +1,47 @@
+#guide-install span+h3 {
+    padding-left: 0.5rem;
+    margin-bottom: 0;
+}
+
+#guide-install ol.toc {
+    padding-left: 2.5rem;
+    counter-reset: list-index;
+}
+
+#guide-install ol.toc > li {
+    list-style: none;
+    counter-increment: list-index;
+}
+
+#guide-install ol.toc > li::marker {
+    content: counter(list-index) ".\a0";
+}
+
+#guide-install ol.toc>li>ol {
+    padding-left: 2.5rem;
+    counter-reset: list-index-nested;
+}
+
+#guide-install ol.toc>li>ol > li {
+    counter-increment: list-index-nested;
+}
+
+#guide-install ol.toc>li>ol > li::marker {
+    content: counter(list-index) "." counter(list-index-nested) "\a0";
+}
+
+#guide-install img {
+    max-width: 25rem;
+}
+
+/* small format */
+@media screen and (max-width: 640px) {
+    #guide-install ol.toc,
+    #guide-install ol.toc>li>ol {
+        padding-left: 2rem;
+    }
+
+    #guide-install img {
+        max-width: 100%;
+    }
+}

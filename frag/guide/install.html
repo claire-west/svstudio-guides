@@ -1,0 +1,440 @@
+<div z--controller="frag.common">
+    <div class="row">
+        <div class="col">
+            <p class="breadcrumb">
+                <a href="#">Home</a>
+                <span>Guides</span>
+                <span>Install</span>
+            </p>
+            <hr/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h2>How to Purchase, Download, and Install Synthesizer V Studio and Voice Databases</h2>
+            <p>This guide was originally written on the <a href="https://forum.synthesizerv.com/t/topic/6220">official forums</a>.</p>
+            <p>This guide is intended to help alleviate confusion about the Synthesizer V Studio software components and their initial setup.</p>
+        </div>
+        <div class="col">
+            <div class="callout">
+                <i class="bi bi-exclamation-triangle"></i>
+                <p>This guide will be updated to ensure it contains accurate information, however it may be missing purchase/download links for the latest voice database products.</p>
+                <p>For all the latest release information, refer to the <a href="https://synthv.fandom.com/wiki/Status">SynthV Wiki</a>.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h3>Table of Contents</h3>
+            <ol class="toc">
+                <li>
+                    <span>Introduction</span>
+                    <ol>
+                        <li><a href="#guide-install/1.1">An overview of components</a></li>
+                        <li><a href="#guide-install/1.2">"SynthV Standard" vs "SynthV AI" voice databases</a></li>
+                        <li><a href="#guide-install/1.3">"Synthesizer V Editor" vs "Synthesizer V Studio"</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <span>Download</span>
+                    <ol>
+                        <li><a href="#guide-install/2.1">Where to download free components</a></li>
+                        <li><a href="#guide-install/2.2">Where to purchase paid components</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <span>Install</span>
+                    <ol>
+                        <li><a href="#guide-install/3.1">Windows installation</a></li>
+                        <li><a href="#guide-install/3.2">MacOS installation</a></li>
+                        <li><a href="#guide-install/3.3">Linux installation</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <span>Additional Topics</span>
+                    <ol>
+                        <li><a href="#guide-install/4.1">Updating your products</a></li>
+                        <li><a href="#guide-install/4.2">Deactivating or reactivating your products</a></li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col flex">
+            <span>1.1</span><h3 id="guide-install/1.1">An overview of components</h3>
+        </div>
+        <div class="col">
+            <p><i><b>Synthesizer V Studio</b></i> is the editor, user interface, and vocal synthesis engine used to generate synthesized vocals. The Basic Edition is completely free for commercial and non-commercial use, but is limited to 3 tracks, 2 rendering CPU cores, and does not include all functions. The Pro edition can be purchased on its own or bundled with a paid voice, and includes additional auto-pitch tuning configuration options, user script functionality, cross-lingual synthesis for paid AI voices, alternate phonemes for non-AI voices, multicore rendering, and more.</p>
+            <br/>
+            <p>A <i><b>Voice Database</b></i>, sometimes referred to as a "voice library" or "voicebank", is the software component which the engine uses to recreate vocal samples. Each voice database is created based on the voice of a real human, usually either a voice actor/actress or a professional vocalist who is referred to as the "voice provider". For this reason, each voice database has a unique sound and may be suited to different styles of music. Voice databases are paid products, however some have a free "lite" version available.</p>
+
+            <p>It is important to be aware of the licensing terms of a voice database you are using, which can be found in the installation folder as a "license.txt" file. At the time of writing all paid voices allow commercial usage of the rendered audio output, however this does not necessarily mean you can use other aspects of the product (such as the mascot character, if one exists) for commercial purposes without prior permission. When using a full (non-"lite") voice, you do not need to declare which voice was used, unless the license states otherwise.</p>
+            <br/>
+            <p><i><b>Lite versions</b></i> are available for free, and contain a lower-quality version of a voice database. These are intended for casual hobby usage, or as a trial/sample of the full product. In addition to having limited quality and functionality, it is important to note that lite voices cannot be used for commercial purposes. This means you cannot generate revenue from anything made with a lite voice. You also must declare up-front and clearly state that a lite version was used if you choose to share your creations (such as in the description or title of a YouTube video, ie. "Original Song ft. Eleanor Forte lite").</p>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col flex">
+            <span>1.2</span><h3 id="guide-install/1.2">"SynthV Standard" vs "SynthV AI" voice databases</h3>
+            <a class="flex-right" href="#guide-install">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <p>There are two methods used to create voice databases for SynthV Studio. Voice databases are sometimes labelled as "Standard" or "AI" based on which method was used. More recently all voices that do not have both a Standard and AI version have been AI voices, though many have not been labelled as either which has caused some confusion. When in doubt, check the <a href="https://synthv.fandom.com/wiki/Status">SynthV Wiki</a>. Generally speaking, if it's not stated in the product name, voices made prior to 2021 are "Standard" and ones from 2021 onward are usually "AI".</p>
+            <br/>
+            <p><i><b>Standard voices</b></i> use a traditional concatenation synthesis method. The voice database is recorded by recording a large number of samples, which represent not only each phoneme supported by the language being recorded for, but also the combinations and transitions between each of those sounds, and this is all done at multiple pitches.</p>
+
+            <p>Since Standard voice databases include all of these individual samples they usually come to around 300-500MB in size. Based on the user's input in the editor, the engine pitch-shifts and stitches together these samples (hence "concatenation") to create a cohesive sound. If you are familiar with Vocaloid or Utau, this is the method used by those engines as well. The Standard method excels at capturing the voice provider's vocal tone, but does not retain the provider's personal singing style.</p>
+            <br/>
+            <p><i><b>AI voices</b></i> use a relatively new method for vocal synthesis, introduced to SynthV Studio in December of 2020. Rather than the voice provider recording a large number of distinct phonemes and phoneme transitions, the database is created from complete songs. A machine learning algorithm analyzes the recordings (ie the "learning material") and, with some human supervision, builds a profile of the voice provider. Based on this profile the AI is able to generate completely new sounds inspired by the learning materials. Notably the original samples are not included in the voice database itself, causing AI voices to only be 10-25MB in size.</p>
+
+            <p>SynthV Studio is capable of automatically introducing pitch deviations in an attempt to mimic the voice provider's personal singing style, and with a wealth of learning materials and machine learning analysis, it is even possible to have an AI voice sing in languages that the voice provider has never recorded. The AI method excels at capturing a voice provider's personal singing style, and allows for impressive features such as auto-pitch tuning and cross-lingual synthesis. It is important to note that while AI enables cross-lingual capabilities, AI voices still have a "native" language and it is normal for them to have an accent when utilizing cross-lingual synthesis.</p>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col flex">
+            <span>1.3</span><h3 id="guide-install/1.3">"Synthesizer V Editor" vs "Synthesizer V Studio"</h3>
+            <a class="flex-right" href="#guide-install">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <p>While we often refer to SynthV Studio as “the editor”, it is important to note that there is a discontinued product from Dreamtonics known as “Synthesizer V” which is often confused with the current generation product. The original product is sometimes referred to as “R1” or “gen1” (“release 1” or “generation 1”).</p>
+
+            <p>Synthesizer V R1 is not compatible with any of the currently-available voices. Similarly you cannot use the SynthV Studio editor with any of the R1 voices. All R1 voices have been ported/re-released for SynthV Studio, so don’t worry about missing out on the older options; you can safely download the current-generation product.</p>
+
+            <p>If you are ever confused about which version is being discussed, you can easily tell based on the logo and the shade of green used.</p>
+
+            <img src="/img/r1-logo.png" alt="Synthesizer V R1 logo"/>
+            <img src="/img/svs-logo.png" alt="Synthesizer V Studio logo"/>
+
+            <p>For the purposes of this guide, all mentions of “the editor” will specifically refer to the SynthV Studio user interface, not SynthV R1. All instructions below will be specific to SynthV Studio and may not apply to SynthV R1.</p>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col flex">
+            <span>2.1</span><h3 id="guide-install/2.1">Where to download free components</h3>
+            <a class="flex-right" href="#guide-install">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <p>Directly from Dreamtonics (<a href="https://resource.dreamtonics.com/download/">https://resource.dreamtonics.com/download</a>):</p>
+            <ul>
+                <li>Synthesizer V Studio Basic (v1.5.0 to latest)</li>
+                <li>AiKO lite</li>
+                <li>Chiyu lite</li>
+                <li>Eleanor Forte lite (Standard only)</li>
+                <li>Genbu lite</li>
+                <li>Koharu Rikka lite (AI and Standard)</li>
+                <li>Saki lite (AI and Standard)</li>
+                <li>Tsurumaki Maki lite (AI only, EN and JP)</li>
+            </ul>
+        </div>
+        <div class="col">
+            <p>From AHS (<a href="https://www.ah-soft.com/trial/synth-v.html">https://www.ah-soft.com/trial/synth-v.html</a>):</p>
+            <p class="indent-full">Please note that the AHS website is only in Japanese. Scroll down and check the checkbox (「プログラム使用許諾に同意する」/ “Agree to the program license”) to see the download links.</p>
+            <ul>
+                <li>Synthesizer V Studio Basic</li>
+                <li>Hanakuma Chifuyu AI lite</li>
+                <li>Koharu Rikka lite (AI and Standard)</li>
+                <li>Kotonoha Akane / Aoi lite</li>
+                <li>Kyomachi Seika lite (AI and Standard)</li>
+                <li>Natsuki Karin AI lite</li>
+                <li>Saki lite (AI and Standard)</li>
+                <li>Tsuina-chan lite (AI and Standard)</li>
+                <li>Tsurumaki Maki lite (AI and Standard, EN and JP)</li>
+            </ul>
+        </div>
+        <div class="col">
+            <p>From ANiCUTE (<a href="https://www.anicute.com/">https://www.anicute.com/</a>):</p>
+            <ul>
+                <li>Synthesizer V Studio Basic (<a href="https://drive.google.com/drive/folders/1hUgB6NpO47v-Tv9JeY-bbmvbxxGcz0uW">Synthesizer V Studio Basic 1.5.0</a>)</li>
+                <li>Eleanor Forte lite (<a href="https://drive.google.com/drive/folders/1ScZ8WSuGm27b5B0jMPge6_HioI_mgD5u">Eleanor Forte (Lite)</a>)</li>
+                <li>Eleanor Forte AI lite (<a href="https://drive.google.com/drive/folders/10bfLbZ57gJJyEH6Wlz3_MFocp31ED2Vr">Eleanor Forte AI (Lite)</a>)</li>
+                <li>Yamine Renri (<a href="https://docs.google.com/forms/d/e/1FAIpQLSfUgB72RZbltu4wtcLwP-nxZ6LXsHw_fKZmHxUZVjOp7cxntw/viewform">Yamine Renri SynthV R2 serial code register form</a>)</li>
+                <li style="list-style: none;">Please note that while Yamine Renri is not a lite voice, she is freely available upon submitting the above Google Form. Check her website and included license file for usage terms: <a href="https://renrivoice.wixsite.com/renri-voice/blank-2">https://renrivoice.wixsite.com/renri-voice/blank-2</a></li>
+                <li>AiKO lite and Genbu lite (<a href="https://drive.google.com/drive/folders/141F-qnfeR5_SpD35IHLKiVppD4nzqLsG">AiKO & GENBU (Lite)</a>)</li>
+                <li>Chiyu lite (<a href="https://drive.google.com/drive/folders/1DQAAUwbdEoxl4EzzbDxQVNHUDA89CFzu">Chiyu (Lite)</a>)</li>
+                <li>Saki lite (Standard only) (<a href="https://drive.google.com/drive/folders/1lRr7aqcmQ8IYOvwh8Y7Orz9wJaibno09">SAKI (Lite)</a>)</li>
+            </ul>
+        </div>
+        <div class="col">
+            <p>From Eclipsed Sounds:</p>
+            <ul>
+                <li>Solaria lite (<a href="https://drive.google.com/drive/folders/14gR5JUMThteD2yvgqE3ORiXDcXltToyT">SOLARIA Lite</a>)</li>
+            </ul>
+        </div>
+        <div class="col">
+            <p>From Audiologie:</p>
+            <ul>
+                <li>Anri lite (<a href="https://drive.google.com/drive/folders/1qJu4kPhzL3NrNlwneFHSgSk2FXlBfBYL">ANRI [LITE]</a>)</li>
+            </ul>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col flex">
+            <span>2.2</span><h3 id="guide-install/2.2">Where to purchase paid products</h3>
+            <a class="flex-right" href="#guide-install">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <div class="callout">
+                <h4 class="flex align-center"><i class="bi bi-info-circle"></i>Regarding Product Codes</h4>
+                <p>When purchasing paid products, your activation code and download link will be emailed to you, or included in the box if a physical edition is purchased. Take care not to lose your activation code, and always deactivate the product before moving the software to a new computer, changing operating systems, or performing firmware updates. Do not delete your order confirmation email, and remember to back up your product codes in case you lose access to your email account (such as uploading an encrypted text file to Dropbox, or storing your codes in a password manager).</p>
+
+                <p>SynthV products allow for three activations to account for unexpected hardware failure or other loss, but if you fail to properly deactivate and run out of activations you may be unable to activate the product on your new computer and there is no guarantee that customer support will be able to assist. Hardware upgrades, firmware updates, and changing to a new operating system can cause SynthV Studio to no longer recognize your computer as the same one it was activated on. <b>Always deactivate your products before starting one of those processes.</b></p>
+
+                <p>To summarize:</p>
+                <ul>
+                    <li>You can use your activation code three times (not simultaneously)</li>
+                    <li>Deactivating the product “refunds” one activation, so you only lose an activation if you fail to deactivate (or are unable to)</li>
+                    <li>There is no way to remotely deactivate the product, it must be done from the SynthV Studio UI (verification is done once when you enter the code; the software does not contact the server to check for revocation)</li>
+                </ul>
+                <p>If you misplace your download link, you can get the latest installer by entering your activation code on the Dreamtonics website: <a href="https://auth.dreamtonics.com/store/download">https://auth.dreamtonics.com/store/download</a></p>
+            </div>
+        </div>
+        <div class="col">
+            <p><b>Dreamtonics</b> (<a href="https://store.dreamtonics.com/shop/">All Products - Dreamtonics Store</a>)</p>
+            <ul>
+                <li>Synthesizer V Studio Pro</li>
+                <li>All first-party Dreamtonics voices</li>
+                <li>Pro + Voice bundle (<a href="https://store.dreamtonics.com/product/bundle-editor-vdb/">[Bundle] Synthesizer V Studio Pro + Any Voice Database</a>) (choice of any one voice database sold on the Dreamtonics store, including third-party voices)</li>
+            </ul>
+            <p class="indent-full">Third party voices available on the Dreamtonics store:</p>
+            <ul><li>Solaria</li></ul>
+        </div>
+        <div class="col">
+            <p><b>ANiCUTE</b> (aka Volor/Animen) (<a href="https://www.anicute.com/">https://www.anicute.com</a>)</p>
+            <p class="indent-full">Please note that each product on the ANiCUTE store has three entries, one in each language. The products are identical, it is simply that the store page is presented in a different language.</p>
+            <ul>
+                <li>Synthesizer V Studio Pro</li>
+                <li>Eleanor Forte AI</li>
+                <li>Pro + Eleanor Forte AI bundle</li>
+                <li>AiKO</li>
+                <li>Genbu</li>
+            </ul>
+            <p class="indent-full">Voices sold by ANiCUTE/Volor but developed by a different company:</p>
+            <ul>
+                <li>Saki (Standard and AI)</li>
+                <li>Chiyu</li>
+                <li>Haiyi</li>
+                <li>Shian</li>
+                <li>Cangqiong</li>
+            </ul>
+        </div>
+        <div class="col">
+            <p><b>AHS</b> (<a href="https://www.ah-soft.com/synth-v/">https://www.ah-soft.com/synth-v</a>)</p>
+            <p class="indent-full">Please note that the AHS website is only in Japanese, and only digital products can be purchased internationally without taking additional steps. You can find physical versions of AHS’s products for international purchase on Amazon Japan (<a href="https://www.amazon.co.jp/">https://www.amazon.co.jp</a>).</p>
+            <ul>
+                <li>Synthesizer V Studio Pro</li>
+                <li>Pro + Voice starter pack (<a href="https://www.amazon.co.jp/-/en/gp/product/B08B3CNY2D">https://www.amazon.co.jp/-/en/gp/product/B08B3CNY2D</a>) (choice of one AHS voice database)</li>
+                <li>Kotonoha Akane & Aoi</li>
+                <li>Koharu Rikka</li>
+                <li>Tsurumaki Maki</li>
+                <li>Tsuina-chan</li>
+                <li>Kyomachi Seika</li>
+                <li>Natsuki Karin</li>
+                <li>Hanakuma Chifuyu</li>
+            </ul>
+            <p class="indent-full">Voices sold by AHS but developed by a different company:</p>
+            <ul>
+                <li>Most Dreamtonics voice databases</li>
+            </ul>
+        </div>
+        <div class="col">
+            <p><b>Eclipsed Sounds</b> (<a href="https://www.eclipsedsounds.com/shop">https://www.eclipsedsounds.com/shop</a>)
+            <ul><li>Solaria</li></ul>
+        </div>
+        <div class="col">
+            <p><b>Audiologie</b> (<a href="https://audiologie.us/collections/voice-databases">https://audiologie.us/collections/voice-databases</a>)
+            <ul><li>Anri</li></ul>
+        </div>
+        <div class="col">
+            <p><b>Quadimension</b> (aka Beijing Photek) (<a href="https://quadimension.taobao.com/">https://quadimension.taobao.com/</a>)
+            <p class="indent-full">This is a bit of a special case since Quadimension only sells their products through Taobao, which can be difficult or impossible for buyers outside China to purchase from. While Chiyu, Haiyi, Shian, and Cangqiong are available from ANiCUTE, many users need to resort to a Taobao proxy service in order to purchase certain Quadimension products.</p>
+            <p class="indent-full">When using a proxy service it is important to understand that you are paying extra for a third party to purchase an item on your behalf and then forward it to you, even if it is a digital product (which all of Quadimension’s voice libraries are). The links below will be to ParcelUp, a proxy service I have used personally, however <b>it is your responsibility to sufficiently research the additional fees and decide on a proxy service you are comfortable using, and to be aware that it may be difficult or impossible to get customer support from Quadimension as an international buyer.</b></p>
+            <ul>
+                <li>Chiyu, Haiyi, Shian, Cangqiong, Minus, Muxin (<a href="https://parcelup.com/shop/item.php?id=675361418857">https://parcelup.com/shop/item.php?id=675361418857</a>)</li>
+                <li>Stardust Infinity / Xingchen (<a href="https://parcelup.com/shop/item.php?id=675192462436">https://parcelup.com/shop/item.php?id=675192462436</a>)</li>
+            </ul>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col flex">
+            <span>3.1</span><h3 id="guide-install/3.1">Windows installation</h3>
+            <a class="flex-right" href="#guide-install">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <ol>
+                <li>Download the installer for SynthV Studio (svstudio-basic-setup-latest.exe) (direct link: <a href="https://resource.dreamtonics.com/download/Synthesizer%20V%20Studio%20Basic/latest/svstudio-basic-setup-latest.exe">svstudio-basic-setup-latest.exe</a>)</li>
+                <p>If you purchased the Pro edition, refer to the download link in your order confirmation email or enter your activation key on the Dreamtonics website: <a href="https://auth.dreamtonics.com/store/download">https://auth.dreamtonics.com/store/download</a></p>
+                <p>If you purchased a physical edition you can use the included DVD to install the product. If you do not have a DVD reader, use your activation code to download the installer from the Dreamtonics website mentioned above.</p>
+                <br/>
+                <li>Download the voice installer. Refer to <i><a href="#guide-install/2.1">Where to download free components</a></i> above, or use the download link included in your order confirmation email. All voice database installers are .svpk files, regardless of which operating system you use.</li>
+                <br/>
+                <li>Execute the SynthV Studio installer by double-clicking on it, then follow the on-screen instructions.</li>
+                <p>If using the Pro edition, you will be prompted for your activation code upon launching the program.</p>
+                <br/>
+                <li>Run the voice installer, either by double-clicking on it or by dragging the .svpk file into the SynthV Studio window, then follow the on-screen instructions. If you are installing a non-lite voice product, you will be prompted for an activation code.</li>
+                <br/>
+                <li>You should now be able to launch SynthV Studio and select a voice from the dropdown in the upper left corner. Keep in mind that the installer you downloaded may not be the most recent version, so you should consider referring to the <i><a href="#guide-install/4.1">Updating your products</a></i> section below.</li>
+                <br/>
+                <img src="/img/voice-select-dropdown.png" alt="The voice database selection dropdown" />
+            </ol>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col flex">
+            <span>3.2</span><h3 id="guide-install/3.2">MacOS installation</h3>
+            <a class="flex-right" href="#guide-install">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <ol>
+                <li>Download the installer for SynthV Studio (svstudio-basic-setup-latest.pkg) (direct link: <a href="https://resource.dreamtonics.com/download/Synthesizer%20V%20Studio%20Basic/latest/svstudio-basic-setup-latest.pkg">svstudio-basic-setup-latest.pkg</a>)</li>
+                <p>If you purchased the Pro edition, refer to the download link in your order confirmation email or enter your activation key on the Dreamtonics website: <a href="https://auth.dreamtonics.com/store/download">https://auth.dreamtonics.com/store/download</a> (be sure to select “MacOS” from the dropdown)</p>
+                <p>If you purchased a physical edition you can use the included DVD to install the product. If you do not have a DVD reader, use your activation code to download the installer from the Dreamtonics website mentioned above.</p>
+                <br/>
+                <li>Download the voice installer. Refer to <i><a href="#guide-install/2.1">Where to download free components</a></i> above, or use the download link included in your order confirmation email. All voice database installers are .svpk files, regardless of which operating system you use.</li>
+                <br/>
+                <li>Execute the SynthV Studio installer by double-clicking on it, then follow the on-screen instructions.</li>
+                <p>If using the Pro edition, you will be prompted for your activation code upon launching the program.</p>
+                <br/>
+                <li>Run the voice installer, either by double-clicking on it or by dragging the .svpk file into the SynthV Studio window, then follow the on-screen instructions. If you are installing a non-lite voice product, you will be prompted for an activation code.</li>
+                <br/>
+                <li>You should now be able to launch SynthV Studio and select a voice from the dropdown in the upper left corner. Keep in mind that the installer you downloaded may not be the most recent version, so you should consider referring to the <i><a href="#guide-install/4.1">Updating your products</a></i> section below.</li>
+                <br/>
+                <img src="/img/voice-select-dropdown.png" alt="The voice database selection dropdown" />
+            </ol>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col flex">
+            <span>3.3</span><h3 id="guide-install/3.3">Linux installation</h3>
+            <a class="flex-right" href="#guide-install">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <p>The steps below assume you know how to execute commands on the Linux terminal. This is a core aspect of using a Linux-based system, however if you are unfamiliar I would recommend reading this page before continuing: <a href="https://askubuntu.com/questions/38162/what-is-a-terminal-and-how-do-i-open-and-use-it">command line - What is a terminal and how do I open and use it? - Ask Ubuntu</a></p>
+            <ol>
+                <li>Download the zip archive for SynthV Studio (svstudio-basic-setup-latest.zip)
+                <p>Direct download via command line:</p>
+                <code>wget https://resource.dreamtonics.com/download/Synthesizer%20V%20Studio%20Basic/latest/svstudio-basic-linux64-latest.zip -P ~/Downloads</code>
+                <p>If you purchased the Pro edition, refer to the download link in your order confirmation email or enter your activation key on the Dreamtonics website: <a href="https://auth.dreamtonics.com/store/download">Dreamtonics Download</a> (be sure to select “Linux” from the dropdown)</p>
+                <p>If you purchased a physical edition you can use the included DVD to install the product. If you do not have a DVD reader, use your activation code to download the files from the Dreamtonics website mentioned above.</p>
+                <p>These steps will assume the zip is in the <code class="inline">~/Downloads</code> directory and commands below will refer to the Basic edition’s zip archive (svstudio-basic-setup-latest.zip). Substitute the file name in the examples for one that matches your version if it differs.</p>
+                <br/>
+                <li>Download the voice installer. Refer to <i><a href="#guide-install/2.1">Where to download free components</a></i> above, or use the download link included in your order confirmation email. All voice database installers are .svpk files, regardless of which operating system you use.</li>
+                <p>These steps will assume the .svpk file is in the <code class="inline">~/Downloads</code> directory and commands below will use Eleanor Forte lite (eleanor-lite-install-100.svpk) as an example. Substitute the file name in the examples for your voice library’s .svpk file.</p>
+                <br/>
+                <li>Navigate to the folder you want to install SynthV Studio to (in this example I use the home directory for simplicity, but you might want to use <code class="inline">/opt</code> or <code class="inline">/usr</code>):</li>
+                <code>cd ~</code>
+                <br/>
+                <li>Unzip the SynthV Studio files:</li>
+                <code>unzip ~/Downloads/svstudio-basic-linux64-latest.zip</code>
+                <br/>
+                <li>Navigate to the new SynthV Studio folder:</li>
+                <code>cd "Synthesizer V Studio Basic"</code>
+                <br/>
+                <li>Test that you can launch the software:</li>
+                <code>./synthv-studio</code>
+                <p>SynthV Studio should start, but you will not have any voices installed yet. If using the Pro edition, you should be prompted for your activation code.</p>
+                <br/>
+                <li>Close SynthV Studio and install the voice by providing it as an argument when launching the software:</li>
+                <code>./synthv-studio ~/Downloads/eleanor-lite-install-100.svpk</code>
+                <p>SynthV Studio should start, but this time you will be immediately presented with a popup to install your voice database. Follow the on-screen steps.</p>
+                <br/>
+                <li>You should now be able to launch SynthV Studio and select a voice from the dropdown in the upper left corner. Keep in mind that the installer you downloaded may not be the most recent version, so you should consider referring to the <i><a href="#guide-install/4.1">Updating your products</a></i> section below.</li>
+                <br/>
+                <img src="/img/voice-select-dropdown.png" alt="The voice database selection dropdown" />
+            </ol>
+            <p>I have personally tested the above steps on the following Linux distributions, so I can rather confidently say that they should apply to nearly all situations:</p>
+            <dl>
+                <dd>Arch Linux 2022.06.01 with GNOME</dd>
+                <dd>Debian 11.3.0 with GNOME</dd>
+                <dd>Fedora Workstation 36 (functional but laggy)</dd>
+                <dd>Kali Linux 2022.2</dd>
+                <dd>Linux Mint 20.3 with Cinnamon</dd>
+                <dd>Manjaro 21.3.1 with Plasma</dd>
+                <dd>MX Linux 21.1</dd>
+                <dd>Nitrux 20220602 with NX Desktop</dd>
+                <dd>OpenSUSE Leap 15.4 with Generic Desktop (functional but laggy)</dd>
+                <dd>Solus 4.3 with Budgie</dd>
+                <dd>Ubuntu Desktop 22.04</dd>
+                <dd>Zorin OS 16.1</dd>
+            </dl>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col flex">
+            <span>4.1</span><h3 id="guide-install/4.1">Updating your products</h3>
+            <a class="flex-right" href="#guide-install">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <p>The “License and Updates” panel is accessible via the cloud icon at the right side of the editor (unless you have dragged the buttons to a different location of the UI).</p>
+            <img src="/img/license-and-updates-panel.png" alt="The License and Updates panel"/>
+            <p>While there is a setting to automatically check for updates, you can also check manually by clicking the “Check for Updates” button.</p>
+            <img src="/img/check-for-updates-button.png" alt="The License and Updates panel with Check for Updates button highlighted"/>
+            <p>After selecting a product indicated by the green “Updates available” text, click the “Update” button to download and install the new version. For updates to SynthV Studio, the software will close and the new version’s installer will be executed. For voice database updates you should simply be presented with an installation popup.</p>
+            <img src="/img/ready-to-update.png" alt="The License and Updates panel with the Update button highlighted"/>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col flex">
+            <span>4.2</span><h3 id="guide-install/4.2">Deactivating or reactivating your products</h3>
+            <a class="flex-right" href="#guide-install">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <p>There may be times that you want to deactivate your products. SynthV products allow for three activations to account for unexpected hardware failure or other loss, but if you fail to properly deactivate and run out of activations you may be unable to activate the product on a new computer. Some users also choose to deactivate any products they are not actively using as a precaution against unexpected hardware failure.</p>
+
+            <p>Hardware upgrades, firmware updates, and changing to a new operating system can cause SynthV Studio to no longer recognize your computer as the same one it was activated on. Always deactivate your products before starting one of those processes.</p>
+
+            <p>The “License and Updates” panel is accessible via the cloud icon at the right side of the editor (unless you have dragged the buttons to a different location of the UI).</p>
+            <img src="/img/license-and-updates-panel.png" alt="The License and Updates panel"/>
+
+            <p>After selecting an activated product, click the “Deactivate” button to deactivate it and reclaim one usage of your activation code. Deactivating SynthV Studio Pro will force the software to close, and upon restarting the program you will be prompted for your activation code. Deactivated voices will not produce audio output if assigned to a track and you will simply hear the default sine tone as if no voice was selected for the track.</p>
+            <img src="/img/ready-to-deactivate.png" alt="The License and Updates panel with the Deactivate button highlighted"/>
+            <p>You can reactivate SynthV Studio Pro by simply launching the software and entering your activation code, and you can reactivate a voice database by selecting it from the list and clicking “Activate”.</p>
+            <img src="/img/ready-to-activate.png" alt="The License and Updates panel with the Activate button highlighted"/>
+        </div>
+    </div>
+    <!-- <div class="row">
+        <div class="col flex">
+            <span>4.3</span><h3 id="guide-install/4.3">Uninstalling</h3>
+            <a class="flex-right" href="#guide-install">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+
+        </div>
+    </div> -->
+    <div class="row">
+        <div class="col flex">
+            <a class="flex-right" href="#guide-install">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+    </div>
+</div>

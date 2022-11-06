@@ -4,6 +4,10 @@
         'lib.fragment',
         'lib.globalModel'
     ]), (modules, bind, fragment, globalModel) => {
+        if (localStorage.getItem('currentHash') === window.location.hash) {
+            globalModel._set('scrollY', localStorage.getItem('scrollY'));
+        }
+
         globalModel._set('onToggleTheme', () => {
             var $body = $('body');
             $body.toggleClass('light');

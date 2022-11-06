@@ -60,8 +60,12 @@ h4 {
     font-size: 1.17em;
 }
 
-ul, ol, dl {
+ul, ol {
     padding-left: 2rem;
+}
+
+p+ul, p+ol, p+dl {
+    margin-top: 0;
 }
 
 dt {
@@ -77,6 +81,32 @@ a {
     text-decoration: none;
 }
 
+code {
+    color: #c7c7c7;
+    font-size: 1rem;
+    display: block;
+    padding: 0.25rem 0.75rem;
+    background: #202225;
+    white-space: nowrap;
+    overflow-y: auto;
+}
+
+code.inline {
+    display: inline-block;
+    padding: 0;
+    white-space: initial;
+    overflow-y: initial;
+}
+
+img {
+    max-width: 100%;
+}
+
+.light code {
+    color: #4D4E53;
+    background: #f4f4f4;
+}
+
 .top-bar a {
     color: hsla(0,0%,100%,.85);
 }
@@ -90,7 +120,7 @@ a {
     left: 0px;
     display: flex;
     justify-content: center;
-    position: fixed;
+    /*position: fixed;*/
     z-index: 9998;
     background-color: #000;
 
@@ -226,6 +256,10 @@ a {
     .app.row {
         padding-top: 0rem;
     }
+
+    .breadcrumb {
+        margin-top: 0.25rem;
+    }
 }
 
 .text-center {
@@ -290,6 +324,40 @@ label.row {
 }
 .row::after {
     clear: both;
+}
+
+.callout {
+    padding: 1rem 1.35rem;
+    margin: 1rem;
+    border: 1px solid hsla(0,0%,100%,.85);
+    border-radius: 1rem;
+}
+
+.callout > i,
+.callout > h4 > i {
+    float: left;
+    padding-right: 1rem;
+}
+
+.callout > i+p {
+    margin-top: 0rem;
+}
+
+.callout *:last-child {
+    margin-bottom: 0;
+}
+
+.flex {
+    display: flex;
+    align-items: baseline;
+}
+
+.flex-right {
+    margin-left: auto;
+}
+
+.align-center {
+    align-items: center;
 }
 
 .nopad, .row.nopad, .col.nopad, .col .row .col.nopad {

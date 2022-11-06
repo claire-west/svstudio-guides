@@ -64,6 +64,14 @@ i.warn:hover {
     color: #cc4b37;
 }
 
+i.icon {
+    display: inline-block;
+}
+
+i.bi {
+    font-size: 1.5rem;
+}
+
 option {
     background-color: #202225;
 }
@@ -136,6 +144,14 @@ body.light .top-bar a:hover {
 
 .error {
     border: 1px solid #A30303;
+}
+
+.indent {
+    text-indent: 1rem;
+}
+
+.indent-full {
+    padding-left: 1rem;
 }
 
 .redText {

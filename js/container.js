@@ -45,12 +45,15 @@
         };
 
         $(window).scroll(() => {
-            var $header = $('div.top-bar, div.top-bar-spacer');
-            if ($(document).scrollTop() > 0) {
-                $header.addClass('shrink');
-            } else {
-                $header.removeClass('shrink');
-            }
+            localStorage.setItem('scrollY', window.pageYOffset);
+            localStorage.setItem('currentHash', window.location.hash);
+
+            // var $header = $('div.top-bar, div.top-bar-spacer');
+            // if ($(document).scrollTop() > 0) {
+            //     $header.addClass('shrink');
+            // } else {
+            //     $header.removeClass('shrink');
+            // }
         });
 
         hashNav.bindNavApp((app, section, args) => {
