@@ -12,7 +12,8 @@
     <div class="row">
         <div class="col">
             <h2>How to Purchase, Download, and Install Synthesizer V Studio and Voice Databases</h2>
-            <p>This guide was originally written on the <a href="https://forum.synthesizerv.com/t/topic/6220">official forums</a>.</p>
+            <p class="small"><i>2022/07/23 (updated 2022/11/06)</i></p>
+            <p>This article was originally written on the <a href="https://forum.synthesizerv.com/t/topic/6220">official forums</a>.</p>
             <p>This guide is intended to help alleviate confusion about the Synthesizer V Studio software components and their initial setup.</p>
         </div>
         <div class="col">
@@ -334,7 +335,10 @@
             <ol>
                 <li>Download the zip archive for SynthV Studio (svstudio-basic-setup-latest.zip)
                 <p>Direct download via command line:</p>
-                <code>wget https://resource.dreamtonics.com/download/Synthesizer%20V%20Studio%20Basic/latest/svstudio-basic-linux64-latest.zip -P ~/Downloads</code>
+                <div class="code">
+                    <a z--click="^onCopy"><i class="fa-solid fa-clipboard-list" title="Copy code"></i></a>
+                    <code>wget https://resource.dreamtonics.com/download/Synthesizer%20V%20Studio%20Basic/latest/svstudio-basic-linux64-latest.zip -P ~/Downloads</code>
+                </div>
                 <p>If you purchased the Pro edition, refer to the download link in your order confirmation email or enter your activation key on the Dreamtonics website: <a href="https://auth.dreamtonics.com/store/download">Dreamtonics Download</a> (be sure to select “Linux” from the dropdown)</p>
                 <p>If you purchased a physical edition you can use the included DVD to install the product. If you do not have a DVD reader, use your activation code to download the files from the Dreamtonics website mentioned above.</p>
                 <p>These steps will assume the zip is in the <code class="inline">~/Downloads</code> directory and commands below will refer to the Basic edition’s zip archive (svstudio-basic-setup-latest.zip). Substitute the file name in the examples for one that matches your version if it differs.</p>
@@ -343,20 +347,35 @@
                 <p>These steps will assume the .svpk file is in the <code class="inline">~/Downloads</code> directory and commands below will use Eleanor Forte lite (eleanor-lite-install-100.svpk) as an example. Substitute the file name in the examples for your voice library’s .svpk file.</p>
                 <br/>
                 <li>Navigate to the folder you want to install SynthV Studio to (in this example I use the home directory for simplicity, but you might want to use <code class="inline">/opt</code> or <code class="inline">/usr</code>):</li>
-                <code>cd ~</code>
+                <div class="code">
+                    <a z--click="^onCopy"><i class="fa-solid fa-clipboard-list" title="Copy code"></i></a>
+                    <code>cd ~</code>
+                </div>
                 <br/>
                 <li>Unzip the SynthV Studio files:</li>
-                <code>unzip ~/Downloads/svstudio-basic-linux64-latest.zip</code>
+                <div class="code">
+                    <a z--click="^onCopy"><i class="fa-solid fa-clipboard-list" title="Copy code"></i></a>
+                    <code>unzip ~/Downloads/svstudio-basic-linux64-latest.zip</code>
+                </div>
                 <br/>
                 <li>Navigate to the new SynthV Studio folder:</li>
-                <code>cd "Synthesizer V Studio Basic"</code>
+                <div class="code">
+                    <a z--click="^onCopy"><i class="fa-solid fa-clipboard-list" title="Copy code"></i></a>
+                    <code>cd "Synthesizer V Studio Basic"</code>
+                </div>
                 <br/>
                 <li>Test that you can launch the software:</li>
-                <code>./synthv-studio</code>
+                <div class="code">
+                    <a z--click="^onCopy"><i class="fa-solid fa-clipboard-list" title="Copy code"></i></a>
+                    <code>./synthv-studio</code>
+                </div>
                 <p>SynthV Studio should start, but you will not have any voices installed yet. If using the Pro edition, you should be prompted for your activation code.</p>
                 <br/>
                 <li>Close SynthV Studio and install the voice by providing it as an argument when launching the software:</li>
-                <code>./synthv-studio ~/Downloads/eleanor-lite-install-100.svpk</code>
+                <div class="code">
+                    <a z--click="^onCopy"><i class="fa-solid fa-clipboard-list" title="Copy code"></i></a>
+                    <code>./synthv-studio ~/Downloads/eleanor-lite-install-100.svpk</code>
+                </div>
                 <p>SynthV Studio should start, but this time you will be immediately presented with a popup to install your voice database. Follow the on-screen steps.</p>
                 <br/>
                 <li>You should now be able to launch SynthV Studio and select a voice from the dropdown in the upper left corner. Keep in mind that the installer you downloaded may not be the most recent version, so you should consider referring to the <i><a href="#guide-install/4.1">Updating your products</a></i> section below.</li>

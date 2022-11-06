@@ -2,8 +2,9 @@
     dynCore.declare('app.globalModel', dynCore.require([
         'lib.bind',
         'lib.fragment',
-        'lib.globalModel'
-    ]), (modules, bind, fragment, globalModel) => {
+        'lib.globalModel',
+        'lib.isMobile'
+    ]), (modules, bind, fragment, globalModel, isMobile) => {
         if (localStorage.getItem('currentHash') === window.location.hash) {
             globalModel._set('scrollY', localStorage.getItem('scrollY'));
         }
@@ -15,6 +16,23 @@
                 localStorage.setItem('theme', 'light');
             } else {
                 localStorage.removeItem('theme');
+            }
+        });
+
+        globalModel._set('onCopy', function() {
+            var text = $(this).next().text();
+            if (text) {
+                if (isMobile()) {
+                    // https://stackoverflow.com/a/71985515
+                    const element = document.createElement("textarea");
+                    element.value = text;
+                    document.body.appendChild(element);
+                    element.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(element);
+                } else {
+                    navigator.clipboard.writeText(text);
+                }
             }
         });
 

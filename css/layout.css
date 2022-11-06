@@ -77,8 +77,31 @@ p {
     margin-bottom: 0.5rem;
 }
 
+p.small {
+    margin-top: -0.25rem;
+    font-size: 0.75rem;
+    margin-bottom: 0;
+}
+
 a {
     text-decoration: none;
+}
+
+div.code {
+    position: relative;
+}
+
+div.code a {
+    position: absolute;
+    left: -1.9rem;
+    padding: 0 0.5rem;
+    font-size: 1.25rem;
+    color: hsla(0,0%,100%,.65);
+    cursor: pointer;
+}
+
+div.code a:hover {
+    color: #85BC38;
 }
 
 code {
@@ -87,8 +110,6 @@ code {
     display: block;
     padding: 0.25rem 0.75rem;
     background: #202225;
-    white-space: nowrap;
-    overflow-y: auto;
 }
 
 code.inline {
@@ -407,6 +428,26 @@ label.row {
 
     .breadcrumb {
         margin-top: 0.25rem;
+    }
+
+    code {
+        white-space: nowrap;
+        overflow-y: auto;
+    }
+
+    .callout {
+        padding: 0.75rem 1rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .col {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+    .col .row .col {
+        padding-right: 0.25rem;
+        padding-left: 0.25rem;
     }
 }
 
