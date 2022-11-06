@@ -56,6 +56,14 @@
             // }
         });
 
+        globalModel._set('onAboutPress', () => {
+            globalModel.openModal('about');
+        });
+
+        globalModel._set('onGoogleAnalyticsPress', () => {
+            globalModel.openModal('googleAnalytics');
+        });
+
         hashNav.bindNavApp((app, section, args) => {
             var $app;
             if (app) {

@@ -235,31 +235,42 @@ img {
     margin-bottom: -0.5rem;
 }
 .breadcrumb *+*:before {
-  padding: 0.5rem;
-  content: "/\00a0";
+    color: hsla(0,0%,100%,.85);
+    padding: 0.5rem;
+    content: "/\00a0";
+}
+.light .breadcrumb *+*:before {
+    color: #4d4e53;
+    padding: 0.5rem;
+    content: "/\00a0";
 }
 .breadcrumb+hr {
     margin-bottom: -0.5rem;
 }
 
-/* medium format */
-@media screen and (max-width: 1280px) {
-
+footer .flex {
+    color: #888;
+    justify-content: center;
 }
 
-/* small format */
-@media screen and (max-width: 640px) {
-    h1 {
-        font-size: 1.25rem;
-    }
+footer span:hover {
+    color: #c7c7c7;
+    cursor: pointer;
+}
 
-    .app.row {
-        padding-top: 0rem;
-    }
+footer .flex *+*:before {
+    color: #888;
+    padding: 0.5rem;
+    content: "|";
+}
 
-    .breadcrumb {
-        margin-top: 0.25rem;
-    }
+.light footer span:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.light footer .flex *+*:before {
+    color: #888;
 }
 
 .text-center {
@@ -302,7 +313,6 @@ input.col {
     padding-right: 0.125rem;
     padding-left: 0.125rem;
 }
-
 
 .row {
     width: 100%;
@@ -378,6 +388,26 @@ label.row {
 
 .margin-bottom-0 {
     margin-bottom: 0;
+}
+
+/* medium format */
+@media screen and (max-width: 1280px) {
+
+}
+
+/* small format */
+@media screen and (max-width: 640px) {
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    .app.row {
+        padding-top: 0rem;
+    }
+
+    .breadcrumb {
+        margin-top: 0.25rem;
+    }
 }
 
 .s1{width:8.333333333333333%;width:calc(100%/12);}
