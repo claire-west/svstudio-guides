@@ -1,10 +1,9 @@
 ((dynCore) => {
     dynCore.when(
         dynCore.require([
-            'app.container',
-            'lib.globalModel'
+            'app.container'
         ])
-    ).done((modules, container, globalModel) => {
+    ).done((modules, container) => {
         container('home', {
             model: {
 

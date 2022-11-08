@@ -80,18 +80,25 @@
 </script>
 <script
     src="https://lib.claire-west.ca/core/js/dynCore.js"
-    data-res='{
-        "url": "https://synthv.info"
-    }'
     data-ns='{
         "app": "/"
-    }'></script>
+    }'
+    data-preload='[
+        "lib"
+    ]'></script>
+<!-- <script
+    src="/js-lib/core/js/dynCore.js"
+    data-ns='{
+        "app": "/",
+        "lib": "/js-lib/util"
+    }'
+    data-preload='[
+        "lib"
+    ]'></script> -->
 <script>
-    (function(dynCore) {
+    ((dynCore) => {
         dynCore.ready(function(modules) {
-            dynCore.require([
-                'app.container'
-            ]);
+            dynCore.require('app.container');
         });
     })(window.dynCore);
 </script>
