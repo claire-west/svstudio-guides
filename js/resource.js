@@ -5,14 +5,16 @@
         'lib.fragment'
     ])).done((modules, container, hashNav, fragment) => {
         var titles = {
-            install: 'How to Purchase, Download, and Install Synthesizer V Studio and Voice Databases',
-            phonemes: 'Entering lyrics & phonemes for better pronounciation & timing, and how to use dictionaries',
-            support: 'Contacting Customer Support'
+            faq: 'Frequently Asked Questions',
+            scripts: 'Script Directory',
+            dicts: 'Dictionary Directory',
+            phonemes: 'Phoneme Lists',
+            glossary: 'Glossary of Terms'
         };
 
-        container('guide', {
+        container('resource', {
             onNavTo: function(app, section) {
-                if (app === 'guide' && section) {
+                if (app === 'resource' && section) {
                     if (titles[section]) {
                         $('title').text(titles[section]);
                     }
