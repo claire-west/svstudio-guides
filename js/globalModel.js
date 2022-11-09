@@ -49,7 +49,7 @@
             modalFragments[fragmentName].done(function($fragment) {
                 $fragment.show();
                 $('body').addClass('noscroll');
-                $('.modal').show();
+                $('.modal').show().find('.dialog').scrollTop(0);
                 promise.resolve();
             });
             return promise;
