@@ -215,7 +215,7 @@ body.light .top-bar a:hover {
     /*top: 20vh;*/
     padding: 1rem;
     border-radius: 0.25rem;
-    margin-top: calc(20% - 1rem);
+    margin-top: calc(20vh - 1rem);
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0.5rem;
@@ -264,6 +264,6 @@ body.light .top-bar a:hover {
 /* small format */
 @media screen and (max-width: 680px) {
     .modal .dialog {
-        top: 0.5rem;
+        margin-top: calc(10vh - 0.5rem);
     }
 }
