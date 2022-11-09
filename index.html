@@ -63,6 +63,7 @@
             <div class="flex">
                 <span z--click="onAboutPress">About</span>
                 <span z--click="onGoogleAnalyticsPress">Google Analytics</span>
+                <span z--click="onAiArtPress">Statement on AI Art</span>
             </div>
         </div>
     </div>
@@ -74,8 +75,7 @@
 <script>
     var theme = localStorage.getItem('theme');
     if (theme) {
-        var $body = $('body');
-        $body.addClass(theme);
+        $('body').addClass(theme);
     }
 </script>
 <script
@@ -92,10 +92,7 @@
     data-ns='{
         "app": "/",
         "lib": "/js-lib/util"
-    }'
-    data-preload='[
-        "lib"
-    ]'>
+    }'>
 </script> -->
 <script>
     ((dynCore) => {

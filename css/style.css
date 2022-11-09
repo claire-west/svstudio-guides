@@ -116,6 +116,7 @@ button:focus, button:hover {
 a {
     color: #7db235;
     cursor: pointer;
+    overflow-wrap: break-word;
 }
 
 a:hover {
@@ -195,10 +196,11 @@ body.light .top-bar a:hover {
 
 .modal {
     position: fixed;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     top: 0;
     left: 0;
+    padding: 0.25rem;
     background-color: rgba(127,127,127,.7);
     z-index: 9999;
 }
@@ -207,13 +209,17 @@ body.light .top-bar a:hover {
     background: #2f3136;
     width: 97.5%;
     max-width: 40rem;
+    max-height: 82.5%;
+    overflow-y: auto;
     position: relative;
-    top: 20%;
+    /*top: 20vh;*/
     padding: 1rem;
     border-radius: 0.25rem;
+    margin-top: calc(20% - 1rem);
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 4.375rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0;
 }
 
 .modal .dialog h4 {
@@ -225,11 +231,9 @@ body.light .top-bar a:hover {
 }
 
 .modal .dialog .options {
-    position: absolute;
+    position: relative;
     text-align: right;
     width: 100%;
-    bottom: 0;
-    left: 0;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
@@ -258,7 +262,7 @@ body.light .top-bar a:hover {
 }
 
 /* small format */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 680px) {
     .modal .dialog {
         top: 0.5rem;
     }

@@ -19,6 +19,11 @@ body {
     background: #2a2a2a;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-y: auto;
+}
+
+body.noscroll {
+    overflow-y: clip;
 }
 
 body.light {
@@ -62,6 +67,8 @@ h4 {
 }
 
 ul, ol {
+    display: flex;
+    flex-flow: column;
     padding-left: 2rem;
 }
 
@@ -113,7 +120,7 @@ code {
     background: #333;
 }
 
-p code, li code {
+p > code, li > code {
     display: inline-block;
     padding: 0;
     white-space: initial;
@@ -282,6 +289,7 @@ body.light .top-bar .top-bar-nav a.button.active {
 footer .flex {
     color: #888;
     justify-content: center;
+    flex-flow: wrap;
 }
 
 footer span:hover {
@@ -428,7 +436,7 @@ label.row {
 }
 
 /* small format */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 680px) {
     h1 {
         font-size: 1.25rem;
     }

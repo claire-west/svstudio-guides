@@ -1,21 +1,18 @@
 ((dynCore) => {
-    dynCore.when(dynCore.require([
-        'app.container',
-        'lib.hashNav',
-        'lib.fragment'
-    ])).done((modules, container, hashNav, fragment) => {
-        var titles = {
-            install: 'How to Purchase, Download, and Install Synthesizer V Studio and Voice Databases',
-            phonemes: 'Entering lyrics & phonemes for better pronounciation & timing, and how to use dictionaries',
-            support: 'Contacting Customer Support'
-        };
-
+    dynCore.when(dynCore.require('app.container')).done((modules, container) => {
         container('guide', {
+            model: {
+                title: {
+                    install: 'How to Purchase, Download, and Install Synthesizer V Studio and Voice Databases',
+                    phonemes: 'Entering lyrics & phonemes for better pronounciation & timing, and how to use dictionaries',
+                    support: 'Contacting Customer Support'
+                }
+            },
+
             onNavTo: function(app, section) {
-                if (app === 'guide' && section) {
-                    if (titles[section]) {
-                        $('title').text(titles[section]);
-                    }
+                if (app === this.title && section && this.model.title[section]) {
+                    $('title').text(this.model.title[section]);
+                    window.scrollTo(0, 0);
                 }
             }
         });

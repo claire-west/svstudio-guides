@@ -52,6 +52,10 @@
             globalModel.openModal('googleanalytics');
         });
 
+        globalModel._set('onAiArtPress', () => {
+            globalModel.openModal('aiart');
+        });
+
         hashNav.bindNavApp((app, section, args) => {
             var $app;
             if (app) {

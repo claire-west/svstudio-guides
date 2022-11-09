@@ -48,6 +48,7 @@
             }
             modalFragments[fragmentName].done(function($fragment) {
                 $fragment.show();
+                $('body').addClass('noscroll');
                 $('.modal').show();
                 promise.resolve();
             });
@@ -58,6 +59,7 @@
             var $element = $(this).parent();
             while ($element.length) {
                 if ($element.hasClass('modal')) {
+                    $('body').removeClass('noscroll');
                     $element.hide();
                     break;
                 }

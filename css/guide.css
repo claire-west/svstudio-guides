@@ -38,8 +38,19 @@
     max-width: 25rem;
 }
 
+/*#guide-support hr + div > div.col.flex + div > p {
+    line-height: 1;
+}*/
+
 /* small format */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 25rem) {
+    #guide-install img {
+        max-width: 100%;
+    }
+}
+
+/* small format */
+@media screen and (max-width: 680px) {
     #app-guide ol.toc,
     #app-guide ol.toc>li>ol {
         padding-left: 2rem;
