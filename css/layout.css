@@ -368,6 +368,7 @@ label.row {
 }
 
 .callout {
+    min-height: 4.25rem;
     padding: 1rem 1.35rem;
     margin: 1rem;
     border: 1px solid hsla(0,0%,100%,.85);
