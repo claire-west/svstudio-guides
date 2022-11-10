@@ -37,9 +37,9 @@
 <section id="resource-phonemes" class="contentSection col">
     <div class="row">
         <div class="col flex">
-            <button id="set-en" class="button">English (arpabet)</button>
-            <button id="set-jp" class="button">Japanese (romaji)</button>
-            <button id="set-zh" class="button">Chinese (x-sampa)</button>
+            <button data-lang="en" class="button">English (arpabet)</button>
+            <button data-lang="jp" class="button">Japanese (romaji)</button>
+            <button data-lang="zh" class="button">Chinese (x-sampa)</button>
         </div>
     </div>
     <div id="phoneme-list-en" class="row" hidden style="padding-top:0.5rem;">
@@ -275,20 +275,14 @@
     var setPhonemeList = function(language) {
         localStorage.setItem('phonemeSet', language);
         $('button').removeClass('active');
-        $('#set-' + language).addClass('active');
+        $('button[data-lang=' + language + ']').addClass('active');
 
         $('[id^=phoneme-list-]').hide();
         $('#phoneme-list-' + language).show();
     };
 
-    $('#set-en').click(function() {
-        setPhonemeList('en');
-    });
-    $('#set-jp').click(function() {
-        setPhonemeList('jp');
-    });
-    $('#set-zh').click(function() {
-        setPhonemeList('zh');
+    $('button').click(function() {
+        setPhonemeList($(this).attr('data-lang'));
     });
 
     setPhonemeList(localStorage.getItem('phonemeSet') || 'en');

@@ -21,17 +21,17 @@
                 "class": "active",
                 "path": "phonemeSet",
                 "eq": "en"
-            }' z--click="setEnglish">English (arpabet)</button>
+            }' z--click="setPhonemeSet" data-lang="en">English (arpabet)</button>
             <button class="button" z--class='{
                 "class": "active",
                 "path": "phonemeSet",
                 "eq": "jp"
-            }' z--click="setJapanese">Japanese (romaji)</button>
+            }' z--click="setPhonemeSet" data-lang="jp">Japanese (romaji)</button>
             <button class="button" z--class='{
                 "class": "active",
                 "path": "phonemeSet",
                 "eq": "zh"
-            }' z--click="setChinese">Chinese (x-sampa)</button>
+            }' z--click="setPhonemeSet" data-lang="zh">Chinese (x-sampa)</button>
             <button class="transparent" title="Pop out" z--visible="!^isMobile"
                 onclick="window.open('/phonemes', '_blank', 'location=yes,height=540,width=690,scrollbars=yes,status=yes');">
                 <i class="bi bi-box-arrow-up-right"></i>

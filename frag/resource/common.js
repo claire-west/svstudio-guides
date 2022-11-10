@@ -6,17 +6,10 @@
         fragment.controller('frag.resource.common', {
             model: {
                 phonemeSet: localStorage.getItem('phonemeSet') || 'en',
-                setEnglish: function(model) {
-                    localStorage.setItem('phonemeSet', 'en');
-                    model._set('phonemeSet', 'en');
-                },
-                setJapanese: function(model) {
-                    localStorage.setItem('phonemeSet', 'jp');
-                    model._set('phonemeSet', 'jp');
-                },
-                setChinese: function(model) {
-                    localStorage.setItem('phonemeSet', 'zh');
-                    model._set('phonemeSet', 'zh');
+                setPhonemeSet: function(model) {
+                    var phonemeSet = $(this).attr('data-lang');
+                    localStorage.setItem('phonemeSet', phonemeSet);
+                    model._set('phonemeSet', phonemeSet);
                 }
             },
 
