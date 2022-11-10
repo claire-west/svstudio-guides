@@ -1,0 +1,7 @@
+#resource-phonemes button {
+    margin-bottom: 0;
+}
+
+#resource-phonemes tr td:first-child {
+    font-family: monospace,monospace;
+}

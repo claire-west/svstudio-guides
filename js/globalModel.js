@@ -5,6 +5,8 @@
         'lib.globalModel',
         'lib.isMobile'
     ]), (modules, bind, fragment, globalModel, isMobile) => {
+        globalModel._set('isMobile', isMobile());
+
         globalModel._set('onToggleTheme', () => {
             var $body = $('body');
             $body.toggleClass('light');

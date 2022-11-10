@@ -1,0 +1,262 @@
+<div z--controller="frag.resource.common">
+    <div class="row">
+        <div class="col">
+            <p class="breadcrumb">
+                <a href="#">Home</a>
+                <span>Resources</span>
+                <span>Phonemes</span>
+            </p>
+            <hr/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h2 z--text="/title.phonemes"></h2>
+            <p class="small"><i>2022/11/09</i></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col flex">
+            <button class="button" z--class='{
+                "class": "active",
+                "path": "phonemeSet",
+                "eq": "en"
+            }' z--click="setEnglish">English (arpabet)</button>
+            <button class="button" z--class='{
+                "class": "active",
+                "path": "phonemeSet",
+                "eq": "jp"
+            }' z--click="setJapanese">Japanese (romaji)</button>
+            <button class="button" z--class='{
+                "class": "active",
+                "path": "phonemeSet",
+                "eq": "zh"
+            }' z--click="setChinese">Chinese (x-sampa)</button>
+            <button class="transparent" title="Pop out" z--visible="!^isMobile"
+                onclick="window.open('/phonemes', '_blank', 'location=yes,height=540,width=690,scrollbars=yes,status=yes');">
+                <i class="bi bi-box-arrow-up-right"></i>
+            </button>
+        </div>
+    </div>
+    <div class="row" z--visible='{ "path": "phonemeSet", "eq": "en" }' style="padding-top:0.5rem;">
+        <div class="col s6 nopad">
+            <div class="row nopad">
+                <div class="col s12 m6">
+                    <table>
+                        <tr><td>aa&nbsp;</td><td>vowel</td></tr>
+                        <tr><td>ae</td><td>vowel</td></tr>
+                        <tr><td>ah</td><td>vowel</td></tr>
+                        <tr><td>ao</td><td>vowel</td></tr>
+                        <tr><td>aw</td><td>diphthong</td></tr>
+                        <tr><td>ax</td><td>vowel</td></tr>
+                        <tr><td>ay</td><td>diphthong</td></tr>
+                        <tr><td>b</td><td>stop</td></tr>
+                        <tr><td>ch</td><td>affricate</td></tr>
+                        <tr><td>d</td><td>stop</td></tr>
+                        <tr><td>dx</td><td>stop</td></tr>
+                        <tr><td>dr</td><td>affricate</td></tr>
+                    </table>
+                </div>
+                <div class="col s12 m6">
+                    <table>
+                        <tr><td>dh&nbsp;</td><td>fricative</td></tr>
+                        <tr><td>eh</td><td>vowel</td></tr>
+                        <tr><td>er</td><td>vowel</td></tr>
+                        <tr><td>ey</td><td>diphthong</td></tr>
+                        <tr><td>f</td><td>fricative</td></tr>
+                        <tr><td>g</td><td>stop</td></tr>
+                        <tr><td>hh</td><td>aspirate</td></tr>
+                        <tr><td>ih</td><td>vowel</td></tr>
+                        <tr><td>iy</td><td>vowel</td></tr>
+                        <tr><td>jh</td><td>affricate</td></tr>
+                        <tr><td>k</td><td>stop</td></tr>
+                        <tr><td>l</td><td>liquid</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col s6 nopad">
+            <div class="row nopad">
+                <div class="col s12 m6">
+                    <table>
+                        <tr><td>m&nbsp;&nbsp;</td><td>nasal</td></tr>
+                        <tr><td>n</td><td>nasal</td></tr>
+                        <tr><td>ng</td><td>nasal</td></tr>
+                        <tr><td>ow</td><td>diphthong</td></tr>
+                        <tr><td>oy</td><td>diphthong</td></tr>
+                        <tr><td>p</td><td>stop</td></tr>
+                        <tr><td>r</td><td>semivowel</td></tr>
+                        <tr><td>s</td><td>fricative</td></tr>
+                        <tr><td>sh</td><td>fricative</td></tr>
+                        <tr><td>t</td><td>stop</td></tr>
+                        <tr><td>tr</td><td>affricate</td></tr>
+                        <tr><td>th</td><td>fricative</td></tr>
+                    </table>
+                </div>
+                <div class="col s12 m6">
+                    <table>
+                        <tr><td>uh&nbsp;</td><td>vowel</td></tr>
+                        <tr><td>uw</td><td>vowel</td></tr>
+                        <tr><td>v</td><td>fricative</td></tr>
+                        <tr><td>w</td><td>semivowel</td></tr>
+                        <tr><td>y</td><td>semivowel</td></tr>
+                        <tr><td>z</td><td>fricative</td></tr>
+                        <tr><td>zh</td><td>fricative</td></tr>
+                        <tr><td>pau</td><td>silence</td></tr>
+                        <tr><td>sil</td><td>silence</td></tr>
+                        <tr><td>cl</td><td>stop</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" z--visible='{ "path": "phonemeSet", "eq": "jp" }' style="padding-top:0.5rem;">
+        <div class="col s6 nopad">
+            <div class="row nopad">
+                <div class="col s12 m6">
+                    <table>
+                        <tr><td>a&nbsp;&nbsp;</td><td>vowel</td></tr>
+                        <tr><td>i</td><td>vowel</td></tr>
+                        <tr><td>u</td><td>vowel</td></tr>
+                        <tr><td>e</td><td>vowel</td></tr>
+                        <tr><td>o</td><td>vowel</td></tr>
+                        <tr><td>N</td><td>vowel</td></tr>
+                        <tr><td>cl</td><td>stop</td></tr>
+                        <tr><td>t</td><td>stop</td></tr>
+                        <tr><td>d</td><td>stop</td></tr>
+                        <tr><td>s</td><td>fricative</td></tr>
+                    </table>
+                </div>
+                <div class="col s12 m6">
+                    <table>
+                        <tr><td>sh&nbsp;</td><td>fricative</td></tr>
+                        <tr><td>j</td><td>affricate</td></tr>
+                        <tr><td>z</td><td>affricate</td></tr>
+                        <tr><td>ts</td><td>affricate</td></tr>
+                        <tr><td>k</td><td>stop</td></tr>
+                        <tr><td>g</td><td>stop</td></tr>
+                        <tr><td>h</td><td>aspirate</td></tr>
+                        <tr><td>b</td><td>stop</td></tr>
+                        <tr><td>p</td><td>stop</td></tr>
+                        <tr><td>f</td><td>fricative</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col s6 nopad">
+            <div class="row nopad">
+                <div class="col s12 m6">
+                    <table>
+                        <tr><td>ch&nbsp;</td><td>affricate</td></tr>
+                        <tr><td>ry</td><td>liquid</td></tr>
+                        <tr><td>ky</td><td>stop</td></tr>
+                        <tr><td>py</td><td>stop</td></tr>
+                        <tr><td>dy</td><td>stop</td></tr>
+                        <tr><td>ty</td><td>stop</td></tr>
+                        <tr><td>ny</td><td>nasal</td></tr>
+                        <tr><td>hy</td><td>aspirate</td></tr>
+                        <tr><td>my</td><td>nasal</td></tr>
+                        <tr><td>gy</td><td>stop</td></tr>
+                    </table>
+                </div>
+                <div class="col s12 m6">
+                    <table>
+                        <tr><td>by&nbsp;</td><td>stop</td></tr>
+                        <tr><td>n</td><td>nasal</td></tr>
+                        <tr><td>m</td><td>nasal</td></tr>
+                        <tr><td>r</td><td>liquid</td></tr>
+                        <tr><td>w</td><td>semivowel</td></tr>
+                        <tr><td>v</td><td>semivowel</td></tr>
+                        <tr><td>y</td><td>semivowel</td></tr>
+                        <tr><td>pau</td><td>silence</td></tr>
+                        <tr><td>sil</td><td>silence</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" z--visible='{ "path": "phonemeSet", "eq": "zh" }' style="padding-top:0.5rem;">
+        <div class="col s6 nopad">
+            <div class="row nopad">
+                <div class="col s12 m6">
+                    <table>
+                        <tr><td>a&nbsp;&nbsp;&nbsp;</td><td>vowel</td></tr>
+                        <tr><td>A</td><td>vowel</td></tr>
+                        <tr><td>o</td><td>vowel</td></tr>
+                        <tr><td>@</td><td>vowel</td></tr>
+                        <tr><td>e</td><td>vowel</td></tr>
+                        <tr><td>7</td><td>vowel</td></tr>
+                        <tr><td>U</td><td>vowel</td></tr>
+                        <tr><td>u</td><td>vowel</td></tr>
+                        <tr><td>i</td><td>vowel</td></tr>
+                        <tr><td>i\</td><td>vowel</td></tr>
+                        <tr><td>i`</td><td>vowel</td></tr>
+                        <tr><td>y</td><td>vowel</td></tr>
+                        <tr><td>AU</td><td>diphthong</td></tr>
+                        <tr><td>@U</td><td>diphthong</td></tr>
+                        <tr><td>ia</td><td>diphthong</td></tr>
+                    </table>
+                </div>
+                <div class="col s12 m6">
+                    <table>
+                        <tr><td>iA&nbsp;&nbsp;</td><td>diphthong</td></tr>
+                        <tr><td>iAU</td><td>diphthong</td></tr>
+                        <tr><td>ie</td><td>diphthong</td></tr>
+                        <tr><td>iE</td><td>diphthong</td></tr>
+                        <tr><td>iU</td><td>diphthong</td></tr>
+                        <tr><td>i@U</td><td>diphthong</td></tr>
+                        <tr><td>y{</td><td>diphthong</td></tr>
+                        <tr><td>yE</td><td>diphthong</td></tr>
+                        <tr><td>ua</td><td>diphthong</td></tr>
+                        <tr><td>uA</td><td>diphthong</td></tr>
+                        <tr><td>u@</td><td>diphthong</td></tr>
+                        <tr><td>ue</td><td>diphthong</td></tr>
+                        <tr><td>uo</td><td>diphthong</td></tr>
+                        <tr><td>:\i</td><td>coda</td></tr>
+                        <tr><td>r`</td><td>coda</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col s6 nopad">
+            <div class="row nopad">
+                <div class="col s12 m6">
+                    <table>
+                        <tr><td>:n&nbsp;&nbsp;</td><td>coda</td></tr>
+                        <tr><td>N</td><td>coda</td></tr>
+                        <tr><td>p</td><td>stop</td></tr>
+                        <tr><td>ph</td><td>stop</td></tr>
+                        <tr><td>t</td><td>stop</td></tr>
+                        <tr><td>th</td><td>stop</td></tr>
+                        <tr><td>k</td><td>stop</td></tr>
+                        <tr><td>kh</td><td>stop</td></tr>
+                        <tr><td>ts\</td><td>affricate</td></tr>
+                        <tr><td>ts</td><td>affricate</td></tr>
+                        <tr><td>tsh</td><td>affricate</td></tr>
+                        <tr><td>ts`</td><td>affricate</td></tr>
+                        <tr><td>ts`h</td><td>affricate</td></tr>
+                        <tr><td>x</td><td>aspirate</td></tr>
+                        <tr><td>f</td><td>fricative</td></tr>
+                    </table>
+                </div>
+                <div class="col s12 m6">
+                    <table>
+                        <tr><td>s&nbsp;&nbsp;&nbsp;</td><td>fricative</td></tr>
+                        <tr><td>s`</td><td>fricative</td></tr>
+                        <tr><td>ts\h</td><td>fricative</td></tr>
+                        <tr><td>s\</td><td>fricative</td></tr>
+                        <tr><td>m</td><td>nasal</td></tr>
+                        <tr><td>n</td><td>nasal</td></tr>
+                        <tr><td>l</td><td>liquid</td></tr>
+                        <tr><td>z`</td><td>semivowel</td></tr>
+                        <tr><td>w</td><td>semivowel</td></tr>
+                        <tr><td>j</td><td>semivowel</td></tr>
+                        <tr><td>pau</td><td>silence</td></tr>
+                        <tr><td>sil</td><td>silence</td></tr>
+                        <tr><td>cl</td><td>stop</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
