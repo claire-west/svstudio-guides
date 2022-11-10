@@ -9,10 +9,12 @@
                 }
             },
 
-            onNavTo: function(app, section) {
+            onNavTo: function(app, section, args) {
                 if (app === this.title && section && this.model.title[section]) {
                     $('title').text(this.model.title[section]);
-                    window.scrollTo(0, 0);
+                    if (!args.length) {
+                        window.scrollTo(0, 0);
+                    }
                 }
             }
         });
