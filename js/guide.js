@@ -4,7 +4,7 @@
             model: {
                 title: {
                     install: 'How to Purchase, Download, and Install Synthesizer V Studio and Voice Databases',
-                    phonemes: 'Entering lyrics & phonemes for better pronounciation & timing, and how to use dictionaries',
+                    phonemes: 'Entering lyrics & phonemes for better pronunciation & timing, and how to use dictionaries',
                     support: 'Contacting Customer Support'
                 }
             },
