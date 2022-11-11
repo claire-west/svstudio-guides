@@ -1,5 +1,8 @@
 ((dynCore) => {
-    dynCore.when(dynCore.require('app.container')).done((modules, container) => {
+    dynCore.when(dynCore.require([
+        'app.container',
+        'app.scrollHandler'
+    ])).done((modules, container, scrollHandler) => {
         container('guide', {
             model: {
                 title: {
@@ -9,20 +12,7 @@
                 }
             },
 
-            onNavTo: function(app, section, args) {
-                if (app === this.title && section && this.model.title[section]) {
-                    $('title').text(this.model.title[section]);
-                    if (!args.length) {
-                        window.scrollTo(0, 0);
-                    } else {
-                        // looking for the id normally doesn't work if it has a / in it
-                        var $heading = this.$app.find('[id="' + window.location.hash.substr(1) + '"]');
-                        if ($heading.length) {
-                            window.scrollTo(0, $heading.offset().top - 20);
-                        }
-                    }
-                }
-            }
+            onNavTo: scrollHandler.handleNavScroll
         });
     });
 })(window.dynCore);

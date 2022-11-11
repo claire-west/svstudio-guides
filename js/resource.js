@@ -1,5 +1,8 @@
 ((dynCore) => {
-    dynCore.when(dynCore.require('app.container')).done((modules, container) => {
+    dynCore.when(dynCore.require([
+        'app.container',
+        'app.scrollHandler'
+    ])).done((modules, container, scrollHandler) => {
         container('resource', {
             model: {
                 title: {
@@ -12,14 +15,7 @@
                 }
             },
 
-            onNavTo: function(app, section, args) {
-                if (app === this.title && section && this.model.title[section]) {
-                    $('title').text(this.model.title[section]);
-                    if (!args.length) {
-                        window.scrollTo(0, 0);
-                    }
-                }
-            }
+            onNavTo: scrollHandler.handleNavScroll
         });
     });
 })(window.dynCore);

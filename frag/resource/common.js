@@ -1,8 +1,8 @@
 ((dynCore) => {
     dynCore.when(dynCore.require([
         'lib.fragment',
-        'app.maintainScrollPos'
-    ])).done((modules, fragment, maintainScrollPos) => {
+        'app.scrollHandler'
+    ])).done((modules, fragment, scrollHandler) => {
         fragment.controller('frag.resource.common', {
             model: {
                 phonemeSet: localStorage.getItem('phonemeSet') || 'en',
@@ -13,9 +13,7 @@
                 }
             },
 
-            onInit: function() {
-                maintainScrollPos();
-            }
+            onInit: scrollHandler.handleInitialScroll
         });
     });
 })(window.dynCore);

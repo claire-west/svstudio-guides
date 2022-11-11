@@ -1,12 +1,10 @@
 ((dynCore) => {
     dynCore.when(dynCore.require([
         'lib.fragment',
-        'app.maintainScrollPos'
-    ])).done((modules, fragment, maintainScrollPos) => {
+        'app.scrollHandler'
+    ])).done((modules, fragment, scrollHandler) => {
         fragment.controller('frag.guide.common', {
-            onInit: function() {
-                maintainScrollPos();
-            }
+            onInit: scrollHandler.handleInitialScroll
         });
     });
 })(window.dynCore);
