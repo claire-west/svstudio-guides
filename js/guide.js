@@ -14,6 +14,12 @@
                     $('title').text(this.model.title[section]);
                     if (!args.length) {
                         window.scrollTo(0, 0);
+                    } else {
+                        // looking for the id normally doesn't work if it has a / in it
+                        var $heading = this.$app.find('[id="' + window.location.hash.substr(1) + '"]');
+                        if ($heading.length) {
+                            window.scrollTo(0, $heading.offset().top - 20);
+                        }
                     }
                 }
             }
