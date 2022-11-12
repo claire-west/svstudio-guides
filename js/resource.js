@@ -6,11 +6,11 @@
         container('resource', {
             model: {
                 title: {
-                    faq: 'Frequently Asked Questions',
-                    issues: 'Known Issues & Workarounds',
-                    scripts: 'Script Directory',
-                    dicts: 'Dictionary Directory',
                     phonemes: 'Phoneme Lists',
+                    faq: 'Frequently Asked Questions',
+                    dicts: 'Dictionary Directory',
+                    scripts: 'Script Directory',
+                    issues: 'Known Issues & Workarounds',
                     glossary: 'Glossary of Terms'
                 }
             },

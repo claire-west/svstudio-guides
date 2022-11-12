@@ -383,6 +383,10 @@ label.row {
     border-radius: 1rem;
 }
 
+.light .callout {
+    border-color: #4d4e53;
+}
+
 .callout > i,
 .callout > h4 > i {
     float: left;

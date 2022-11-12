@@ -1,0 +1,390 @@
+<div z--controller="frag.resource.common">
+    <div class="row">
+        <div class="col">
+            <p class="breadcrumb">
+                <a href="#">Home</a>
+                <span>Resources</span>
+                <span>Scripts</span>
+            </p>
+            <hr/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h2 z--text="/title.scripts"></h2>
+            <p class="small"><i>2022/11/12</i></p>
+        </div>
+        <div class="col">
+            <p>A directory of scripts created for Synthesizer V Studio Pro.</p>
+            <p>To have your scripts added to this page, contact <a href="https://forum.synthesizerv.com/u/claire/summary">Claire</a> on the official forums or tag <code>@claire</code> in a forum topic linking to your scripts.</p>
+        </div>
+        <div class="col">
+            <div class="callout">
+                <i class="bi bi-info-circle"></i>
+                <p>This page will be updated to ensure it contains accurate information, however it may be missing some scripts from each author's collection.</p>
+                <p>Check each author's included links for the most up-to-date information.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h3>Table of Contents</h3>
+            <ol class="toc">
+                <li>
+                    <span>Introduction</span>
+                    <ol>
+                        <li><a href="#resource-scripts/1.1">What are scripts?</a></li>
+                        <li><a href="#resource-scripts/1.2">Creating new scripts</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <span>Official Scripts</span>
+                    <ol>
+                        <li><a href="#resource-scripts/2.1">Dreamtonics</a></li>
+                        <li><a href="#resource-scripts/2.2">Eclipsed Sounds</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <span>User Scripts</span>
+                    <ol>
+                        <li><a href="#resource-scripts/3.1">Claire</a></li>
+                        <li><a href="#resource-scripts/3.2">Hataori</a></li>
+                        <li><a href="#resource-scripts/3.3">dcuny</a></li>
+                        <li><a href="#resource-scripts/3.4">impbox</a></li>
+                        <li><a href="#resource-scripts/3.5">Leo</a></li>
+<!--                         <li><a href="#resource-scripts/3.6"></a></li>
+                        <li><a href="#resource-scripts/3.7"></a></li>
+                        <li><a href="#resource-scripts/3.8"></a></li>
+                        <li><a href="#resource-scripts/3.9"></a></li> -->
+                        <li><a href="#resource-scripts/3.80">JP Fandom Wiki</a></li>
+                        <li><a href="#resource-scripts/3.90">Other</a></li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col flex">
+            <span>1.1</span><h3 id="resource-scripts/1.1">What are scripts?</h3>
+        </div>
+        <div class="col">
+            <p>Scripts (sometimes referred to as "user scripts") are JavaScript or Lua files which can be executed within the Synthesizer V Studio Pro application. This feature requires the Pro edition of the software and is not available with the Basic version.</p>
+            <p>These scripts are able to modify various aspect of a project, such as tracks, groups, notes, and parameters. Most scripts either accomplish a common task more quickly than if it were done manually, or automate complex tasks that would be difficult to perform manually.</p>
+            <p>To use scripts, download the .js or .lua file and put it in the scripts folder, which can be located with the "Open Scripts Folder" option within SynthV Studio Pro.</p>
+            <img src="/img/resource/scriptsFolder.png" alt="the Open Scripts Folder option under the Scripts menu" />
+
+            <p>After adding scripts, if SynthV Studio is open, you will need to select "Rescan" or restart the application.</p>
+            <img src="/img/resource/scriptsRescan.png" alt="the Rescan option under the Scripts menu" />
+
+            <p>Downloading scripts should generally be straightforward, however due to the nature of the website GitHub makes downloading individual files somewhat less intuitive. You can download an individual file from GitHub by right clicking on "Raw" and selecting "Save Link As...".</p>
+            <img src="/img/resource/downloadFromGitHub.png" alt="downloading a file from GitHub" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col flex">
+            <span>1.2</span><h3 id="resource-scripts/1.2">Creating new scripts</h3>
+            <a class="flex-right" href="#resource-scripts">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <p>The focus of this guide is not the creation of new scripts or teaching users how to code, however if you are familiar with JavaScript or Lua you can refer to the official <a href="https://resource.dreamtonics.com/scripting/">Scripting Manual</a> to get started, using the links below to find implementation examples.</p>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col flex">
+            <span>2.1</span><h3 id="resource-scripts/2.1">Dreamtonics</h3>
+            <a class="flex-right" href="#resource-scripts">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <p>GitHub: <a href="https://github.com/Dreamtonics/svstudio-scripts">Dreamtonics/svstudio-scripts</a></p>
+            <p>The scripts included with Synthesizer V Studio Pro can be found in the Utilities folder of Dreamtonics' GitHub repository. Dreamtonics also provides example/test scripts for users learning the scripting API. Users may create pull requests to the official repository to have their scripts distributed with future versions of the software.</p>
+            <ul>
+                <li>Merge Selected Notes</li>
+                <li>Play with Smooth Page Turning</li>
+                <li>Randomize Parameters</li>
+                <li>Remove Short Silences</li>
+                <li>Scale Selected Notes</li>
+                <li>Silence Skipping Play</li>
+                <li>Split Selected Groups</li>
+                <li>Split Selected Notes</li>
+            </ul>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col flex">
+            <span>2.2</span><h3 id="resource-scripts/2.2">Eclipsed Sounds</h3>
+            <a class="flex-right" href="#resource-scripts">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <p>Eclipsed Sounds distributes four scripts with the purchase of Solaria. These extras are only included with purchases from the Eclipsed Sounds website. If you purchased Solaria from the Dreamtonics store, you may need to <a href="#resource-support/2.5">contact Eclipsed Sounds</a> to receive these files.</p>
+            <ul>
+                <li>Change Track Color</li>
+                <li>English Phoneme Reference</li>
+                <li>Mass Adjust Phoneme Duration/Strength</li>
+                <li>Replace Phoneme</li>
+            </ul>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col flex">
+            <span>3.1</span><h3 id="resource-scripts/3.1">Claire</h3>
+            <a class="flex-right" href="#resource-scripts">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <div class="callout">
+                <h4 class="flex align-center"><i class="bi bi-info-circle"></i>Disclaimer</h4>
+                <p>This author is also the creator and maintainer of this website.</p>
+            </div>
+            <p>GitHub: <a href="https://github.com/claire-west/svstudio-scripts">claire-west/svstudio-scripts</a></p>
+            <p>Scripts are separated into folders based on their behavior or purpose. Most scripts have a description at the top of the file as well as variables that can be changed to customize the behavior, including comments explaining what each variable does.</p>
+            <p><b>automation</b> - Scripts that automate a complex task.</p>
+            <ul>
+                <li>Generate Metronome (deprecated as of 1.8.0)</li>
+            </ul>
+            <p><b>hotkey-scripts</b> - Scripts which perform simple tasks intended to be hotkeyed to improve workflow and reduce reliance on the mouse.</p>
+            <ul>
+                <li>Copy Lyrics / Paste Lyrics</li>
+                <li>Copy Phonemes / Paste Phonemes</li>
+                <li>Find Next With Same Lyric / Find Prev With Same Lyric</li>
+                <li>Find Next With Same Phonemes / Find Prev With Same Phonemes</li>
+                <li>Move Notes Down / Left / Right / Up</li>
+                <li>Preview Selection</li>
+                <li>Scroll to Selection Center / Scroll to Selection Start</li>
+                <li>Select All With Same Lyric / Select All With Same Phonemes</li>
+                <li>Select Next Note / Select Previous Note</li>
+                <li>Set Lyrics / Set Phonemes</li>
+            </ul>
+            <p><b>long-running</b> - Scripts to be run once and then continue running while you work.</p>
+            <ul>
+                <li>Start Live Preview (plays notes as you create/change them)</li>
+            </ul>
+            <p><b>utility</b> - "Regular" scripts which do not fall into any of the above categories.</p>
+            <ul>
+                <li>Find Lyric (a find dialog in the style of the ctrl+F function of most text editors and web browsers)</li>
+                <li>Move Selected Notes</li>
+                <li>Reset All Notes</li>
+                <li>Select All With Lyric / Select All With Phonemes</li>
+            </ul>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col flex">
+            <span>3.2</span><h3 id="resource-scripts/3.2">Hataori</h3>
+            <a class="flex-right" href="#resource-scripts">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <p>GitHub: <a href="https://github.com/hataori-p/real-voice">hataori-p/real-voice</a></p>
+            <p>Hataori has created a project focused on applying the parameters of a real voice to SynthV Studio, but has also contributed some more general-purpose utilities (such as <i>RV Growl</i> and <i>RV Shift Notes & Params</i>).</p>
+            <p>Refer to the <a href="https://docs.google.com/document/d/18whY2QPfZvC_sAOYphNVpUgji3e07FaI2AT9-zdLOEk/edit">SynthV Praat Tutorial</a> for information on using these scripts.</p>
+            <ul>
+                <li>RV Filter Pitch</li>
+                <li>RV Growl (<a href="https://forum.synthesizerv.com/t/topic/5052">forum topic</a>)</li>
+                <li>RV Load Envelope</li>
+                <li>RV Load Pitch</li>
+                <li>RV Notes from TextGrid</li>
+                <li>RV Notes to TextGrid</li>
+                <li>RV Quantize Pitch</li>
+                <li>RV Randomize Onsets</li>
+                <li>RV Shift Notes & Params (<a href="https://forum.synthesizerv.com/t/topic/5119">forum topic</a>)</li>
+                <li>RV Split Note</li>
+            </ul>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col flex">
+            <span>3.3</span><h3 id="resource-scripts/3.3">dcuny</h3>
+            <a class="flex-right" href="#resource-scripts">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <p>GitHub: <a href="https://github.com/dcuny/synth-v-scripts">dcuny/synth-v-scripts</a></p>
+            <ul>
+                <li>Expression Curves (creates parameter curves for selected notes)</li>
+                <li>Progressive Vibrato</li>
+                <li>Scale Pitch Deviation</li>
+            </ul>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col flex">
+            <span>3.4</span><h3 id="resource-scripts/3.4">impbox</h3>
+            <a class="flex-right" href="#resource-scripts">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <ul>
+                <li><a href="https://forum.synthesizerv.com/t/topic/4911">Transpose in Key</a> (<a href="https://forum.synthesizerv.com/t/topic/4911/12">revised version</a>)</li>
+            </ul>
+            <p>impbox has also created scripts focused on hotkeying simple functions.</p>
+            <p>GitHub: <a href="https://github.com/ftsf/synthv-impkit">ftsf/synthv-impkit</a></p>
+            <ul>
+                <li>Add Note</li>
+                <li>Backspace Note</li>
+                <li>Lengthen Note</li>
+                <li>Shorten Note</li>
+                <li>Move Note Down / Up</li>
+                <li>Next Note / Prev Note</li>
+                <li>Add Breaths</li>
+            </ul>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col flex">
+            <span>3.5</span><h3 id="resource-scripts/3.5">Leo</h3>
+            <a class="flex-right" href="#resource-scripts">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <p>GitHub: <a href="https://github.com/leostudiooo/sv-scripts">leostudiooo/sv-scripts</a></p>
+            <ul>
+                <li>Autosave Helper (shows a reminder every x minutes to save)</li>
+                <li>Delete 0-Duration Notes</li>
+                <li>Param Compressor</li>
+            </ul>
+            <p>Leo has also contributed a <a href="https://github.com/leostudiooo/sv-scripts/blob/main/types/sv.d.ts">TypeScript definition</a> for working with the SynthV Studio scripting API.</p>
+        </div>
+    </div>
+    <hr/>
+    <!-- <div class="row">
+        <div class="col flex">
+            <span>3.6</span><h3 id="resource-scripts/3.6"></h3>
+            <a class="flex-right" href="#resource-scripts">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <hr/> -->
+    <div class="row">
+        <div class="col flex">
+            <span>3.6</span><h3 id="resource-scripts/3.80">JP Fandom Wiki</h3>
+            <a class="flex-right" href="#resource-scripts">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <p>Wiki page: <a href="https://synthesizer-v.fandom.com/ja/wiki/%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%83%BBTIPS%E9%9B%86">プラグイン・TIPS集</a></p>
+            <p>Many scripts from Japanese contributors are already organized on the JP Fandom Wiki. These authors have been grouped under the same heading for easier viewing, and script names have been translated for those who cannot read Japanese. Refer to the original wiki page for the most up-to-date list.</p>
+            <ul>
+                <li><a href="https://github.com/Auxilyrica/AutoMovieScript-SynthesizerV">AutoMovieScript</a> by Auxi</li>
+                <li><a href="https://gist.github.com/Aster1205/be095a3d4dedf46ac563b477f7b16470">Optimize lyrics for ust</a> by Aster</a></li>
+                <li><a href="https://mitsuru.hateblo.jp/entry/2020/09/06/150915">Next ALT / Reset ALT</a> by kadotanimitsuru</li>
+                <li><a href="https://forum.synthesizerv.com/t/topic/6322">Korean lyrics support script</a> by Charlotte_White</li>
+                <li><a href="https://forum.synthesizerv.com/t/topic/4864">SynthV Growl</a> by Charlotte_White</li>
+                <li><a href="https://github.com/kozv/SynthV-kozv-scripts">Duplicate Note</a> by kozv</li>
+                <li><a href="https://twitter.com/ShiimoLen/status/1589376152946503680">VCV to CV</a> by ShimoLen</li>
+                <li>
+                    <span>suzumof (<a href="https://github.com/suzumof/synthv-suzu-scripts">GitHub</a>)</span>
+                    <ul>
+                        <li>Repeat Play Of Current / Next / Prev Phrase</li>
+                        <li>Repeat Play Of Selected Notes</li>
+                        <li>Filter Note With Multiple Phonemes</li>
+                        <li>Filter Note With Single Phoneme</li>
+                        <li>Select Next / Prev Note</li>
+                        <li>Set Consonant Phoneme Duration</li>
+                        <li>Set First Phoneme Duration</li>
+                        <li>Pack Parameter To Group</li>
+                        <li>Copy Track</li>
+                        <li>Down / Up Selected Note Pitch</li>
+                        <li>Fit Note Edge To Playhead</li>
+                    </ul>
+                </li>
+                <li><a href="https://gist.github.com/so-c/d2ce848b3b209c9b496effacfaf37246">Change Track Color</a> by so-c</li>
+                <li><a href="https://gist.github.com/so-c/d2ce848b3b209c9b496effacfaf37246">Pronounce Hiragana With Chinese Voice</a> by so-c</li>
+                <li>
+                    <span>chom</span>
+                    <ul>
+                        <li><a href="https://github.com/chomstudio/AddPoints">Add Points</a> (adds loudness anchors for easily modifying the attack)</li>
+                        <li><a href="https://github.com/chomstudio/MoveCursor">Move Cursor</a></li>
+                        <li><a href="https://github.com/chomstudio/ZoomInOut">Zoom In / Out</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span>hachinana (<a href="https://bowlroll.net/file/277097">BowlRoll</a>)</span>
+                    <ul>
+                        <li>Consonant Cut</li>
+                        <li>Vowel Copy</li>
+                        <li>Insert Breath / Cl / Sil / N / Hyphen / Pau</li>
+                        <li>Add Cl</li>
+                    </ul>
+                </li>
+                <li>
+                    <span>maiko (<a href="https://drive.google.com/drive/folders/13YUromADAUrgNrRqJ8k7qAja627rYjXG">Google Drive</a>)</span>
+                    <ul>
+                        <li>Insert Lyrics (avoiding "br" and "-")</li>
+                        <li>Add Breath</li>
+                        <li>Create Harmony</li>
+                        <li>Split Breathy Vowel</li>
+                    </ul>
+                </li>
+                <li><a href="http://darksky.soregashi.com/dl/trackcolor.html">Change Track Color</a> by 水っぽいスープ (waterysoup)</li>
+                <li>
+                    <span>yukikazari (<a href="https://github.com/Yukikazari/SynthV_scripts">GitHub</a>)</span>
+                    <ul>
+                        <li>Return 2 Original Position</li>
+                        <li>Change Lyrics default2pitch (replace default "la" with CeVIO-style "do, re, mi...")</li>
+                        <li>Change__Notes (multiple scripts to set note length)</li>
+                        <li>__NotesLonger / __NotesShorter (multiple scripts to adjust note length)</li>
+                    </ul>
+                </li>
+                <li><a href="https://github.com/RigoLigoRLC/rigo-synthv-scripts/blob/master/copy_notes_and_parameters.lua">Copy Notes and Parameters</a> by RigoLigo</li>
+                <li><a href="https://github.com/RigoLigoRLC/rigo-synthv-scripts/blob/master/fine_tune_bpm.lua">Fine tune BPM</a> by RigoLigo</li>
+                <li><a href="https://www.lemorin.jp/other/em_script_kiritan.html">Imitation of AI Tohoku Kiritan</a> by lemorin</li>
+                <li>
+                    <span>rem (<a href="https://note.com/rem_maysick/n/n0a6eb88a1145">note.com</a>)</span>
+                    <ul>
+                        <li>Zoom in / out Horizontally</li>
+                        <li>Forward / Back One Measure</li>
+                        <li>Move Note Up / Down</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col flex">
+            <span>3.7</span><h3 id="resource-scripts/3.90">Other</h3>
+            <a class="flex-right" href="#resource-scripts">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <p>These scripts are from authors that have only made one or two scripts, and have been grouped under the same heading for easier viewing.</p>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=d2jk6JDpHVo">setF4Falsetto / setDropTension</a> by kadotanimitsuru (scripts for Genbu)</li>
+                <li><a href="https://github.com/Rheinhauss/SynthV_plugin_auto_loudness_by_vibrato">auto loudness by vibrato</a> by Rheinhauss</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col flex">
+            <a class="flex-right" href="#resource-scripts">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+    </div>
+</div>

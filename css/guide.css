@@ -1,35 +1,3 @@
-#app-guide span+h3 {
-    padding-left: 0.5rem;
-    margin-bottom: 0;
-}
-
-#app-guide ol.toc {
-    padding-left: 2.5rem;
-    counter-reset: list-index;
-}
-
-#app-guide ol.toc > li {
-    list-style: none;
-    counter-increment: list-index;
-}
-
-#app-guide ol.toc > li::marker {
-    content: counter(list-index) ".\a0";
-}
-
-#app-guide ol.toc>li>ol {
-    padding-left: 2.5rem;
-    counter-reset: list-index-nested;
-}
-
-#app-guide ol.toc>li>ol > li {
-    counter-increment: list-index-nested;
-}
-
-#app-guide ol.toc>li>ol > li::marker {
-    content: counter(list-index) "." counter(list-index-nested) "\a0";
-}
-
 #app-guide img {
     max-width: 100%;
 }
@@ -51,8 +19,5 @@
 
 /* small format */
 @media screen and (max-width: 680px) {
-    #app-guide ol.toc,
-    #app-guide ol.toc>li>ol {
-        padding-left: 2rem;
-    }
+
 }

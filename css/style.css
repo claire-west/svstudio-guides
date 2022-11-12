@@ -275,9 +275,50 @@ body.light .top-bar a:hover {
     align-items: center;
 }
 
+.contentSection ol.toc {
+    padding-left: 2.5rem;
+    counter-reset: list-index;
+}
+
+.contentSection ol.toc > li {
+    list-style: none;
+    counter-increment: list-index;
+}
+
+.contentSection ol.toc > li::marker {
+    content: counter(list-index) ".\a0";
+}
+
+.contentSection ol.toc>li>ol {
+    padding-left: 2.5rem;
+    counter-reset: list-index-nested;
+}
+
+.contentSection ol.toc>li>ol > li {
+    counter-increment: list-index-nested;
+}
+
+.contentSection ol.toc>li>ol > li::marker {
+    content: counter(list-index) "." counter(list-index-nested) "\a0";
+}
+
+.contentSection span+h3 {
+    padding-left: 0.5rem;
+    margin-bottom: 0;
+}
+
+.contentSection img {
+    max-width: 100%;
+}
+
 /* small format */
 @media screen and (max-width: 680px) {
     .modal .dialog {
         margin-top: calc(10vh - 0.5rem);
+    }
+
+    .contentSection ol.toc,
+    .contentSection ol.toc>li>ol {
+        padding-left: 2rem;
     }
 }
