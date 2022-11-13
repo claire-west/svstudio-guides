@@ -35,7 +35,8 @@
                     <ol>
                         <li><a href="#resource-scripts/1.1">What are scripts?</a></li>
                         <li><a href="#resource-scripts/1.2">Using scripts</a></li>
-                        <li><a href="#resource-scripts/1.3">Creating new scripts</a></li>
+                        <li><a href="#resource-scripts/1.3">Security considerations</a></li>
+                        <li><a href="#resource-scripts/1.4">Creating new scripts</a></li>
                     </ol>
                 </li>
                 <li>
@@ -58,7 +59,7 @@
                         <li><a href="#resource-scripts/3.8"></a></li>
                         <li><a href="#resource-scripts/3.9"></a></li> -->
                         <li><a href="#resource-scripts/3.80">JP Fandom Wiki</a></li>
-                        <li><a href="#resource-scripts/3.90">Other</a></li>
+                        <li><a href="#resource-scripts/3.90">Other Contributors</a></li>
                     </ol>
                 </li>
             </ol>
@@ -100,7 +101,29 @@
     <hr/>
     <div class="row">
         <div class="col flex">
-            <span>1.3</span><h3 id="resource-scripts/1.3">Creating new scripts</h3>
+            <span>1.3</span><h3 id="resource-scripts/1.3">Security Considerations</h3>
+            <a class="flex-right" href="#resource-scripts">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <p>Since scripts allow code to be executed on your computer, there is some caution to be taken. Generally speaking, JavaScript is much more limited than Lua in this respect. SynthV's JavaScript implementation cannot access things outside the editor like files, and therefore has minimal potential for abuse.</p>
+            <p>Lua scripts, however, can access <b>any file, anywhere on your computer</b>. You should take caution when executing Lua scripts from untrusted sources.</p>
+            <p>Checking a script for potentially malicious code is relatively straightforward. Search the file for the following functions, as these are the primary concerns. Please keep in mind that the use of these functions may have legitimate use, however if you are not familiar with software development you should verify the reason for their use before running the script.</p>
+            <ul>
+                <li><code>io.open</code> reads a file</li>
+                <li><code>io.popen</code> executes an external script or application</li>
+                <li><code>os.execute</code> runs a command on your OS's command line</li>
+                <li><code>os.exit</code> closes SynthV Studio</li>
+                <li><code>os.getenv</code> reads an environment variable from your OS</li>
+                <li><code>require</code> loads an external library (this one could do practically anything depending on the library loaded)</li>
+            </ul>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col flex">
+            <span>1.4</span><h3 id="resource-scripts/1.4">Creating new scripts</h3>
             <a class="flex-right" href="#resource-scripts">
                 <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
             </a>
@@ -393,7 +416,7 @@
     <hr/>
     <div class="row">
         <div class="col flex">
-            <span>3.7</span><h3 id="resource-scripts/3.90">Other</h3>
+            <span>3.7</span><h3 id="resource-scripts/3.90">Other Contributors</h3>
             <a class="flex-right" href="#resource-scripts">
                 <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
             </a>
