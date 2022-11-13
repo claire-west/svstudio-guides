@@ -87,6 +87,9 @@
             <p>After adding scripts, if SynthV Studio is open, you will need to select "Rescan" or restart the application.</p>
             <img src="/img/resource/scriptsRescan.png" alt="the Rescan option under the Scripts menu" />
 
+            <p>Scripts can be assigned a keybind via the Settings panel. Once set, the assigned keys will be shown in the Scripts menu and can be pressed to quickly execute the bound script.</p>
+            <img src="/img/resource/hotkeyScripts.png" alt="binding a hotkey to a script" />
+
             <p>Downloading scripts should generally be straightforward, however due to the nature of the website GitHub makes downloading individual files somewhat less intuitive. You can download an individual file from GitHub by right clicking on "Raw" and selecting "Save Link As...".</p>
             <img src="/img/resource/downloadFromGitHub.png" alt="downloading a file from GitHub" />
 
@@ -103,13 +106,13 @@
             </a>
         </div>
         <div class="col">
-            <p>The focus of this guide is not the creation of scripts or teaching users how to code, however if you are familiar with JavaScript or Lua you can refer to the official <a href="https://resource.dreamtonics.com/scripting/">Scripting Manual</a> to get started, using the links below to find implementation examples.</p>
+            <p>The focus of this catalog is not the creation of scripts or teaching users how to code, however if you are familiar with JavaScript or Lua you can refer to the official <a href="https://resource.dreamtonics.com/scripting/">Scripting Manual</a> to get started, using the links below to find implementation examples.</p>
             <p>There are some limitations to the scripting capabilities within SynthV Studio:</p>
             <ul>
-                <li>Certain aspects of the SynthV Studio application are inaccessible via the scripting API, such as Tone Shift, Vocal Modes, AI Retakes, and some others</li>
-                <li>While the Lua implementation is rather fully-featured, JavaScript is implemented via <a href="https://duktape.org/">Duktape</a> and therefore is lacking certain capabilities such as file io and loading of external dependencies</li>
+                <li>Certain aspects of the SynthV Studio application are inaccessible via the scripting API, such as Tone Shift, Vocal Modes, AI Retakes, and some others.</li>
+                <li>While the Lua implementation is rather fully-featured, JavaScript is implemented via <a href="https://duktape.org/">Duktape</a> and therefore is lacking certain capabilities such as file io and loading of external dependencies.</li>
                 <li>Scripts are completey isolated from one another, meaning there is no convenient manner in which to store a variable for later or share variables between scripts. The "global scope" only applies to the current script being executed.</li>
-                <li>There are no event hooks</li>
+                <li>There are no event hooks.</li>
                 <li>Dialog boxes are always "blocking", ie the user cannot interact with the application while a dialog box is open, even using the async functions.</li>
             </ul>
         </div>
