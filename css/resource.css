@@ -5,3 +5,21 @@
 #resource-phonemes tr td:first-child {
     font-family: monospace,monospace;
 }
+
+#resource-eula table {
+    border-spacing: 1rem 0.5rem;
+}
+
+#resource-eula tbody td {
+    text-align: center;
+}
+
+#resource-eula tbody td:nth-child(2),
+#resource-eula tbody td:last-child {
+    text-align: right;
+}
+
+#resource-eula tbody th,
+#resource-eula tbody td[colspan] {
+    text-align: left;
+}

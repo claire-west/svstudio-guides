@@ -375,6 +375,10 @@ label.row {
     clear: both;
 }
 
+.scroll-x {
+    overflow-x: auto;
+}
+
 .callout {
     min-height: 4.25rem;
     padding: 1rem 1.35rem;

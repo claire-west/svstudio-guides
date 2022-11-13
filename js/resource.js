@@ -11,6 +11,7 @@
                     scripts: 'Script Catalog',
                     dicts: 'Dictionary Catalog',
                     issues: 'Known Issues & Workarounds',
+                    eula: 'Product EULA & Terms of Use',
                     glossary: 'Glossary of Terms'
                 }
             },
