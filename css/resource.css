@@ -23,3 +23,7 @@
 #resource-eula tbody td[colspan] {
     text-align: left;
 }
+
+#resource-eula tbody td[colspan] {
+    padding-bottom: 0.5rem;
+}
