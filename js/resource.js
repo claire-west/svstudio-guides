@@ -8,8 +8,8 @@
                 title: {
                     phonemes: 'Phoneme Lists',
                     faq: 'Frequently Asked Questions',
-                    dicts: 'Dictionary Directory',
-                    scripts: 'Script Directory',
+                    scripts: 'Script Catalog',
+                    dicts: 'Dictionary Catalog',
                     issues: 'Known Issues & Workarounds',
                     glossary: 'Glossary of Terms'
                 }
