@@ -8,6 +8,7 @@
                 title: {
                     install: 'How to Purchase, Download, and Install Synthesizer V Studio and Voice Databases',
                     phonemes: 'Entering lyrics & phonemes for better pronunciation & timing, and how to use dictionaries',
+                    pitchdeviation: 'All About Pitch Deviation, Vibrato, and Instant Mode',
                     support: 'Contacting Customer Support'
                 }
             },
