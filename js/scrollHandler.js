@@ -67,6 +67,10 @@
                         scrollToHash(this.$app);
                     }
                 }
+            },
+
+            scrollTop: function() {
+                window.scrollTo(0, 0);
             }
         }
     });
