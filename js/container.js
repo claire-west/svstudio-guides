@@ -45,15 +45,15 @@
         };
 
         globalModel._set('onAboutPress', () => {
-            globalModel.openModal('about');
+            globalModel.openModal('footer-about');
         });
 
         globalModel._set('onGoogleAnalyticsPress', () => {
-            globalModel.openModal('googleanalytics');
+            globalModel.openModal('footer-googleanalytics');
         });
 
         globalModel._set('onAiArtPress', () => {
-            globalModel.openModal('aiart');
+            globalModel.openModal('footer-aiart');
         });
 
         hashNav.bindNavApp((app, section, args) => {
