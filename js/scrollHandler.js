@@ -52,7 +52,7 @@
                 if (this === window) {
                     console.error('handleInitialScroll must be called with .call(this,)');
                 } else {
-                    scrollOnRefresh() || scrollToHash(this.$fragment);
+                    scrollOnRefresh() || scrollToHash(this.$fragment || this.$app);
                 }
             },
 
