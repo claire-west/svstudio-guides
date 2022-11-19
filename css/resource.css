@@ -6,8 +6,13 @@
     font-family: monospace,monospace;
 }
 
+#resource-dicts table,
 #resource-eula table {
     border-spacing: 1rem 0.5rem;
+}
+
+#resource-dicts tbody td[rowspan] {
+    vertical-align: top;
 }
 
 #resource-eula tbody td {

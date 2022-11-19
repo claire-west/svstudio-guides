@@ -1,0 +1,235 @@
+<div z--controller="frag.resource.common">
+    <div class="row">
+        <div class="col">
+            <p class="breadcrumb">
+                <a href="#">Home</a>
+                <span>Resources</span>
+                <span>Dictionaries</span>
+            </p>
+            <hr/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h2 z--text="/title.dicts"></h2>
+            <p class="small"><i>2022/11/18</i></p>
+        </div>
+        <div class="col">
+            <p>A directory of dictionaries for Synthesizer V Studio Pro.</p>
+            <p>To have your dictionaries added to this page, contact <a href="https://forum.synthesizerv.com/u/claire/summary">Claire</a> on the official forums or tag <code>@claire</code> in a forum topic linking to your dictionaries.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h3>Table of Contents</h3>
+            <ol class="toc">
+                <li>
+                    <span>Introduction</span>
+                    <ol>
+                        <li><a href="#resource-dicts/1.1">What are dictionaries?</a></li>
+                        <li><a href="#resource-dicts/1.2">Using dictionaries</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <span>Dictionaries</span>
+                    <ol>
+                        <li><a href="#resource-dicts/2.1">Official Dictionaries</a></li>
+                        <li><a href="#resource-dicts/2.2">User Dictionaries</a></li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col flex">
+            <span>1.1</span><h3 id="resource-dicts/1.1">What are dictionaries?</h3>
+        </div>
+        <div class="col">
+            <p>Dictionaries are used to determine which phonemes should be used to represent a word. For example, entering "hello" as a lyric will cause the phonemes <code>hh ax l ow</code> to be used when rendering the audio output.</p>
+            <p>For more information about lyrics, phonemes, and dictionaries, see the full guide on <a href="#guide-phonemes">Entering lyrics & phonemes for better pronunciation & timing, and how to use dictionaries</a>.</p>
+            <p>Dictionaries are sometimes used to sing in unsupported languages using the phonemes available from the supported ones. For example, Solaria comes with a "Japanese to Spanish" dictionary which is meant to be used to produce Spanish-sounding output using the Japanese phonemes made available via cross-lingual synthesis. In these cases, this language will be denoted as the "Target Language" below.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col flex">
+            <span>1.2</span><h3 id="resource-dicts/1.2">Using Scripts</h3>
+            <a class="flex-right" href="#resource-dicts">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <p>To use a dictionary, download the .json file and put it in the appropriate dictionary folder <em>for your voice database's native language</em>, which can be located with the "Open Scripts Folder" option within SynthV Studio Pro.</p>
+            <div class="callout">
+                <i class="bi bi-info-circle"></i>
+                <p>Dictionaries are always loaded from the folder that matches the selected voice database's native language.</p>
+                <p>This means even if you are using Solaria (a native English vocal) to sing in Japanese, SynthV Studio will load dictionaries from the <code>english-arpabet</code> folder. While this is somewhat counter-intuitive, this means that you should copy any dictionaries you want to use with Solaria into the <code>english-arpabet</code> folder, even if they are not English dictionaries.</p>
+                <p>Selecting a different language for cross-lingual synthesis does not change which dictionaries are loaded for the current voice database.</p>
+            </div>
+            <img src="/img/resource/scriptsFolder.png" alt="the Open Scripts Folder option under the Scripts menu" />
+            <img src="/img/resource/dictsFolder.png" alt="the Dictionary folder in the Windows file explorer" />
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col flex">
+            <span>2.1</span><h3 id="resource-dicts/2.1">Official Dictionaries</h3>
+            <a class="flex-right" href="#resource-dicts">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col scroll-x">
+            <br/>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Source</th>
+                        <th>SVD Language</th>
+                        <th>Target Language</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3">Dreamtonics</td>
+                        <td rowspan="3">SynthV Studio Default</td>
+                        <td>English</td>
+                        <td>–</td>
+                    </tr>
+                    <tr>
+                        <td>Japanese</td>
+                        <td>–</td>
+                    </tr>
+                    <tr>
+                        <td>Mandarin Chinese</td>
+                        <td>–</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Eclipsed Sounds</td>
+                        <td rowspan="2">Purchase of Solaria</td>
+                        <td>English</td>
+                        <td>–</td>
+                    </tr>
+                    <tr>
+                        <td>Japanese</td>
+                        <td>Spanish</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col flex">
+            <span>2.2</span><h3 id="resource-dicts/2.2">User Dictionaries</h3>
+            <a class="flex-right" href="#resource-dicts">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col scroll-x">
+            <br/>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Author</th>
+                        <th>Source</th>
+                        <th>SVD Language</th>
+                        <th>Target Language</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="8">Slidingwall</td>
+                        <td rowspan="8"><a href="https://github.com/Slidingwall/synthv-dictionaries">GitHub</a></td>
+                        <td>English</td>
+                        <td>Japanese</td>
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>Korean</td>
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>Mandarin Chinese</td>
+                    </tr>
+                    <tr>
+                        <td>Japanese</td>
+                        <td>English</td>
+                    </tr>
+                    <tr>
+                        <td>Japanese</td>
+                        <td>Korean</td>
+                    </tr>
+                    <tr>
+                        <td>Japanese</td>
+                        <td>Mandarin Chinese</td>
+                    </tr>
+                    <tr>
+                        <td>Mandarin Chinese</td>
+                        <td>English</td>
+                    </tr>
+                    <tr>
+                        <td>Mandarin Chinese</td>
+                        <td>Korean</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5">Pigeon</td>
+                        <td rowspan="5"><a href="https://drive.google.com/drive/folders/1_QomGOhEr2aBRTqOBp-pGeVuuoySuFxg">Google Drive</a></td>
+                        <td>English</td>
+                        <td>Japanese</td>
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>Toki Pona</td>
+                    </tr>
+                    <tr>
+                        <td>Mandarin Chinese</td>
+                        <td>Japanese</td>
+                    </tr>
+                    <tr>
+                        <td>Mandarin Chinese</td>
+                        <td>Toki Pona</td>
+                    </tr>
+                    <tr>
+                        <td>Japanese</td>
+                        <td>Toki Pona</td>
+                    </tr>
+                    <tr>
+                        <td>Pigeon</td>
+                        <td><a href="https://drive.google.com/drive/folders/1cTqyZYx_4WhOrUuEDJ0KLLQzp8q4dKcm">Google Drive</a></td>
+                        <td>Mandarin Chinese (AiKO)</td>
+                        <td>Japanese</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">irunabara</td>
+                        <td rowspan="2"><a href="https://forum.synthesizerv.com/t/topic/2603">SynthV Forums</a></td>
+                        <td>Mandarin Chinese (AiKO)</td>
+                        <td>Japanese</td>
+                    </tr>
+                    <tr>
+                        <td>Mandarin Chinese (Medium5)</td>
+                        <td>Japanese</td>
+                    </tr>
+                    <tr>
+                        <td>latticenail</td>
+                        <td><a href="https://github.com/latticenail/jpn2kor-synthv">GitHub</a></td>
+                        <td>Japanese</td>
+                        <td>Korean</td>
+                    </tr>
+                    <tr>
+                        <td>Kazumi</td>
+                        <td><a href="https://mega.nz/file/vQ0GUDaJ#xs6eEuynnbIIkC37AcpnXLA1n25WVhVA01qi33aEuwE">mega.nz</a></td>
+                        <td>Mandarin Chinese</td>
+                        <td>English</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col flex">
+            <a class="flex-right" href="#resource-dicts">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+    </div>
+</div>
