@@ -12,7 +12,7 @@
     <div class="row">
         <div class="col">
             <h2 z--text="/title.pitchdeviation"></h2>
-            <p class="small"><i>2022/11/17</i></p>
+            <p class="small"><i>2022/11/17 (updated 2022/11/27)</i></p>
             <p>The focus of this guide is on pitch deviation, and how to modify pitch in Synthesizer V Studio. It is assumed that you know the basics of adding notes and <a href="#guide-phonemes">entering lyrics/phonemes</a>. This is not a guide on tuning or writing melodies, as those are separate topics.</p>
             <div class="callout">
                 <i class="bi bi-info-circle"></i>
@@ -142,7 +142,7 @@
             <ul>
                 <li>Always creates a perfect sine wave</li>
                 <li>Has no variation in frequency</li>
-                <li>Has limited variation in depth</li>
+                <li>Has limited variation in depth without using additional parameters</li>
                 <li>Offers an easy to understand, but somewhat limited set of options for dictating the shape of the vibrato</li>
             </ul>
 
@@ -154,6 +154,13 @@
                 <i class="bi bi-info-circle"></i>
                 <p>The "Jitter" option is supposed introduce minor fluctuations in vibrato to help it adhere less to a perfect sine wave, however in my experience this has had minimal effect when using AI voice databases.</p>
             </div>
+
+            <p>The <b>vibrato envelope</b> parameter can be used to increase or decrease the amplitude (depth) of the vibrato over its duration. These examples show the difference between the default vibrato, and a vibrato envelope parameter which increases the depth toward the midsection of the note and reduces it at the start and end.</p>
+
+            <p>Only the vibrato depth is affected by the vibrato envelope parameter, and it can only modify the depth to be between 0% and 200% of the original setting.</p>
+
+            <img src="/img/guide/pitchdeviation/vibrato-envelope-blank.png" alt="Vibrato with default settings" />
+            <img src="/img/guide/pitchdeviation/vibrato-envelope.png" alt="Vibrato that is more intense at the midpoint of the note" />
         </div>
     </div>
     <hr/>
