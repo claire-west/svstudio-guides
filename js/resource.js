@@ -12,6 +12,7 @@
                     dicts: 'Dictionary Catalog',
                     issues: 'Known Issues & Workarounds',
                     eula: 'Product EULA & Terms of Use',
+                    plugin: 'Music Production Tools',
                     glossary: 'Glossary of Terms'
                 }
             },
