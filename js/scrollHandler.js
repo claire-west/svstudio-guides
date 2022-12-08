@@ -50,7 +50,7 @@
         return {
             handleInitialScroll: function() {
                 if (this === window) {
-                    console.error('handleInitialScroll must be called with .call(this,)');
+                    console.error('handleInitialScroll must be invoked with .call(this,)');
                 } else {
                     scrollOnRefresh() || scrollToHash(this.$fragment || this.$app);
                 }
@@ -58,9 +58,11 @@
 
             handleNavScroll: function(app, section, args) {
                 if (this === window) {
-                    console.error('handleNavScroll must be called with .call(this,)');
-                } else if (app === this.title && section && this.model.title[section]) {
-                    $('title').text(this.model.title[section]);
+                    console.error('handleNavScroll must be invoked with .call(this,)');
+                } else if (app === this.title) {
+                    if (section && this.model.title[section]) {
+                        $('title').text(this.model.title[section]);
+                    }
                     if (!args.length) {
                         window.scrollTo(0, 0);
                     } else {
