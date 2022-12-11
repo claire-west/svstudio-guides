@@ -10,7 +10,8 @@
             },
 
             onInit: function() {
-
+                $('#home > section').detach().appendTo(this.$app);
+                $('#home').remove();
             },
 
             onNavTo: function(app, section) {
