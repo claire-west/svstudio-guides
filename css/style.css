@@ -237,6 +237,7 @@ body.light .top-bar a:hover {
 }
 
 .modal .dialog h4 {
+    margin-top: 0;
     text-align: center
 }
 

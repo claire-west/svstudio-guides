@@ -6,6 +6,7 @@
         container('resource', {
             model: {
                 title: {
+                    voices: 'Voice Databases for SynthV Studio',
                     phonemes: 'Phoneme Lists',
                     faq: 'Frequently Asked Questions',
                     scripts: 'Script Catalog',

@@ -6,9 +6,8 @@
     font-family: monospace,monospace;
 }
 
-#resource-dicts table,
-#resource-eula table {
-    border-spacing: 1rem 0.5rem;
+#resource-phonemes table {
+    border-spacing: initial;
 }
 
 #resource-dicts tbody td[rowspan] {

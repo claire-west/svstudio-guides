@@ -31,7 +31,7 @@
                     setTimeout(() => {
                         scrollY = null;
                     }, 0);
-                }, 0);
+                }, 100);
                 return true;
             }
             return false;

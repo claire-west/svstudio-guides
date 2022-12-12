@@ -64,6 +64,7 @@ h3 {
 
 h4 {
     font-size: 1.17em;
+    margin-top: 1rem;
 }
 
 ul, ol {
@@ -110,6 +111,32 @@ div.code a {
 
 div.code a:hover {
     color: #85BC38;
+}
+
+table {
+    border-spacing: 1rem 0.5rem;
+}
+
+table.collapse {
+    border-collapse: collapse;
+}
+
+table.collapse tr th,
+table.collapse tr td {
+    padding: 0.75rem 0.5rem;
+}
+
+table.collapse tr th:first-child,
+table.collapse tr td:first-child {
+    padding-left: 0.75rem;
+}
+table.collapse tr th:last-child,
+table.collapse tr td:last-child {
+    padding-right: 0.75rem;
+}
+
+table.collapse tbody tr:nth-child(odd) {
+    background: hsla(0,0%,0%,0.15);
 }
 
 code {
@@ -387,6 +414,10 @@ label.row {
     border-radius: 1rem;
 }
 
+.callout h4 {
+    margin-top: 0;
+}
+
 .light .callout {
     border-color: #4d4e53;
 }
@@ -558,4 +589,12 @@ label.row {
     .lOffset9{margin-left:75%;}
     .lOffset10{margin-left:83.33333333333334%;margin-left:calc(100%/6*5);}
     .lOffset11{margin-left:91.66666666666667%;margin-left:calc(100%/12*11);}
+}
+
+@media screen and (max-width: 640px) {
+    .sShow{display:inherit;}
+}
+
+@media screen and (min-width: 641px) {
+    .mShow{display:inherit;}
 }
