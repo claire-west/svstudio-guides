@@ -1,16 +1,16 @@
 ((dynCore) => {
     dynCore.declare('app.container', dynCore.require([
-        'lib.hashNav',
+        'lib.hashlessNav',
         'lib.bind',
         'app.globalModel'
-    ]), (modules, hashNav, bind, globalModel) => {
+    ]), (modules, nav, bind, globalModel) => {
         var apps = {};
         var pending = {};
         var lib = modules.lib;
 
         var container = {
             init: function(title, app, $app) {
-                dynCore.when(dynCore.require('lib.baseApp')).done((modules, baseApp) => {
+                dynCore.when(dynCore.require('lib.hashlessApp')).done((modules, baseApp) => {
                     $app = $app || $('#app-' + title);
                     baseApp({
                         title: title,
@@ -23,7 +23,7 @@
                         if (pending[appPath]) {
                             pending[appPath].resolve();
                         }
-                        hashNav.rehash(true);
+                        nav.refresh(true);
                     });
                 });
             },
@@ -56,14 +56,12 @@
             globalModel.openModal('footer-aiart');
         });
 
-        hashNav.bindNavApp((app, section, args) => {
+        nav.bindNavApp((app, section, args) => {
             var $app;
             if (app) {
                 $app = $('#app-' + app);
             } else {
                 app = $('body .defaultApp').get(0).id.split('-')[1];
-                window.location.replace('#' + app);
-                return;
             }
 
             if (typeof(apps[app]) === 'undefined') {
@@ -77,7 +75,7 @@
             $('title').text($app.data('app'));
         });
 
-        hashNav.bindNavSection((app, section, args) => {
+        nav.bindNavSection((app, section, args) => {
             var $app = $('#app-' + app);
             var sectionSelector;
             if (app && section) {
@@ -92,7 +90,7 @@
 
         bind($('body'), globalModel);
 
-        hashNav.rehash();
+        nav.refresh();
 
         return container.init;
     });

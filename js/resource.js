@@ -13,6 +13,7 @@
                     dicts: 'Dictionary Catalog',
                     issues: 'Known Issues & Workarounds',
                     eula: 'Product EULA & Terms of Use',
+                    support: 'Contacting Customer Support',
                     plugin: 'Music Production Tools',
                     glossary: 'Glossary of Terms'
                 }

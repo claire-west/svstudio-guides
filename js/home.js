@@ -10,8 +10,11 @@
             },
 
             onInit: function() {
-                $('#home > section').detach().appendTo(this.$app);
-                $('#home').remove();
+                var $home = $('#home');
+                if ($home.length) {
+                    $home.detach().appendTo(this.$app);
+                    $('#home').remove();
+                }
             },
 
             onNavTo: function(app, section) {
