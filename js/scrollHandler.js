@@ -22,6 +22,51 @@
             localStorage.setItem('currentHash', window.location.hash);
         });
 
+        var binarySearch = function(ar, el, compare_fn) {
+            var m = 0;
+            var n = ar.length - 1;
+            while (m <= n) {
+                var k = (n + m) >> 1;
+                var cmp = compare_fn(el, ar[k]);
+                if (cmp > 0) {
+                    m = k + 1;
+                } else if(cmp < 0) {
+                    n = k - 1;
+                } else {
+                    return k;
+                }
+            }
+            return -m - 1;
+        };
+
+        var setHash = function() {
+            // if above the first heading, remove the hash
+            var $headings = $('section.app:visible section.contentSection:visible h3[id]');
+            if ($headings.get(0).getBoundingClientRect().top > 125) {
+                history.replaceState({}, '', window.location.pathname + window.location.search);
+                return;
+            }
+            // user scrolled, binary search for nearest header and set hash
+            var index = binarySearch($headings, 125, (target, element) => {
+                return target - element.getBoundingClientRect().top;
+            });
+            var target = $headings.get(Math.abs(index + 2));
+            history.replaceState({}, '', '#' + target.id);
+        };
+
+        var prevScroll = 0;
+        var onScroll;
+        $(window).on('scroll', (e) => {
+            var currScroll = window.pageYOffset
+            // if user scrolls more than 50 pixels, queue hash update
+            // if scrolling continuously, wait until scrolling stops by resetting the timeout
+            if (Math.abs(currScroll - prevScroll) > 50) {
+                window.clearTimeout(onScroll);
+                onScroll = window.setTimeout(setHash, 200);
+                prevScroll = currScroll;
+            }
+        });
+
         var scrollOnRefresh = function() {
             if (scrollY && pageAccessedByReload) {
                 // scroll after current execution queue
