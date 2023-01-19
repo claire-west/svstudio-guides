@@ -12,7 +12,7 @@
     <div class="row">
         <div class="col">
             <h2 z--text="/title.phonemes"></h2>
-            <p class="small"><i>2022/08/06 (updated 2022/11/09)</i></p>
+            <p class="small"><i>2022/08/06 (updated 2023/01/19)</i></p>
             <p>This article was originally written on the <a href="https://forum.synthesizerv.com/t/topic/6320">official forums</a>.</p>
             <p>This guide is intended to help users achieve better pronunciation and vocal timing, and better understand the phonemes used to generate synthesized vocals.</p>
         </div>
@@ -432,18 +432,28 @@
     <hr/>
     <div class="row">
         <div class="col flex">
-            <span>4.3</span><h3 id="phonemes/4.3">Alternate phonemes and expression groups (Standard voices only)</h3>
+            <span>4.3</span><h3 id="phonemes/4.3">Alternate phonemes</h3>
+            <a class="flex-right" href="#">
+                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
+            </a>
+        </div>
+        <div class="col">
+            <p>Alternate phonemes and expression groups (covered in the next section) are found at the bottom of the Note Properties panel. Keep in mind these settings apply only to the note or notes you have selected at the time.</p>
+            <img src="/img/guide/phonemes/expression-group-highlighted.png" alt="The alternate phoneme buttons and expression groups in the Note Properties panel" />
+
+            <p>Cycling through <b>alternate phonemes</b> will cause the engine to use an alternate articulation for a sound (AI) or a different recorded sample for that specific sound (Standard). This can be useful if your lyrics have many of the same phoneme and you don't want them to all sound the same, or if the default sample has a harsher consonant sound and you'd prefer a softer one, for example. This will vary wildly between voice databases since it relies on the variation in the original recordings.</p>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col flex">
+            <span>4.4</span><h3 id="phonemes/4.4">Expression groups (Standard voices only)</h3>
             <a class="flex-right" href="#">
                 <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
             </a>
         </div>
         <div class="col">
             <p>Since Standard voices are based on individual phoneme samples, you can control exactly which samples are used during synthesis.</p>
-
-            <p>This includes alternate phonemes and expression groups, found at the bottom of the Note Properties panel. Keep in mind these settings apply only to the note or notes you have selected at the time.</p>
-            <img src="/img/guide/phonemes/expression-group-highlighted.png" alt="The alternate phoneme buttons and expression groups in the Note Properties panel" />
-
-            <p>Cycling through <b>alternate phonemes</b> will cause the engine to use a different recorded sample for that specific sound. This can be useful if your lyrics have many of the same phoneme and you don't want them to all sound the same, or if the default sample has a harsher consonant sound and you'd prefer a softer one, for example. This will vary wildly between voice databases since it is based entirely on how many takes of each phoneme were recorded, and how different they are from one another.</p>
 
             <p>When a Standard voice is being recorded, the various samples are all recorded at multiple pitches. <b>Expression groups</b> represent the different pitches and tone variations of recorded samples. By default Synthesizer V Studio will select the most suitable expression group for the notes you have entered, but you also have the option to manually change this. This is useful if you want to force the engine to use soft or falsetto samples, or prevent it from doing so. Pictured below is the list of expression groups included with Genbu.</p>
             <img src="/img/guide/phonemes/expression-group-dropdown-genbu.png" alt="The list of expression groups for Genbu" />
