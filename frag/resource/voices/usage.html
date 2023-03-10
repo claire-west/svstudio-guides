@@ -1,0 +1,41 @@
+<div z--controller>
+    <div class="col">
+        <p>This is a ranking of voice database usage based on the number of songs on <a href="https://vocadb.net/">VocaDB</a>.</p>
+        <div class="callout" z--visible="!!error">
+            <i class="bi bi-exclamation-triangle"></i>
+            <p z--bind="error"></p>
+        </div>
+    </div>
+    <div class="col s12 m6">
+        <table z--visible="aByCharacter.length">
+            <thead>
+                <tr>
+                    <th>Character</th>
+                    <th>Number of Songs</th>
+                </tr>
+            </thead>
+            <tbody z--iterate="aByCharacter">
+                <tr z--template>
+                    <td z--bind=">name"></td>
+                    <td z--bind=">songCount"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col s12 m6">
+        <table z--visible="aBySVD.length">
+            <thead>
+                <tr>
+                    <th>Voice Database</th>
+                    <th>Number of Songs</th>
+                </tr>
+            </thead>
+            <tbody z--iterate="aBySVD">
+                <tr z--template>
+                    <td z--bind=">name"></td>
+                    <td z--bind=">songCount"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
