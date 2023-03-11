@@ -93,6 +93,7 @@
                         oByCharacter[name] += resp.sharedStats.songCount;
                         aBySVD.push({
                             name: name + ' ' + suffix,
+                            url: 'https://vocadb.net/Ar/' + id,
                             songCount: resp.sharedStats.songCount
                         });
                     }));
