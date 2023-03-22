@@ -16,9 +16,14 @@ module.exports = function(grunt) {
         dest: 'deploy/',
         expand: true
       }
+    },
+    build_templated_pages: {
+      build: {}
     }
   });
 
+  grunt.loadTasks('./grunt');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.registerTask('default', [ 'copy' ]);
+  grunt.registerTask('default', [ 'build_templated_pages' ]);
+  grunt.registerTask('prepare-neocities', [ 'copy' ]);
 };
