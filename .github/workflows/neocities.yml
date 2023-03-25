@@ -1,10 +1,10 @@
 name: Deploy to neocities
 
-# only run on changes to main
+# only run on changes to gh-pages
 on:
   push:
     branches:
-      - main
+      - gh-pages
 
 concurrency: # prevent concurrent deploys doing strange things
   group: deploy-to-neocities
@@ -13,7 +13,6 @@ concurrency: # prevent concurrent deploys doing strange things
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js
