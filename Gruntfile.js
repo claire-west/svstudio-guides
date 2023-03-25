@@ -25,5 +25,5 @@ module.exports = function(grunt) {
   grunt.loadTasks('./grunt');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.registerTask('default', [ 'build_templated_pages' ]);
-  grunt.registerTask('prepare-neocities', [ 'copy' ]);
+  grunt.registerTask('prepare-neocities', [ 'build_templated_pages', 'copy' ]);
 };

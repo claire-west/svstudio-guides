@@ -1,6 +1,5 @@
 name: neocities-deploy
 
-# only run on changes to gh-pages
 on:
   workflow_run:
     workflows: [ build ]
