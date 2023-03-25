@@ -1,4 +1,4 @@
-name: Build templated pages for hosting that does not support URL rewrite
+name: build
 
 # only run on changes to main
 on:

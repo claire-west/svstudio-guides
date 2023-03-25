@@ -1,10 +1,11 @@
-name: Deploy to neocities
+name: neocities-deploy
 
 # only run on changes to gh-pages
 on:
-  push:
-    branches:
-      - gh-pages
+  workflow_run:
+    workflows: [ build ]
+    types:
+      - completed
 
 concurrency: # prevent concurrent deploys doing strange things
   group: deploy-to-neocities
