@@ -23,9 +23,9 @@ jobs:
       run: |
         npm i
         grunt
-    - name: Push
-      uses: ad-m/github-push-action@master
+    - name: Push to gh-pages
+      uses: stefanzweifel/git-auto-commit-action@v4
       with:
         branch: gh-pages
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        force: true
+        push_options: '--force'
