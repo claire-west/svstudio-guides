@@ -25,6 +25,6 @@ jobs:
         grunt
     - name: Push
       uses: ad-m/github-push-action@master
-      env:
+      with:
         branch: gh-pages
         github_token: ${{ secrets.GITHUB_TOKEN }}
