@@ -24,10 +24,7 @@ jobs:
         npm i
         grunt
     - name: Push
-      uses: s0/git-publish-subdir-action@develop
+      uses: ad-m/github-push-action@master
       env:
-        REPO: self
-        BRANCH: gh-pages
-        FOLDER: .
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        MESSAGE: "Build: ({sha}) {msg}"
+        branch: gh-pages
+        github_token: ${{ secrets.GITHUB_TOKEN }}

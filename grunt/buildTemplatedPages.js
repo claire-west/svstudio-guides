@@ -24,10 +24,9 @@ module.exports = function(grunt) {
       }
       let content = grunt.file.read(template);
       let thisRoute = manifest[route];
-      console.log(route, thisRoute)
+
       for (let placeholder in thisRoute) {
         let value = thisRoute[placeholder];
-        console.log(placeholderPrefix + placeholder, value)
         if (grunt.file.exists(value)) {
           value = grunt.file.read(value);
         }
