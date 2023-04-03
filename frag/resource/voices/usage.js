@@ -4,6 +4,7 @@
     ])).done((modules, fragment, scrollHandler) => {
 
         var dayMillis = 24 * 60 * 60 * 1000;
+        var vocaDbBaseUrl = 'https://vocadb.net/api/songs?start=0&getTotalCount=true&maxResults=1&songTypes=Original&artistId[]=';
         var vocaDbIds = {
             'AiKO': 69866,
             'An Xiao': 102955,
@@ -22,6 +23,7 @@
             'Haiyi': 74324,
             'Hanakuma Chifuyu': 103592,
             'JUN': 116048,
+            'Kasane Teto': 118397,
             'Kevin': 99147,
             'Koharu Rikka': {
                 '(Unknown)': 85853,
@@ -88,13 +90,13 @@
 
                 for (let suffix in vocaDbIds[name]) {
                     let id = vocaDbIds[name][suffix];
-                    promises.push($.ajax('https://vocadb.net/api/artists/' + id + '/details').done((resp) => {
+                    promises.push($.ajax(vocaDbBaseUrl + id).done((resp) => {
                         oByCharacter[name] = oByCharacter[name] || 0;
-                        oByCharacter[name] += resp.sharedStats.songCount;
+                        oByCharacter[name] += resp.totalCount;
                         aBySVD.push({
                             name: name + ' ' + suffix,
                             url: 'https://vocadb.net/Ar/' + id,
-                            songCount: resp.sharedStats.songCount
+                            songCount: resp.totalCount
                         });
                     }));
                 }
@@ -104,12 +106,19 @@
 
         var onFetchSuccess = function(model) {
             var aByCharacter = [];
+            var total = 0;
             for (let name in oByCharacter) {
+                total += oByCharacter[name];
                 aByCharacter.push({
                     name: name,
                     songCount: oByCharacter[name]
                 });
             }
+            aByCharacter.push({
+                name: 'Total',
+                songCount: total
+            });
+
             aByCharacter.sort(songCountCompare);
             aBySVD.sort(songCountCompare);
 
