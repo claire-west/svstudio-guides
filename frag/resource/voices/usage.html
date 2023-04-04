@@ -1,6 +1,6 @@
 <div z--controller>
     <div class="col">
-        <p>This is a ranking of voice database usage based on the number of original songs on <a href="https://vocadb.net/">VocaDB</a>.</p>
+        <p>This is a ranking of voice database usage based on the number of original songs documented on <a href="https://vocadb.net/">VocaDB</a>. Note that Chinese songs are generally underrepresented on VocaDB.</p>
         <div class="callout" z--visible="!!error">
             <i class="bi bi-exclamation-triangle"></i>
             <p z--bind="error"></p>
@@ -17,7 +17,7 @@
             <tbody z--iterate="aByCharacter">
                 <tr z--template>
                     <td z--bind=">name"></td>
-                    <td z--bind=">songCount"></td>
+                    <td z--bind=">songCount" class="text-right"></td>
                 </tr>
             </tbody>
         </table>
@@ -33,7 +33,25 @@
             <tbody z--iterate="aBySVD">
                 <tr z--template>
                     <td><a z--bind=">url" z--text=">name" target="_blank"></a></td>
-                    <td z--bind=">songCount"></td>
+                    <td z--bind=">songCount" class="text-right"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col" z--visible="aOther.length">
+        <h4>Other Notable Vocal Synths</h4>
+        <p>The number of original songs featuring the most popular vocal synths on other engines, as well as previous versions of characters that later moved to SynthV.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Vocal Synth</th>
+                    <th>Number of Songs</th>
+                </tr>
+            </thead>
+            <tbody z--iterate="aOther">
+                <tr z--template>
+                    <td z--bind=">name"></td>
+                    <td z--bind=">songCount" class="text-right"></td>
                 </tr>
             </tbody>
         </table>
