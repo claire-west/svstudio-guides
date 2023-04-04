@@ -70,39 +70,8 @@
             'Yamine Renri': 69286,
             'Yuma': 109074
         };
-
         var otherVocaDbIds = {
-            'Hatsune Miku (all versions)': {
-                'V2 or Unknown': 1,
-                'Append (Unknown)': 343,
-                'Append (Dark)': 75,
-                'Append (Solid)': 76,
-                'Append (Soft)': 78,
-                'Append (Sweet)': 79,
-                'Append (Vivid)': 80,
-                'Append (Light)': 81,
-                'V3 (Unknown)': 11839,
-                'V3 (English)': 958,
-                'V3 (Sweet)': 11833,
-                'V3 (Solid)': 11834,
-                'V3 (Dark)': 11835,
-                'V3 (Soft)': 11836,
-                'V3 (Light)': 11837,
-                'V3 (Vivid)': 11838,
-                'V3 (Original)': 15490,
-                'V4X (Unknown)': 41322,
-                'V4X (Soft)': 50232,
-                'V4X (Dark)': 50233,
-                'V4X (Origial)': 50234,
-                'V4X (Solid)': 50235,
-                'V4X (Sweet)': 50236,
-                'V4X (中文版)': 60540,
-                'V4 (English)': 49724,
-                'NT (Unknown)': 84429,
-                'NT (Original+)': 84430,
-                'NT (Whisper+)': 84431,
-                'NT (Dark+)': 84432
-            },
+            'Hatsune Miku (all versions)': 1,
             'KAFU (CeVIO AI)': 83928,
             'Kasane Teto (UTAU)': 116,
             'Xia Yu Yao (UTAU)': 27056,
@@ -147,20 +116,11 @@
             var promises = [];
             oOther = {};
             for (let name in otherVocaDbIds) {
-                if (typeof(otherVocaDbIds[name]) === 'number') {
-                    otherVocaDbIds[name] = {
-                        '': otherVocaDbIds[name]
-                    };
-                }
-
-                for (let suffix in otherVocaDbIds[name]) {
-                    let id = otherVocaDbIds[name][suffix];
-                    promises.push($.ajax(vocaDbBaseUrl + id).done((resp) => {
-                        console.log(name, suffix)
-                        oOther[name] = oOther[name] || 0;
-                        oOther[name] += resp.totalCount;
-                    }));
-                }
+                let id = otherVocaDbIds[name];
+                promises.push($.ajax(vocaDbBaseUrl + id + '&childVoicebanks=true').done((resp) => {
+                    oOther[name] = oOther[name] || 0;
+                    oOther[name] += resp.totalCount;
+                }));
             }
             return promises;
         };
@@ -190,7 +150,7 @@
             aByCharacter.sort(songCountCompare);
             aBySVD.sort(songCountCompare);
             aOther.sort(songCountCompare);
-            console.log(aOther)
+
             model.aByCharacter = aByCharacter;
             model.aBySVD = aBySVD;
             model.aOther = aOther;
