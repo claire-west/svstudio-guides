@@ -14,6 +14,7 @@
             'Cheng Xiao': 76105,
             'Chiyu': 72386,
             'Cong Zheng': 76109,
+            'D-Lin': 119025,
             'Eleanor Forte': {
                 'AI': 92247,
                 'Standard (R1 & lite)': 66906
@@ -44,11 +45,13 @@
             'Natsuki Karin': 94959,
             'Ninezero': 115724,
             'Qing Su': 76272,
+            'Ritchy': 119026,
             'Ryo': 99167,
             'Saki': {
                 'AI': 85852,
                 'Standard': 81917
             },
+            'SAROS': 118795,
             'Shian': 71416,
             'SOLARIA': 76317,
             'Stardust Infinity': 76283,
