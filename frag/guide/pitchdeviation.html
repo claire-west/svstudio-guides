@@ -14,9 +14,20 @@
             <h2 z--text="/title.pitchdeviation"></h2>
             <p class="small"><i>2022/11/17 (updated 2022/11/27)</i></p>
             <p>The focus of this guide is on pitch deviation, and how to modify pitch in Synthesizer V Studio. It is assumed that you know the basics of adding notes and <a href="/guide-phonemes">entering lyrics/phonemes</a>. This is not a guide on tuning or writing melodies, as those are separate topics.</p>
-            <div class="callout">
+            <!-- <div class="callout">
                 <i class="bi bi-info-circle"></i>
                 <p>The examples in this guide will start with Instant Mode disabled. If you are trying to follow along, make sure you also <b>disable Instant Mode</b> before adding notes to the piano roll.</p>
+            </div> -->
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="callout">
+                <h4 class="flex align-center"><i class="bi bi-x-octagon"></i>This Guide is Out of Date</h4>
+                <p>Much of the information presented here is still accurate, however <b>Instant Mode is no longer part of Synthesizer V Studio</b>.</p>
+                <p>See the unofficial user manual for information on the successor features introduced in version 1.9.0: <a href="https://manual.synthv.info/ai-functions/pitch-mode-sing/">Sing Pitch Mode</a> and <a href="https://manual.synthv.info/ai-functions/pitch-mode-rap/">Rap Pitch Mode</a>.</p>
+                <p>Additionally, the pitch transition and vibrato sliders are now only accessible when using <a href="https://manual.synthv.info/advanced/pitch-mode-manual/">Manual Pitch Mode</a>.</p>
+                <p>Note ornamentation, parameter editing, auto pitch tuning, and AI retakes all remain unchanged.</p>
             </div>
         </div>
     </div>
@@ -40,12 +51,6 @@
                         <li><a href="#pitchdeviation/2.3">The parameters panel</a></li>
                         <li><a href="#pitchdeviation/2.4">Auto pitch tuning</a></li>
                         <li><a href="#pitchdeviation/2.5">Instant Mode & AI Retakes</a></li>
-                    </ol>
-                </li>
-                <li>
-                    <span>Additional Topics</span>
-                    <ol>
-                        <li><a href="#pitchdeviation/3.1">Known issues and bugs</a></li>
                     </ol>
                 </li>
             </ol>
@@ -292,19 +297,6 @@
             <p>Instant mode can be a bit difficult to use, however like auto pitch tuning it offers a lot of potential when used correctly, and the AI Retakes feature can be extremely helpful in creating specific effects (such as vocal fry) depending on the voice database being used.</p>
 
             <p>AI Retakes can also be generated for timbre, however this is separate from the pitch-based retakes that require instant mode, and timbre retakes can be generated even with instant mode disabled.</p>
-        </div>
-    </div>
-    <hr/>
-    <div class="row">
-        <div class="col flex">
-            <span>3.1</span><h3 id="pitchdeviation/3.1">Known Issues and Bugs</h3>
-            <a class="flex-right" href="#">
-                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
-            </a>
-        </div>
-        <div class="col">
-            <p>There is currently a known issue where disabling Instant Mode when multiple instances of the same group are present in the arrangement will apply the pitch deviations to the parameter panel multiple times, once for each instance of the group.</p>
-            <p>Until the bug is fixed it is recommended that you ensure each group is only present in the arrangement once before disabling Instant Mode, and then re-add the groups after the pitch deviations have been applied to the parameter panel.</p>
         </div>
     </div>
     <div class="row">
