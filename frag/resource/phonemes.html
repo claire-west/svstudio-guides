@@ -12,7 +12,7 @@
     <div class="row">
         <div class="col">
             <h2 z--text="/title.phonemes"></h2>
-            <p class="small"><i>2022/11/09 (updated 2022/11/12)</i></p>
+            <p class="small"><i>2022/11/09 (updated 2023/04/26)</i></p>
             <p>The phoneme list below is intended as a quick-reference that fits neatly in a small window or on a tablet screen without additional clutter. These additional resources offer more in-depth information about the phonemes:</p>
             <ul>
                 <li><a href="https://slidingwall.github.io/synthv-dictionaries/phoneme">Slidingwall's Phoneme Charts</a> (cross-reference between each language, with examples)</li>
@@ -35,8 +35,13 @@
             <button class="button" z--class='{
                 "class": "active",
                 "path": "phonemeSet",
-                "eq": "zh"
-            }' z--click="setPhonemeSet" data-lang="zh">Chinese (x-sampa)</button>
+                "eq": "zh-m"
+            }' z--click="setPhonemeSet" data-lang="zh-m">Mandarin (x-sampa)</button>
+            <button class="button" z--class='{
+                "class": "active",
+                "path": "phonemeSet",
+                "eq": "zh-c"
+            }' z--click="setPhonemeSet" data-lang="zh-c">Cantonese (x-sampa)</button>
             <button class="transparent sHide" title="Pop out"
                 onclick="window.open('/phonemes', '_blank', 'location=yes,height=540,width=690,scrollbars=yes,status=yes');">
                 <i class="bi bi-box-arrow-up-right"></i>
@@ -180,7 +185,7 @@
             </div>
         </div>
     </div>
-    <div class="row" z--visible='{ "path": "phonemeSet", "eq": "zh" }' style="padding-top:0.5rem;">
+    <div class="row" z--visible='{ "path": "phonemeSet", "eq": "zh-m" }' style="padding-top:0.5rem;">
         <div class="col s6 nopad">
             <div class="row nopad">
                 <div class="col s12 m6">
@@ -258,6 +263,77 @@
                         <tr><td>j</td><td>semivowel</td></tr>
                         <tr><td>pau</td><td>silence</td></tr>
                         <tr><td>sil</td><td>silence</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" z--visible='{ "path": "phonemeSet", "eq": "zh-c" }' style="padding-top:0.5rem;">
+        <div class="col s6 nopad">
+            <div class="row nopad">
+                <div class="col s12 m6">
+                    <table>
+                        <tr><td>ts&nbsp;&nbsp;</td><td>affricate</td></tr>
+                        <tr><td>tsh</td><td>affricate</td></tr>
+                        <tr><td>f</td><td>fricative</td></tr>
+                        <tr><td>h</td><td>fricative</td></tr>
+                        <tr><td>s</td><td>fricative</td></tr>
+                        <tr><td>l</td><td>liquid</td></tr>
+                        <tr><td>m</td><td>nasal</td></tr>
+                        <tr><td>n</td><td>nasal</td></tr>
+                        <tr><td>N</td><td>nasal</td></tr>
+                        <tr><td>w</td><td>semivowel</td></tr>
+                        <tr><td>j</td><td>semivowel</td></tr>
+                        <tr><td>p</td><td>stop</td></tr>
+                    </table>
+                </div>
+                <div class="col s12 m6">
+                    <table>
+                        <tr><td>ph&nbsp;&nbsp;</td><td>stop</td></tr>
+                        <tr><td>t</td><td>stop</td></tr>
+                        <tr><td>th</td><td>stop</td></tr>
+                        <tr><td>k</td><td>stop</td></tr>
+                        <tr><td>kh</td><td>stop</td></tr>
+                        <tr><td>kw</td><td>stop</td></tr>
+                        <tr><td>kwh</td><td>stop</td></tr>
+                        <tr><td>a</td><td>vowel</td></tr>
+                        <tr><td>6</td><td>vowel</td></tr>
+                        <tr><td>E</td><td>vowel</td></tr>
+                        <tr><td>e</td><td>vowel</td></tr>
+                        <tr><td>i</td><td>vowel</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col s6 nopad">
+            <div class="row nopad">
+                <div class="col s12 m6">
+                    <table>
+                        <tr><td>I&nbsp;&nbsp;&nbsp;</td><td>vowel</td></tr>
+                        <tr><td>O</td><td>vowel</td></tr>
+                        <tr><td>o</td><td>vowel</td></tr>
+                        <tr><td>u</td><td>vowel</td></tr>
+                        <tr><td>U</td><td>vowel</td></tr>
+                        <tr><td>9</td><td>vowel</td></tr>
+                        <tr><td>8</td><td>vowel</td></tr>
+                        <tr><td>y</td><td>vowel</td></tr>
+                        <tr><td>m=</td><td>vowel</td></tr>
+                        <tr><td>N=</td><td>vowel</td></tr>
+                        <tr><td>:i</td><td>coda</td></tr>
+                        <tr><td>:u</td><td>coda</td></tr>
+                    </table>
+                </div>
+                <div class="col s12 m6">
+                    <table>
+                        <tr><td>:m&nbsp;&nbsp;</td><td>coda</td></tr>
+                        <tr><td>:n</td><td>coda</td></tr>
+                        <tr><td>:N</td><td>coda</td></tr>
+                        <tr><td>:p_}</td><td>coda</td></tr>
+                        <tr><td>:t_}</td><td>coda</td></tr>
+                        <tr><td>:k_}</td><td>coda</td></tr>
+                        <tr><td>pau</td><td>silence</td></tr>
+                        <tr><td>sil</td><td>silence</td></tr>
+                        <tr><td>br</td><td>breath</td></tr>
                     </table>
                 </div>
             </div>
