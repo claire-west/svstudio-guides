@@ -12,7 +12,7 @@
     <div class="row">
         <div class="col">
             <h2 z--text="/title.phonemes"></h2>
-            <p class="small"><i>2022/08/06 (updated 2023/01/19)</i></p>
+            <p class="small"><i>2022/08/06 (updated 2023/04/26)</i></p>
             <p>This article was originally written on the <a href="https://forum.synthesizerv.com/t/topic/6320">official forums</a>.</p>
             <p>This guide is intended to help users achieve better pronunciation and vocal timing, and better understand the phonemes used to generate synthesized vocals.</p>
         </div>
@@ -30,10 +30,8 @@
                 <li>
                     <span>Phoneme Lists</span>
                     <ol>
-                        <li><a href="#phonemes/2.1">English phonemes (arpabet)</a></li>
-                        <li><a href="#phonemes/2.2">Japanese phonemes (romaji)</a></li>
-                        <li><a href="#phonemes/2.3">Mandarin Chinese phonemes (x-sampa)</a></li>
-                        <li><a href="#phonemes/2.4">Special phonemes and symbols</a></li>
+                        <li><a href="#phonemes/2.1">Phonemes for Each Language</a></li>
+                        <li><a href="#phonemes/2.2">Special phonemes and symbols</a></li>
                     </ol>
                 </li>
                 <li>
@@ -86,196 +84,26 @@
     <hr/>
     <div class="row">
         <div class="col flex">
-            <span>2.1</span><h3 id="phonemes/2.1">English phonemes (arpabet)</h3>
+            <span>2.1</span><h3 id="phonemes/2.1">Phonemes for Each Language</h3>
             <a class="flex-right" href="#">
                 <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
             </a>
         </div>
         <div class="col">
-            <p>This list is from the <code>english-arpabet-phones.txt</code> file found in Synthesizer V Studio's installation directory.</p>
-            <p>For a version of this list formatted for easy reference, check the <a href="/resource-phonemes">Phoneme List</a>.</p>
-            <dl>
-                <dd>aa vowel</dd>
-                <dd>ae vowel</dd>
-                <dd>ah vowel</dd>
-                <dd>ao vowel</dd>
-                <dd>aw diphthong</dd>
-                <dd>ax vowel</dd>
-                <dd>ay diphthong</dd>
-                <dd>b stop</dd>
-                <dd>ch affricate</dd>
-                <dd>d stop</dd>
-                <dd>dx stop</dd>
-                <dd>dr affricate</dd>
-                <dd>dh fricative</dd>
-                <dd>eh vowel</dd>
-                <dd>er vowel</dd>
-                <dd>ey diphthong</dd>
-                <dd>f fricative</dd>
-                <dd>g stop</dd>
-                <dd>hh aspirate</dd>
-                <dd>ih vowel</dd>
-                <dd>iy vowel</dd>
-                <dd>jh affricate</dd>
-                <dd>k stop</dd>
-                <dd>l liquid</dd>
-                <dd>m nasal</dd>
-                <dd>n nasal</dd>
-                <dd>ng nasal</dd>
-                <dd>ow diphthong</dd>
-                <dd>oy diphthong</dd>
-                <dd>p stop</dd>
-                <dd>q stop (not implemented for most voices, use cl instead)</dd>
-                <dd>r semivowel</dd>
-                <dd>s fricative</dd>
-                <dd>sh fricative</dd>
-                <dd>t stop</dd>
-                <dd>tr affricate</dd>
-                <dd>th fricative</dd>
-                <dd>uh vowel</dd>
-                <dd>uw vowel</dd>
-                <dd>v fricative</dd>
-                <dd>w semivowel</dd>
-                <dd>y semivowel</dd>
-                <dd>z fricative</dd>
-                <dd>zh fricative</dd>
-                <dd>pau silence</dd>
-                <dd>sil silence</dd>
-            </dl>
+            <p>Each language has its own set of phonemes and notations, which can be found in the following files located in Synthesizer V Studio's installation directory:</p>
+            <ul>
+                <li><code>english-arpabet-phones.txt</code></li>
+                <li><code>japanese-romaji-phones.txt</code></li>
+                <li><code>mandarin-xsampa-phones.txt</code></li>
+                <li><code>cantonese-xsampa-phones.txt</code></li>
+            </ul>
+            <p>For a version of these lists formatted for easy reference, check the <a href="/resource-phonemes">Phoneme List</a> page.</p>
         </div>
     </div>
     <hr/>
     <div class="row">
         <div class="col flex">
-            <span>2.2</span><h3 id="phonemes/2.2">Japanese phonemes (romaji)</h3>
-            <a class="flex-right" href="#">
-                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
-            </a>
-        </div>
-        <div class="col">
-            <p>This list is from the <code>japanese-romaji-phones.txt</code> file found in Synthesizer V Studio's installation directory.</p>
-            <p>For a version of this list formatted for easy reference, check the <a href="/resource-phonemes">Phoneme List</a>.</p>
-            <dl>
-                <dd>a vowel</dd>
-                <dd>i vowel</dd>
-                <dd>u vowel</dd>
-                <dd>e vowel</dd>
-                <dd>o vowel</dd>
-                <dd>N vowel</dd>
-                <dd>cl stop</dd>
-                <dd>t stop</dd>
-                <dd>d stop</dd>
-                <dd>s fricative</dd>
-                <dd>sh fricative</dd>
-                <dd>j affricate</dd>
-                <dd>z affricate</dd>
-                <dd>ts affricate</dd>
-                <dd>k stop</dd>
-                <dd>kw stop (not implemented for most voices)</dd>
-                <dd>g stop</dd>
-                <dd>gw stop (not implemented for most voices)</dd>
-                <dd>h aspirate</dd>
-                <dd>b stop</dd>
-                <dd>p stop</dd>
-                <dd>f fricative</dd>
-                <dd>ch affricate</dd>
-                <dd>ry liquid</dd>
-                <dd>ky stop</dd>
-                <dd>py stop</dd>
-                <dd>dy stop</dd>
-                <dd>ty stop</dd>
-                <dd>ny nasal</dd>
-                <dd>hy aspirate</dd>
-                <dd>my nasal</dd>
-                <dd>gy stop</dd>
-                <dd>by stop</dd>
-                <dd>n nasal</dd>
-                <dd>m nasal</dd>
-                <dd>r liquid</dd>
-                <dd>w semivowel</dd>
-                <dd>v semivowel</dd>
-                <dd>y semivowel</dd>
-                <dd>pau silence</dd>
-                <dd>sil silence</dd>
-            </dl>
-        </div>
-    </div>
-    <hr/>
-    <div class="row">
-        <div class="col flex">
-            <span>2.3</span><h3 id="phonemes/2.3">Mandarin Chinese phonemes (x-sampa)</h3>
-            <a class="flex-right" href="#">
-                <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
-            </a>
-        </div>
-        <div class="col">
-            <p>This list is from the <code>mandarin-xsampa-phones.txt</code> file found in Synthesizer V Studio's installation directory.</p>
-            <p>For a version of this list formatted for easy reference, check the <a href="/resource-phonemes">Phoneme List</a>.</p>
-            <dl>
-                <dd>a vowel</dd>
-                <dd>A vowel</dd>
-                <dd>o vowel</dd>
-                <dd>@ vowel</dd>
-                <dd>e vowel</dd>
-                <dd>7 vowel</dd>
-                <dd>U vowel</dd>
-                <dd>u vowel</dd>
-                <dd>i vowel</dd>
-                <dd>i\ vowel</dd>
-                <dd>i` vowel</dd>
-                <dd>y vowel</dd>
-                <dd>AU diphthong</dd>
-                <dd>@U diphthong</dd>
-                <dd>ia diphthong</dd>
-                <dd>iA diphthong</dd>
-                <dd>iAU diphthong</dd>
-                <dd>ie diphthong</dd>
-                <dd>iE diphthong</dd>
-                <dd>iU diphthong</dd>
-                <dd>i@U diphthong</dd>
-                <dd>y{ diphthong</dd>
-                <dd>yE diphthong</dd>
-                <dd>ua diphthong</dd>
-                <dd>uA diphthong</dd>
-                <dd>u@ diphthong</dd>
-                <dd>ue diphthong</dd>
-                <dd>uo diphthong</dd>
-                <dd>:\i coda</dd>
-                <dd>r\` coda</dd>
-                <dd>:n coda</dd>
-                <dd>N coda</dd>
-                <dd>p stop</dd>
-                <dd>ph stop</dd>
-                <dd>t stop</dd>
-                <dd>th stop</dd>
-                <dd>k stop</dd>
-                <dd>kh stop</dd>
-                <dd>ts\ affricate</dd>
-                <dd>ts affricate</dd>
-                <dd>tsh affricate</dd>
-                <dd>ts` affricate</dd>
-                <dd>ts`h affricate</dd>
-                <dd>x aspirate</dd>
-                <dd>f fricative</dd>
-                <dd>s fricative</dd>
-                <dd>s` fricative</dd>
-                <dd>ts\h fricative</dd>
-                <dd>s\ fricative</dd>
-                <dd>m nasal</dd>
-                <dd>n nasal</dd>
-                <dd>l liquid</dd>
-                <dd>z` semivowel</dd>
-                <dd>w semivowel</dd>
-                <dd>j semivowel</dd>
-                <dd>pau silence</dd>
-                <dd>sil silence</dd>
-            </dl>
-        </div>
-    </div>
-    <hr/>
-    <div class="row">
-        <div class="col flex">
-            <span>2.4</span><h3 id="phonemes/2.4">Special phonemes and symbols</h3>
+            <span>2.2</span><h3 id="phonemes/2.2">Special phonemes and symbols</h3>
             <a class="flex-right" href="#">
                 <i class="bi bi-chevron-bar-up" title="Back to Top"></i>
             </a>

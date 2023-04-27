@@ -42,6 +42,10 @@
         var setHash = function() {
             // if above the first heading, remove the hash
             var $headings = $('section.app:visible section.contentSection:visible h3[id]');
+            if (!$headings.length) {
+                return;
+            }
+
             if ($headings.get(0).getBoundingClientRect().top > 125) {
                 history.replaceState({}, '', window.location.pathname + window.location.search);
                 return;
