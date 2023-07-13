@@ -23,6 +23,7 @@
             'Genbu': 70241,
             'Haiyi': 74324,
             'Hanakuma Chifuyu': 103592,
+            'Haruno Sora': 121429,
             'JUN': 116048,
             'Kasane Teto': 118397,
             'Kevin': 99147,
@@ -37,6 +38,7 @@
                 'AI': 97760,
                 'Standard': 97770
             },
+            'Lin Lai': 120528,
             'Mai': 110703,
             'Minus': 76428,
             'Mo Chen': 76210,
@@ -71,9 +73,11 @@
             'Xia Yu Yao': 113812,
             'Xuan Yu': 76108,
             'Yamine Renri': 69286,
-            'Yuma': 109074
+            'Yuma': 109074,
+            'Yun Quan': 120529
         };
         var otherVocaDbIds = {
+            'Haruno Sora (VOCALOID5)': 67089,
             'Hatsune Miku (all versions)': 1,
             'KAFU (CeVIO AI)': 83928,
             'Kasane Teto (UTAU)': 116,
