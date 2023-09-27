@@ -12,7 +12,7 @@
     <div class="row">
         <div class="col">
             <h2 z--text="/title.scripts"></h2>
-            <p class="small"><i>2022/11/12 (updated 2022/04/26)</i></p>
+            <p class="small"><i>2022/11/12 (updated 2023/09/27)</i></p>
         </div>
         <div class="col">
             <p>A directory of scripts for Synthesizer V Studio Pro.</p>
@@ -121,12 +121,11 @@
             </a>
         </div>
         <div class="col">
-            <p>The focus of this catalog is not the creation of scripts or teaching users how to code, however if you are familiar with JavaScript or Lua you can refer to the official <a href="https://resource.dreamtonics.com/scripting/">Scripting Manual</a> to get started, using the links below to find implementation examples.</p>
+            <p>The focus of this catalog is not the creation of scripts or teaching users how to code, however if you are familiar with JavaScript or Lua you can refer to the official <a href="https://resource.dreamtonics.com/scripting/">Scripting Manual</a> to get started, using the links below to find implementation examples. Some undocumented functions have been detailed in the <a href="https://manual.synthv.info/advanced/scripting/#undocumented-functions-and-properties">Unofficial User Manual</a>.</p>
             <p>There are some limitations to the scripting capabilities within SynthV Studio:</p>
             <ul>
-                <li>Certain aspects of the SynthV Studio application are inaccessible via the scripting API, such as Tone Shift, Vocal Modes, AI Retakes, and some others.</li>
                 <li>While the Lua implementation is rather fully-featured, JavaScript is implemented via <a href="https://duktape.org/">Duktape</a> and therefore is lacking certain capabilities such as file io and loading of external dependencies.</li>
-                <li>Scripts are completey isolated from one another, meaning there is no convenient manner in which to store a variable for later or share variables between scripts. The "global scope" only applies to the current script being executed.</li>
+                <li>Scripts are completely isolated from one another, meaning there is no convenient manner in which to store a variable for later or share variables between scripts. The "global scope" only applies to the current script being executed.</li>
                 <li>There are no event hooks.</li>
                 <li>Dialog boxes are always "blocking", ie the user cannot interact with the application while a dialog box is open, even using the async functions.</li>
             </ul>
@@ -191,7 +190,9 @@
             <p><b>automation</b> - Scripts that automate a complex or continuous task.</p>
             <ul>
                 <li>Generate Key Reference</li>
+                <li>Apply Tempo from MIDI (Reads a MIDI file and applies any tempo changes and time signatures to the current project)</li>
                 <li>Start Live Preview (plays notes as you create/change them)</li>
+                <li>Create Stepwise Tempo Change</li>
             </ul>
             <p><b>hotkey-scripts</b> - Scripts which perform simple tasks intended to be hotkeyed to improve workflow and reduce reliance on the mouse.</p>
             <ul>
