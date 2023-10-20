@@ -594,6 +594,11 @@ label.row {
 
 @media screen and (max-width: 640px) {
     .sShow{display:inherit;}
+
+    html {
+        /*font-size: 13px;*/
+        font-size: 81.25%;
+    }
 }
 
 @media screen and (min-width: 641px) {
