@@ -1,7 +1,7 @@
 ((dynCore) => {
     dynCore.when(dynCore.require([
         'lib.fragment'
-    ])).done((modules, fragment, scrollHandler) => {
+    ])).done((modules, fragment) => {
 
         var dayMillis = 24 * 60 * 60 * 1000;
         var vocaDbBaseUrl = 'https://vocadb.net/api/songs?start=0&getTotalCount=true&maxResults=1&songTypes=Original&artistId[]=';
@@ -10,6 +10,7 @@
             'An Xiao': 102955,
             'ANRI': 76270,
             'ASTERIAN': 111548,
+            'Ayame': 129002,
             'Cangqiong': 73875,
             'Cheng Xiao': 76105,
             'Chiyu': 72386,
@@ -17,11 +18,14 @@
             'D-Lin': 119025,
             'Eleanor Forte AI': 92247,
             'Eleanor Forte Standard (R1 & lite)': 66906,
+            'Eri': 125668,
             'Feng Yi': 76186,
             'Genbu': 70241,
             'Haiyi': 74324,
             'Hanakuma Chifuyu': 103592,
             'Haruno Sora': 121429,
+            'Hayden': 125666,
+            'Jin': 129003,
             'JUN': 116048,
             'Kasane Teto': 118397,
             'Kevin': 99147,
@@ -44,14 +48,18 @@
             'Natalie': 109075,
             'Natsuki Karin': 94959,
             'Ninezero': 115724,
+            'Oscar': 129384,
+            'POPY': 126705,
             'Qing Su': 76272,
             'Ritchy': 119026,
+            'ROSE': 126706,
             'Ryo': 99167,
             'Saki': {
                 'AI': 85852,
                 'Standard': 81917
             },
             'SAROS': 118795,
+            'Sheena': 125665,
             'Shian': 71416,
             'SOLARIA': 76317,
             'Stardust Infinity': 76283,
@@ -68,6 +76,7 @@
                 'Standard (English)': 85837
             },
             'Weina': 76161,
+            'Wei Shu': 125661,
             'Xia Yu Yao': 113812,
             'Xuan Yu': 76108,
             'Yamine Renri': 69286,
@@ -80,9 +89,13 @@
             'Hatsune Miku (all versions)': 1,
             'KAFU (CeVIO AI)': 83928,
             'Kasane Teto (UTAU)': 116,
+            'Kiyoteru (all versions)': 246,
+            'Luo Tianyi (all versions)': 1778,
             'Megpoid/GUMI (all versions)': 3,
+            'Oscar (UTAU)': 50238,
             'POPY (CeVIO AI)': 111837,
             'ROSE (CeVIO AI)': 111839,
+            'SF-A2 miki (all versions)': 146,
             'Xia Yu Yao (UTAU)': 27056,
             'Xingchen/Stardust (V4)': 35966
         };
@@ -173,7 +186,7 @@
             var fetched = localStorage.getItem('songCount.fetched');
 
             if (!aByCharacter || !aBySVD || !fetched) {
-                model.fetch(model);
+                model._set('stale', true);
                 return;
             }
 
@@ -183,13 +196,13 @@
                 model.aOther = JSON.parse(aOther);
                 fetched = new Date(fetched);
             } catch (e) {
-                model.fetch(model);
+                model._set('stale', true);
                 return;
             }
 
             var daysSinceCache = Math.round((new Date() - fetched) / dayMillis);
-            if (daysSinceCache > 3) {
-                model.fetch(model);
+            if (daysSinceCache > 1) {
+                model._set('stale', true);
             }
         };
 
@@ -202,6 +215,7 @@
 
                 fetch: function(model) {
                     var promises = fetchSongCounts().concat(fetchOtherSongCounts());
+                    model._set('fetching', true);
                     $.when.apply(this, promises).then(() => {
                         onFetchSuccess(model);
                         localStorage.setItem('songCount.byCharacter', JSON.stringify(model.aByCharacter));
@@ -211,7 +225,14 @@
                     }, () => {
                         console.log('Failed to fetch from VocaDB');
                         model._set('error', 'An error occurred while refreshing the song counts from VocaDB.');
+                    }).always(() => {
+                        model._set('fetching', false);
                     });
+                },
+
+                onFetch: function(model) {
+                    model._set('stale', false);
+                    model.fetch(model);
                 }
             },
 
