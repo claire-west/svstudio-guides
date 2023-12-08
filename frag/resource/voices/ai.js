@@ -7,8 +7,8 @@
         let model;
         function filterTable() {
             let $rows = $('#resource-voices-ai table tbody tr');
-            let tokens = [ model.selectedLanguage, ...model.search.split(',') ].filter(Boolean);
-            tokens.map(t => t.toLocaleLowerCase());
+            let tokens = [ model.selectedLanguage, ...model.search.split(',') ].filter(t => Boolean(t.trim()));
+            tokens = tokens.map(t => t.trim().toLocaleLowerCase());
             if (tokens.length) {
                 for (let i = 0; i < $rows.length; i++) {
                     let row = $rows.get(i);
