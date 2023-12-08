@@ -31,3 +31,18 @@
 #resource-eula tbody td[colspan] {
     padding-bottom: 0.5rem;
 }
+
+#resource-voices select {
+    display: inline-block;
+    appearance: auto;
+    width: auto;
+    flex-grow: 1;
+    margin-left: 0.5rem;
+}
+
+#resource-voices input {
+    height: 2.4375rem;
+    flex-grow: 1;
+    margin-left: 0.5rem;
+    padding: 0 0.5rem;
+}

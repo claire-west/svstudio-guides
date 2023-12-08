@@ -15,10 +15,8 @@
             'Chiyu': 72386,
             'Cong Zheng': 76109,
             'D-Lin': 119025,
-            'Eleanor Forte': {
-                'AI': 92247,
-                'Standard (R1 & lite)': 66906
-            },
+            'Eleanor Forte AI': 92247,
+            'Eleanor Forte Standard (R1 & lite)': 66906,
             'Feng Yi': 76186,
             'Genbu': 70241,
             'Haiyi': 74324,
@@ -76,11 +74,15 @@
             'Yuma': 109074,
             'Yun Quan': 120529
         };
+
         var otherVocaDbIds = {
             'Haruno Sora (VOCALOID5)': 67089,
             'Hatsune Miku (all versions)': 1,
             'KAFU (CeVIO AI)': 83928,
             'Kasane Teto (UTAU)': 116,
+            'Megpoid/GUMI (all versions)': 3,
+            'POPY (CeVIO AI)': 111837,
+            'ROSE (CeVIO AI)': 111839,
             'Xia Yu Yao (UTAU)': 27056,
             'Xingchen/Stardust (V4)': 35966
         };
