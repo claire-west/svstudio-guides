@@ -51,12 +51,14 @@
             <thead>
                 <tr>
                     <th>Vocal Synth</th>
+                    <th>Platform</th>
                     <th>Number of Songs</th>
                 </tr>
             </thead>
             <tbody z--iterate="aOther">
                 <tr z--template>
-                    <td z--bind=">name"></td>
+                    <td z--bind='{ "path": ">name", "fn": "getName" }'></td>
+                    <td z--bind='{ "path": ">name", "fn": "getPlatform" }'></td>
                     <td z--bind=">songCount" class="text-right"></td>
                 </tr>
             </tbody>

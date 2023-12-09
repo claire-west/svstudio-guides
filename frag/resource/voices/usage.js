@@ -86,19 +86,24 @@
 
         var otherVocaDbIds = {
             'flower (all versions)': 21165,
-            'Haruno Sora (VOCALOID5)': 67089,
+            'Haruno Sora (Vocaloid5)': 67089,
             'Hatsune Miku (all versions)': 1,
+            'KAITO (all versions)': 71,
             'KAFU (CeVIO AI)': 83928,
+            'Kagamine Len (all versions)': 15,
+            'Kagamine Rin (all versions)': 14,
             'Kasane Teto (UTAU)': 116,
             'Kiyoteru (all versions)': 246,
             'Luo Tianyi (all versions)': 1778,
+            'MEIKO (all versions)': 176,
             'Megpoid/GUMI (all versions)': 3,
+            'Megurine Luka (all versions)': 2,
             'Oscar (UTAU)': 50238,
             'POPY (CeVIO AI)': 111837,
             'ROSE (CeVIO AI)': 111839,
             'SF-A2 miki (all versions)': 146,
             'Xia Yu Yao (UTAU)': 27056,
-            'Xingchen/Stardust (V4)': 35966
+            'Xingchen/Stardust (Vocaloid4)': 35966
         };
 
         var songCountCompare = function(a, b) {
@@ -234,6 +239,14 @@
                 onFetch: function(model) {
                     model._set('stale', false);
                     model.fetch(model);
+                },
+
+                getName: function(name) {
+                    return name ? name.split('(')[0].trim() : '';
+                },
+
+                getPlatform: function(name) {
+                    return name ? name.split('(')[1].slice(0, -1).trim() : '';
                 }
             },
 
