@@ -50,13 +50,6 @@
                 video: 'EKOSQGKn5Cw',
                 mviews: 4.3
             },
-            // {
-            //     title: 'Uncanny',
-            //     artist: 'GHOST',
-            //     vocals: 'Kevin',
-            //     video: 'qK62up6otZU',
-            //     mviews: 0.9
-            // },
             {
                 title: 'It Should\'ve Been Me',
                 artist: 'R.I.P',
@@ -70,7 +63,21 @@
                 vocals: 'Tsurumaki Maki',
                 video: 'gmEqkdl4wEA',
                 mviews: 3.6
-            }
+            },
+            // {
+            //     title: 'Uncanny',
+            //     artist: 'GHOST',
+            //     vocals: 'Kevin',
+            //     video: 'qK62up6otZU',
+            //     mviews: 0.9
+            // },
+            // {
+            //     title: 'ATARAXIA',
+            //     artist: 'Patterns',
+            //     vocals: 'Eleanor Forte',
+            //     video: 'bUh2W3jjapA',
+            //     mviews: 0.9
+            // }
             // {
             //     title: '',
             //     artist: '',
@@ -154,7 +161,7 @@
             {
                 title: 'ずんだもんの朝食 (Zundamon\'s Breakfast)',
                 artist: 'Hiraumi',
-                vocals: 'Koharu Rikka, Zundamon (UTAU)',
+                vocals: 'Koharu Rikka, Zundamon (Voicevox)',
                 video: 'YTn37zK4Hck',
                 mviews: 2.5
             },
@@ -164,6 +171,27 @@
                 vocals: 'AiKO',
                 video: 'SrGCmZqjz7o',
                 mviews: 1.2
+            },
+            {
+                title: 'Liar Dancer',
+                artist: 'Masarada',
+                vocals: 'Kasane Teto',
+                video: 'UHbmkxv-874',
+                mviews: 1.9
+            },
+            {
+                title: 'のだ (The Reason Is)',
+                artist: 'Daibakuhashin',
+                vocals: 'Kasane Teto, Hatsune Miku (Vocaloid), Zundamon (Neutrino)',
+                video: 'vY8iwpN3GXQ',
+                mviews: 2.8
+            },
+            {
+                title: 'あいのうた (Song of "AI")',
+                artist: 'Daibakuhashin',
+                vocals: 'Kasane Teto, Hatsune Miku (Vocaloid)',
+                video: 'LyZk53_5GwM',
+                mviews: 1.5
             }
             // {
             //     title: '',
@@ -209,7 +237,7 @@
             {
                 title: 'Talking to the Rain',
                 artist: 'Da Huntun',
-                vocals: 'Haiyi, Xingchen (Vocaloid4)',
+                vocals: 'Haiyi, Xingchen (Vocaloid)',
                 video: 'av85509041',
                 mviews: 1.0
             },
