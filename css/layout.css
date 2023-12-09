@@ -127,6 +127,12 @@ table.collapse tr td {
     padding: 0.75rem 0.5rem;
 }
 
+table.collapse.collapse-narrow tr th,
+table.collapse.collapse-narrow tr td {
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+}
+
 table.collapse tr th:first-child,
 table.collapse tr td:first-child {
     padding-left: 0.75rem;
@@ -136,7 +142,8 @@ table.collapse tr td:last-child {
     padding-right: 0.75rem;
 }
 
-table.collapse tbody tr:nth-child(odd) {
+table.collapse tbody tr:nth-child(odd),
+table.odd-row-shading tbody tr:nth-child(odd) {
     background: hsla(0,0%,0%,0.15);
 }
 
@@ -442,6 +449,11 @@ label.row {
     align-items: baseline;
 }
 
+.flex-v {
+    display: flex;
+    flex-direction: column;
+}
+
 .flex-right {
     margin-left: auto;
 }
@@ -468,6 +480,15 @@ label.row {
 
 .margin-bottom-0 {
     margin-bottom: 0;
+}
+
+.margin-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.width-100 {
+    width: 100%;
 }
 
 /* medium format */

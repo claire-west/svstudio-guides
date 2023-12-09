@@ -1,0 +1,101 @@
+<div z--controller>
+    <div class="col">
+        <p>This is a list of top songs created with Synthesizer V. For a song to be present in this list it must have exceeded 1 million views on YouTube or Bilibili. Non-SynthV vocals are not listed.</p>
+    </div>
+    <div class="col">
+        <h4 class="text-center">English</h4>
+        <table class="width-100">
+            <thead>
+                <tr>
+                    <th>Song</th>
+                    <th></th>
+                    <th>Artist</th>
+                    <th>Vocals</th>
+                    <th>Views</th>
+                </tr>
+            </thead>
+            <tbody z--iterate="youtubeEn">
+                <tr z--template>
+                    <td>
+                        <span z--bind=">title"></span>
+                        <a class="super" z--bind='{ "path": ">video", "fn": "getYouTubeHref" }' target="_blank"><i class="bi bi-box-arrow-up-right" title="View on YouTube"></i></a>
+                    </td>
+                    <td class="text-center"><i class="bi bi-play-btn" z--click='{ "path": "showYouTubeEmbed", "args": [ ">/" ] }' title="Watch Video"></i></td>
+                    <td z--bind=">artist"></td>
+                    <td z--bind=">vocals"></td>
+                    <td class="text-right"><span z--bind=">mviews"></span>M+</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col">
+        <h4 class="text-center">Other Languages</h4>
+        <table class="width-100">
+            <thead>
+                <tr>
+                    <th>Song</th>
+                    <th></th>
+                    <th>Artist</th>
+                    <th>Vocals</th>
+                    <th>Views</th>
+                </tr>
+            </thead>
+            <tbody z--iterate="youtubeOther">
+                <tr z--template>
+                    <td>
+                        <span z--bind=">title"></span>
+                        <a class="super" z--bind='{ "path": ">video", "fn": "getYouTubeHref" }' target="_blank"><i class="bi bi-box-arrow-up-right" title="View on YouTube"></i></a>
+                    </td>
+                    <td class="text-center"><i class="bi bi-play-btn" z--click='{ "path": "showYouTubeEmbed", "args": [ ">/" ] }' title="Watch Video"></i></td>
+                    <td z--bind=">artist"></td>
+                    <td z--bind=">vocals"></td>
+                    <td class="text-right"><span z--bind=">mviews"></span>M+</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- <div class="col">
+        <h4 class="text-center">Niconico</h4>
+        <table class="width-100">
+            <thead>
+                <tr>
+                    <th>Views</th>
+                    <th>Song</th>
+                    <th>Artist</th>
+                    <th>Vocals</th>
+                </tr>
+            </thead>
+            <tbody z--iterate="niconico">
+                <tr z--template>
+
+                </tr>
+            </tbody>
+        </table>
+    </div> -->
+    <div class="col">
+        <h4 class="text-center">Bilibili</h4>
+        <table class="width-100">
+            <thead>
+                <tr>
+                    <th>Song</th>
+                    <th></th>
+                    <th>Artist</th>
+                    <th>Vocals</th>
+                    <th>Views</th>
+                </tr>
+            </thead>
+            <tbody z--iterate="bilibili">
+                <tr z--template>
+                    <td>
+                        <span z--bind=">title"></span>
+                        <a class="super" z--bind='{ "path": ">video", "fn": "getBilibiliHref" }' target="_blank"><i class="bi bi-box-arrow-up-right" title="View on Bilibili"></i></a>
+                    </td>
+                    <td class="text-center"><i class="bi bi-play-btn" z--click='{ "path": "showBilibiliEmbed", "args": [ ">/" ] }' title="Watch Video"></i></td>
+                    <td z--bind=">artist"></td>
+                    <td z--bind=">vocals"></td>
+                    <td class="text-right"><span z--bind=">mviews"></span>M+</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

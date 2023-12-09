@@ -202,7 +202,7 @@
             }
 
             var daysSinceCache = Math.round((new Date() - fetched) / dayMillis);
-            if (daysSinceCache > 1) {
+            if (daysSinceCache > 2) {
                 model._set('stale', true);
             }
         };

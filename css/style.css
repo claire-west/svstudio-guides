@@ -189,6 +189,15 @@ body.light .top-bar a:hover {
     display: none;
 }
 
+.super {
+    font-size: smaller;
+    line-height: 0;
+    vertical-align: super;
+}
+.super i {
+    font-size: inherit;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
