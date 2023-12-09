@@ -4,19 +4,22 @@
         'app.globalModel'
     ])).done((modules, fragment, globalModel) => {
 
-        function addSrc(iframe) {
-            console.warn(iframe);
-            iframe.src = '//player.bilibili.com/player.html?bvid=' + iframe.attributes.video.value + '&p=1&autoplay=0';
+        function addSrc(iframe, video) {
+            iframe.src = '//player.bilibili.com/player.html?bvid=' + video + '&p=1&autoplay=0';
         };
 
         fragment.controller('frag.embed.bilibili', {
             onInit: function() {
-                let iframe = this.$fragment.get(0);
-                if (iframe.attributes.lazy) {
-                    globalModel.lazyElements.set(iframe, addSrc.bind(this, iframe));
-                    iframe.removeAttribute('lazy');
+                let container = this.$fragment.get(0);
+                let iframe = container.firstElementChild;
+                let video = container.attributes.video.value;
+                container.removeAttribute('video');
+
+                if (container.attributes.lazy) {
+                    globalModel.lazyElements.set(iframe, addSrc.bind(this, iframe, video));
+                    container.removeAttribute('lazy');
                 } else {
-                    addSrc(iframe);
+                    addSrc(iframe, video);
                 }
             }
         });
