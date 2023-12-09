@@ -32,6 +32,14 @@
     padding-bottom: 0.5rem;
 }
 
+#resource-voices table i.bi-info-circle {
+    padding: 0.25rem;
+    cursor: pointer;
+}
+#resource-voices table i.bi-info-circle:hover {
+    color: #85BC38;
+}
+
 #resource-voices select {
     display: inline-block;
     appearance: auto;

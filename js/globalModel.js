@@ -52,7 +52,7 @@
                 $fragment.show();
                 $('body').addClass('noscroll');
                 $('.modal').show().find('.dialog').scrollTop(0);
-                promise.resolve();
+                promise.resolve($fragment);
             });
             return promise;
         });
@@ -79,6 +79,8 @@
             }
             return '';
         });
+
+        globalModel._set('lazyElements', new Map());
 
         return globalModel;
     });

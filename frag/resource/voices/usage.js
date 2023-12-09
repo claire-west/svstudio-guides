@@ -85,6 +85,7 @@
         };
 
         var otherVocaDbIds = {
+            'flower (all versions)': 21165,
             'Haruno Sora (VOCALOID5)': 67089,
             'Hatsune Miku (all versions)': 1,
             'KAFU (CeVIO AI)': 83928,

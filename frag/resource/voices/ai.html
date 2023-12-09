@@ -4,8 +4,8 @@
     <ul>
         <li><b>Primary Language</b> - The language of the original recordings used to train the AI models. Using cross-lingual synthesis to sing in other languages may result in an accent or loss of clarity. If a voice database is marketed as bilingual, both languages are listed, with the voice provider's native language indicated.</li>
         <li><b>Type</b> - Whether a voice is intended to be feminine, masculine, or androgynous, as well as any genres, keywords, or descriptors that are specified by the developer.</li>
-        <li><b>Range</b> - The optimal range for the voice, as specified by the developer. Working outside this range may result in lower quality results.</li>
         <li><b>Vocal Modes</b> - The vocal modes available to Pro edition users, which can be used to bias the AI engine toward certain behaviors.</li>
+        <li><b>Info <i class="bi bi-info-circle"></i></b> - Additional information about the voice database, such as the optimal range as specified by the developer, demo links, the voice provider, etc.</li>
     </ul>
 </div>
 <div class="col m6 flex">
@@ -33,357 +33,799 @@
                 <th>Product</th>
                 <th>Primary Language</th>
                 <th>Type</th>
-                <th>Range</th>
                 <th>Vocal Modes</th>
+                <th></th>
                 <th>Purchase</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <tr data-voice="anxiao">
                 <td>An Xiao (岸晓)</td>
                 <td>Mandarin Chinese</td>
                 <td>Masculine, full, bright, passionate</td>
-                <td>Tenor/baritone</td>
+                <!-- <td>Tenor/baritone</td> -->
                 <td>Airy, Chest, Open, Power, Soft</td>
-                <td><a href="https://store.dreamtonics.com/product/an-xiao-voice-database/">Dreamtonics</a>, <a href="https://www.ah-soft.com/synth-v/dreamtonics/index.html#cart">AHS</a></td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
+                <td><a href="https://store.dreamtonics.com/product/an-xiao-voice-database/">Dreamtonics</a>, <a href="https://www.ah-soft.com/synth-v/dreamtonics/index.html#cart">AHS</a>, <a href="https://www.dlsite.com/soft/work/=/product_id/VJ01000440.html">DLsite</a></td>
             </tr>
             <tr>
                 <td>ANRI</td>
                 <td>American English</td>
                 <td>Feminine, feathery, sweet</td>
-                <td></td>
                 <td>Charm, Chill, Emotive, Light</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td>Discontinued; succeeded by ANRI Arcane</td>
             </tr>
-            <tr>
+            <tr data-voice="anriarcane">
                 <td>ANRI Arcane</td>
                 <td>American English</td>
                 <td>Feminine, bright, versatile, R&B, pop, rock, ballad</td>
-                <td>A3-F#5</td>
+                <!-- <td>A3-F#5</td> -->
                 <td>Dark, Edge, Flow, Mellow, Power, Princess, Serious, Smokey, Sumire, Vivid, Whisper</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://audiologie.us/products/synthesizer-v-ai-anri-digital">Audiologie</a> (releases Dec 11, 2023)</td>
             </tr>
-            <tr>
+            <tr data-voice="asterian">
                 <td>ASTERIAN</td>
                 <td>American English</td>
                 <td>Masculine, bass, emotive, versatile</td>
-                <td>E2-D4 (main), G4-C5 (falsetto)</td>
+                <!-- <td>E2-D4 (main), G4-C5 (falsetto)</td> -->
                 <td>Clear, Warm, Gentle, Strained, Rough, Open, Closed, Passionate, Theatrical</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://www.eclipsedsounds.com/product-page/asterian-synthesizer-v-ai-voice-database-digital-download">Eclipsed Sounds</a>, <a href="https://store.dreamtonics.com/product/asterian-voice-database/">Dreamtonics</a></td>
             </tr>
-            <tr>
-                <td>Ayame</td>
+            <tr data-voice="ayame">
+                <td>Ayame (アヤメ)</td>
                 <td>Japanese</td>
                 <td>Feminine, mild, lustrous</td>
-                <td></td>
                 <td>Soft, Mellow, Sweet, Powerful</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://store.dreamtonics.com/product/ayame-voice-database/">Dreamtonics</a>, <a href="https://www.ah-soft.com/synth-v/dreamtonics/index.html#cart">AHS</a></td>
             </tr>
-            <tr>
+            <tr data-voice="chengxiao">
                 <td>Cheng Xiao (澄宵)</td>
                 <td>Mandarin Chinese</td>
                 <td>Feminine, Peking opera (specialized voice)</td>
-                <td></td>
                 <td>Open, Closed, Resonant</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://store.dreamtonics.com/product/cheng-xiao-voice-database/">Dreamtonics</a>, <a href="https://item.taobao.com/item.htm?id=697191131532">Taobao</a></td>
             </tr>
-            <tr>
+            <tr data-voice="congzheng">
                 <td>Cong Zheng (从铮)</td>
                 <td>Mandarin Chinese</td>
                 <td>Feminine, rock, bold, emotive, powerful</td>
-                <td>Soprano</td>
+                <!-- <td>Soprano</td> -->
                 <td>Gentle, Closed, Vivid, Soft, Solid, Powerful</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://store.dreamtonics.com/product/cong-zheng-voice-database/">Dreamtonics</a></td>
             </tr>
-            <tr>
+            <tr data-voice="dlin">
                 <td>D-Lin</td>
                 <td>Mandarin Chinese</td>
                 <td>Rap, masculine, mid-range, fast-paced</td>
-                <td></td>
                 <td>HighTone, MidTone, LowTone, Singing</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://store.dreamtonics.com/product/d-lin-voice-database/">Dreamtonics</a></td>
             </tr>
-            <tr>
+            <tr data-voice="eleanor">
                 <td>Eleanor Forte</td>
                 <td>American English</td>
                 <td>Feminine</td>
-                <td></td>
                 <td>Melancholic, Solid, Warm, Powerful, Dark, Clear, Tender, Bold</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://www.anicute.com/product/47513f0f-b93d-4a3f-a3e2-904eb247824d">ANiCUTE</a></td>
             </tr>
-            <tr>
-                <td>Eri</td>
+            <tr data-voice="eri">
+                <td>Eri (エリ)</td>
                 <td>Japanese</td>
                 <td>Rap, feminine, breathy, velvety</td>
-                <td></td>
                 <td>Relaxed, Aggressive, Focused, Singing</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://store.dreamtonics.com/product/eri-voice-database/">Dreamtonics</a>, <a href="https://www.ah-soft.com/synth-v/dreamtonics/index.html#cart">AHS</a></td>
             </tr>
-            <tr>
+            <tr data-voice="fengyi">
                 <td>Feng Yi (沨漪)</td>
                 <td>Mandarin Chinese</td>
                 <td>Feminine, expressive, versatile</td>
-                <td>Mezzo-soprano</td>
+                <!-- <td>Mezzo-soprano</td> -->
                 <td>Chest, Power, Open, Opera, Soft, Airy</td>
-                <td><a href="https://store.dreamtonics.com/product/fengyi-voice-database/">Dreamtonics</a>, <a href="https://www.ah-soft.com/synth-v/dreamtonics/index.html#cart">AHS</a></td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
+                <td><a href="https://store.dreamtonics.com/product/fengyi-voice-database/">Dreamtonics</a>, <a href="https://www.ah-soft.com/synth-v/dreamtonics/index.html#cart">AHS</a>, <a href="https://www.dlsite.com/soft/work/=/product_id/VJ01000439.html">DLsite</a></td>
             </tr>
-            <tr>
+            <tr data-voice="chifuyu">
                 <td>Hanakuma Chifuyu (花隈千冬)</td>
                 <td>Japanese</td>
                 <td>Feminine, low, breathy</td>
-                <td>F3-G5</td>
+                <!-- <td>F3-G5</td> -->
                 <td>Kawaii, Soft, Rock, Adult, Piano_Ballade</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://www.ah-soft.com/synth-v/chifuyu/index.html#cart">AHS</a>, <a href="https://www.dlsite.com/soft/work/=/product_id/VJ015663.html">DLsite</a></td>
             </tr>
-            <tr>
+            <tr data-voice="sora">
                 <td>Haruno Sora (桜乃そら)</td>
                 <td>Japanese</td>
                 <td>Feminine, rich, gentle, cool</td>
-                <td>C3-E5</td>
+                <!-- <td>C3-E5</td> -->
                 <td>Sweet, Soft, Adult, Pop, Cool</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://www.ah-soft.com/synth-v/sora/#cart">AHS</a>, <a href="https://www.dlsite.com/soft/work/=/product_id/VJ01000763.html">DLsite</a></td>
             </tr>
-            <tr>
+            <tr data-voice="hayden">
                 <td>Hayden</td>
                 <td>English (accent not specified)</td>
                 <td>Masculine, crisp, melancholic, early-2000s pop, alt-punk anthem</td>
-                <td></td>
                 <td>Clear, Heavy, Soft, and Powerful</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://store.dreamtonics.com/product/hayden-voice-database/">Dreamtonics</a>, <a href="https://www.ah-soft.com/synth-v/dreamtonics/index.html#cart">AHS</a></td>
             </tr>
-            <tr>
-                <td>Jin</td>
+            <tr data-voice="jin">
+                <td>Jin (ジン)</td>
                 <td>Japanese</td>
                 <td>Masculine, soulful, powerful, gritty, bright</td>
-                <td></td>
                 <td>Airy, Gentle, Resonant, Belt, Powerful</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://store.dreamtonics.com/product/jin-voice-database/">Dreamtonics</a>, <a href="https://www.ah-soft.com/synth-v/dreamtonics/index.html#cart">AHS</a></td>
             </tr>
-            <tr>
+            <tr data-voice="jun">
                 <td>JUN</td>
                 <td>American English</td>
                 <td>Masculine, powerful, bright, flexible</td>
-                <td>B2-A4</td>
+                <!-- <td>B2-A4</td> -->
                 <td>Dark, Chest, Soul, Power, Light, Soft, Tsubaki</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://audiologie.us/products/synthesizer-v-ai-jun-voice-database-english-digital-download">Audiologie</a></td>
             </tr>
-            <tr>
+            <tr data-voice="teto">
                 <td>Kasane Teto (重音テト)</td>
                 <td>Japanese</td>
                 <td>Feminine, ageless, straightforward, versatile</td>
-                <td>D3-G5</td>
+                <!-- <td>D3-G5</td> -->
                 <td>Joyful, Cute, Power, Mellow</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://www.ah-soft.com/synth-v/teto/#cart">AHS</a>, <a href="https://www.dlsite.com/soft/work/=/product_id/VJ01000376.html">DLsite</a></td>
             </tr>
-            <tr>
+            <tr data-voice="kevin">
                 <td>Kevin</td>
                 <td>American English</td>
                 <td>Masculine, rock, EDM, clear</td>
-                <td></td>
                 <td>Belt, Clear, Soft, Solid</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://store.dreamtonics.com/product/vdb-kevin/">Dreamtonics</a>, <a href="https://www.ah-soft.com/synth-v/dreamtonics/index.html#cart">AHS</a>, <a href="https://www.dlsite.com/soft/work/=/product_id/VJ015171.html">DLsite</a></td>
             </tr>
-            <tr>
+            <tr data-voice="rikka">
                 <td>Koharu Rikka (小春六花)</td>
                 <td>Japanese</td>
                 <td>Feminine, bright, cheerful</td>
-                <td>G3-F#5</td>
+                <!-- <td>G3-F#5</td> -->
                 <td>Kawaii, Soft, Pops, Emotional, Ballade</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://www.ah-soft.com/synth-v/rikka/index.html#cart">AHS</a>, <a href="https://www.dlsite.com/soft/work/=/product_id/VJ014356.html">DLsite</a></td>
             </tr>
-            <tr>
+            <tr data-voice="seika">
                 <td>Kyomachi Seika (京町セイカ)</td>
                 <td>Japanese</td>
                 <td>Feminine, full, straightforward, candid</td>
-                <td>B3-D5</td>
+                <!-- <td>B3-D5</td> -->
                 <td>Breathy, Bright, Straight, Tight</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://www.ah-soft.com/synth-v/seika/index.html#cart">AHS</a>, <a href="https://www.dlsite.com/soft/work/=/product_id/VJ015078.html">DLsite</a></td>
             </tr>
-            <tr>
+            <tr data-voice="linlai">
                 <td>Lin Lai (林籁)</td>
                 <td>Mandarin Chinese</td>
                 <td>Child, youthful, brave, confident</td>
-                <td></td>
                 <td>Gentle, Unadorned, Lively, Bright</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://store.dreamtonics.com/product/lin-lai-voice-database/">Dreamtonics</a>, <a href="https://item.taobao.com/item.htm?id=724435871648">Taobao</a></td>
             </tr>
-            <tr>
+            <tr data-voice="mai">
                 <td>Mai</td>
                 <td>Japanese</td>
                 <td>Feminine, J-Pop, dance, idol</td>
-                <td></td>
                 <td>Emotional, Soft</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://resource.dreamtonics.com/download/English/Voice%20Databases/Free%20Voice%20Databases%20for%20Synthesizer%20V%20Studio%20Pro/">Dreamtonics</a> (free with Pro)</td>
             </tr>
-            <tr>
+            <tr data-voice="mochen">
                 <td>Mo Chen (默辰)</td>
                 <td>Mandarin Chinese</td>
                 <td>Masculine, C-Pop, folk, blues</td>
-                <td>Baritone</td>
+                <!-- <td>Baritone</td> -->
                 <td>Open, Soft, Clear</td>
-                <td><a href="https://store.dreamtonics.com/product/mo-chen-voice-database/">Dreamtonics</a>, <a href="https://www.ah-soft.com/synth-v/dreamtonics/index.html#cart">AHS</a></td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
+                <td><a href="https://store.dreamtonics.com/product/mo-chen-voice-database/">Dreamtonics</a>, <a href="https://www.ah-soft.com/synth-v/dreamtonics/index.html#cart">AHS</a>, <a href="https://www.dlsite.com/soft/work/=/product_id/VJ01000437.html">DLsite</a></td>
             </tr>
-            <tr>
+            <tr data-voice="natalie">
                 <td>Natalie</td>
                 <td>American English</td>
                 <td>Feminine, soft, clear, rich, expressive, EDM</td>
-                <td></td>
                 <td>Soft, Soulful, Steady, Bold, Warm</td>
-                <td><a href="https://store.dreamtonics.com/product/vdb-natalie/">Dreamtonics</a>, <a href="https://www.ah-soft.com/synth-v/dreamtonics/index.html#cart">AHS</a></td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
+                <td><a href="https://store.dreamtonics.com/product/vdb-natalie/">Dreamtonics</a>, <a href="https://www.ah-soft.com/synth-v/dreamtonics/index.html#cart">AHS</a>, <a href="https://www.dlsite.com/soft/work/=/product_id/VJ01000442.html">DLsite</a></td>
             </tr>
-            <tr>
+            <tr data-voice="karin">
                 <td>Natsuki Karin (夏色花梨)</td>
                 <td>Japanese</td>
                 <td>Feminine, high, wide range</td>
-                <td>G3-C6</td>
+                <!-- <td>G3-C6</td> -->
                 <td>Kawaii, Soft, Cool, Happy, Falsetto</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://www.ah-soft.com/synth-v/karin/index.html#cart">AHS</a>, <a href="https://www.dlsite.com/soft/work/=/product_id/VJ015246.html">DLsite</a></td>
             </tr>
-            <tr>
+            <tr data-voice="ninezero">
                 <td>Ninezero</td>
                 <td>Australian English</td>
                 <td>Masculine, hard rock/metal, deep growl, soaring high tone, breathy release</td>
-                <td></td>
                 <td>Solid, Overdrive, Muted</td>
-                <td><a href="https://store.dreamtonics.com/product/ninezero-voice-database/">Dreamtonics</a>, <a href="https://www.ah-soft.com/synth-v/dreamtonics/index.html#cart">AHS</a></td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
+                <td><a href="https://store.dreamtonics.com/product/ninezero-voice-database/">Dreamtonics</a>, <a href="https://www.ah-soft.com/synth-v/dreamtonics/index.html#cart">AHS</a>, <a href="https://www.dlsite.com/soft/work/=/product_id/VJ01000443.html">DLsite</a></td>
             </tr>
-            <tr>
+            <tr data-voice="qingsu">
                 <td>Qing Su (青溯)</td>
                 <td>Mandarin Chinese</td>
                 <td>Feminine, C-Pop</td>
-                <td></td>
                 <td>Airy, Chest, Power, Soft, Sweet</td>
-                <td><a href="https://store.dreamtonics.com/product/vdb-qingsu/">Dreamtonics</a>, <a href="https://www.ah-soft.com/synth-v/dreamtonics/index.html#cart">AHS</a></td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
+                <td><a href="https://store.dreamtonics.com/product/vdb-qingsu/">Dreamtonics</a>, <a href="https://www.ah-soft.com/synth-v/dreamtonics/index.html#cart">AHS</a>, <a href="https://www.dlsite.com/soft/work/=/product_id/VJ01000438.html">DLsite</a></td>
             </tr>
-            <tr>
+            <tr data-voice="ritchy">
                 <td>Ritchy</td>
                 <td>English</td>
                 <td>Rap, masculine, hip-hop, calm, impactful</td>
-                <td></td>
                 <td>HighTone, MidTone, LowTone, Singing</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://store.dreamtonics.com/product/ritchy-voice-database/">Dreamtonics</a></td>
             </tr>
-            <tr>
+            <tr data-voice="ryo">
                 <td>Ryo (リョウ)</td>
                 <td>Japanese</td>
                 <td>Masculine, J-Pop</td>
-                <td>Tenor</td>
+                <!-- <td>Tenor</td> -->
                 <td>Open, Soft, Airy, Clear, Nasal, Resonant</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://store.dreamtonics.com/product/vdb-ryo/">Dreamtonics</a>, <a href="https://www.ah-soft.com/synth-v/dreamtonics/index.html#cart">AHS</a>, <a href="https://www.dlsite.com/soft/work/=/product_id/VJ015170.html">DLsite</a></td>
             </tr>
-            <tr>
+            <tr data-voice="saki">
                 <td>Saki (サキ)</td>
                 <td>Japanese</td>
                 <td>Feminine, versatile</td>
-                <td></td>
                 <td>Chest, Airy, Open, Soft</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://store.dreamtonics.com/product/vdb-saki/">Dreamtonics</a>, <a href="https://www.ah-soft.com/synth-v/dreamtonics/index.html#cart">AHS</a>, <a href="https://www.dlsite.com/soft/work/=/product_id/VJ014529.html">DLsite</a>, <a href="https://www.anicute.com/products/2a0c3368-e994-47a4-a775-5e2af7259142">ANiCUTE</a></td>
             </tr>
-            <tr>
+            <tr data-voice="saros">
                 <td>SAROS</td>
                 <td>American English (native) & Spanish</td>
                 <td>Dynamic, versatile, glam rock, ballad, atmospheric, bilingual</td>
-                <td>Tenor (B2-C5)</td>
+                <!-- <td>Tenor (B2-C5)</td> -->
                 <td>Passionate, Power, Bright, Dark, Falsetto, Full, Soft, Gentle, Feminine, Resounding</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://www.eclipsedsounds.com/saros">Eclipsed Sounds</a></td>
             </tr>
-            <tr>
-                <td>Sheena</td>
+            <tr data-voice="sheena">
+                <td>Sheena (シーナ)</td>
                 <td>Japanese (native) & English</td>
                 <td>Feminine, mature, melancholic, R&B, soul, blues, bilingual</td>
-                <td></td>
                 <td>Soft, Clear, Chest, Tense</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://store.dreamtonics.com/product/sheena-voice-database/">Dreamtonics</a>, <a href="https://www.ah-soft.com/synth-v/dreamtonics/index.html#cart">AHS</a></td>
             </tr>
-            <tr>
+            <tr data-voice="solaria">
                 <td>SOLARIA</td>
                 <td>American English</td>
                 <td>Feminine, warm, powerful, clear, versatile</td>
-                <td>E3-G5</td>
+                <!-- <td>E3-G5</td> -->
                 <td>Clear, Soft, Airy, Power, Passionate, Solid, Light</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://www.eclipsedsounds.com/product-page/solaria-synthesizer-v-ai">Eclipsed Sounds</a>, <a href="https://store.dreamtonics.com/product/solaria-voice-database/">Dreamtonics</a>, <a href="https://item.taobao.com/item.htm?id=689937565236">Taobao</a></td>
             </tr>
-            <tr>
+            <tr data-voice="stardust">
                 <td>Stardust Infinity (Xingchen/星尘)</td>
                 <td>Mandarin Chinese</td>
                 <td>Feminine, firm, confident</td>
-                <td></td>
                 <td>Airy, Bright, Cool, Dark, Emotional, Power, Solid, Sweet</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://item.taobao.com/item.htm?id=675192462436">Taobao</a>, <a href="https://parcelup.com/shop/item.php?id=675192462436">ParcelUp</a> (Taobao proxy)</td>
             </tr>
-            <tr>
+            <tr data-voice="tsuina">
                 <td>Tsuina-chan (ついなちゃん)</td>
                 <td>Japanese</td>
                 <td>Feminine, fluffy, crisp, husky</td>
-                <td>B3-C5</td>
+                <!-- <td>B3-C5</td> -->
                 <td>Attacky, Breathy, Crispy, Soft</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://www.ah-soft.com/synth-v/tsuina/index.html#cart">AHS</a>, <a href="https://www.dlsite.com/soft/work/=/product_id/VJ014902.html">DLsite</a></td>
             </tr>
-            <tr>
+            <tr data-voice="maki-jp">
                 <td>Tsurumaki Maki (弦巻マキ)</td>
                 <td>Japanese</td>
                 <td>Feminine, crisp, energetic, cute, bright</td>
-                <td>A3-D#5</td>
+                <!-- <td>A3-D#5</td> -->
                 <td>Adult, Breathy, Power Pop, Twangy, Whisper</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://www.ah-soft.com/synth-v/maki/index.html#cart">AHS</a>, <a href="https://www.dlsite.com/soft/work/=/product_id/VJ014523.html">DLsite</a></td>
             </tr>
-            <tr>
+            <tr data-voice="maki-en">
                 <td>Tsurumaki Maki (弦巻マキ)</td>
                 <td>English (Japanese accent)</td>
                 <td>Feminine, crisp, energetic, cute, bright</td>
-                <td>G#3-E5</td>
+                <!-- <td>G#3-E5</td> -->
                 <td>Adult, Breathy, Power Pop, Twangy, Whisper</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://www.ah-soft.com/synth-v/maki/english.html#cart">AHS</a>, <a href="https://www.dlsite.com/soft/work/=/product_id/VJ014525.html">DLsite</a></td>
             </tr>
-            <tr>
+            <tr data-voice="weina">
                 <td>Weina</td>
                 <td>Mandarin Chinese (native) & English</td>
                 <td>Feminine, powerful, rich, bilingual</td>
-                <td>Mezzo-soprano</td>
+                <!-- <td>Mezzo-soprano</td> -->
                 <td>Delicate, Tender, Lucid, Firm, Powerful, Resonant</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://store.dreamtonics.com/product/weina-voice-database/">Dreamtonics</a></td>
             </tr>
-            <tr>
+            <tr data-voice="weishu">
                 <td>Wei Shu (未抒)</td>
                 <td>Cantonese Chinese</td>
                 <td>Masculine, soft, ballad, electro-pop</td>
-                <td></td>
                 <td>Soft, Bright, Powerful, Subdued</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://store.dreamtonics.com/product/wei-shu-voice-database/">Dreamtonics</a></td>
             </tr>
-            <tr>
+            <tr data-voice="yao">
                 <td>Xia Yu Yao 《遙YAO》</td>
                 <td>Mandarin Chinese</td>
                 <td>Feminine, gentle, confident</td>
-                <td>D3~G4</td>
+                <!-- <td>D3~G4</td> -->
                 <td>Sweet, Solid, Whisper, Dark, Soft</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://www.voicemith.com/yaoaivoicebank/">Voicemith</a></td>
             </tr>
-            <tr>
+            <tr data-voice="xuanyu">
                 <td>Xuan Yu (煊宇)</td>
                 <td>Mandarin Chinese</td>
                 <td>Masculine, rock, mature, powerful</td>
-                <td></td>
                 <td>Soft, Light, Passionate, Solid, Open</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://store.dreamtonics.com/product/xuan-yu-voice-database/">Dreamtonics</a></td>
             </tr>
-            <tr>
+            <tr data-voice="yuma">
                 <td>Yuma (ユウマ)</td>
                 <td>Japanese</td>
                 <td>Masculine, androgynous, young, clear, bright</td>
-                <td></td>
                 <td>Gentle, Airy, Powerful, Solid</td>
-                <td><a href="https://store.dreamtonics.com/product/vdb-yuma/">Dreamtonics</a>, <a href="https://www.ah-soft.com/synth-v/dreamtonics/index.html#cart">AHS</a></td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
+                <td><a href="https://store.dreamtonics.com/product/vdb-yuma/">Dreamtonics</a>, <a href="https://www.ah-soft.com/synth-v/dreamtonics/index.html#cart">AHS</a>, <a href="https://www.dlsite.com/soft/work/=/product_id/VJ01000441.html">DLsite</a></td>
             </tr>
-            <tr>
+            <tr data-voice="yunquan">
                 <td>Yun Quan (韵泉)</td>
                 <td>Mandarin Chinese</td>
                 <td>Child, energetic, gentle, bright</td>
-                <td></td>
                 <td>Gentle, Unadorned, Lively, Bright</td>
+                <td class="text-center"><z--frag-resource-voices-infobutton /></td>
                 <td><a href="https://store.dreamtonics.com/product/yun-quan-voice-database/">Dreamtonics</a>, <a href="https://item.taobao.com/item.htm?id=724256618063">Taobao</a></td>
             </tr>
         </tbody>
     </table>
+</div>
+<div id="resource-voices-ai-info" class="col" hidden>
+
+    <!-- DREAMTONICS -->
+
+    <div data-voice="anxiao">
+        <h3 class="text-center">An Xiao (岸晓)</h3>
+        <p><b>Range</b>: <span searchable>Tenor/baritone</span></p>
+        <p><b>Voice provider</b>: Unknown</p>
+        <p><b>Release</b>: May 4, 2022</p>
+        <z--frag-resource-voices-links wiki="An_Xiao" vocadb="102955" eula="dreamtonics" />
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="RLMrx2WJIOQ" lazy />
+    </div>
+    <div data-voice="ayame">
+        <h3 class="text-center">Ayame (アヤメ)</h3>
+        <p><b>Range</b>: Unspecified</p>
+        <p><b>Voice provider</b>: Unknown</p>
+        <p><b>Release</b>: December 7, 2023</p>
+        <z--frag-resource-voices-links wiki="Ayame" vocadb="129002" eula="dreamtonics" />
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="7HYUJCQLz8c" lazy />
+    </div>
+    <div data-voice="chengxiao">
+        <h3 class="text-center">Cheng Xiao (澄宵)</h3>
+        <p><b>Range</b>: Unspecified</p>
+        <p><b>Voice provider</b>: Unknown</p>
+        <p><b>Release</b>: January 9, 2023</p>
+        <z--frag-resource-voices-links wiki="Cheng_Xiao" vocadb="76105" eula="dreamtonics" />
+        <p><b>Notes</b>:</p>
+        <ul>
+            <li>Cheng Xiao was created explicitly for Peking opera vocals, and may not perform well outside that genre.</li>
+        </ul>
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-bilibili video="BV1Y14y1P7mM" lazy />
+    </div>
+    <div data-voice="congzheng">
+        <h3 class="text-center">Cong Zheng (从铮)</h3>
+        <p><b>Range</b>: <span searchable>Soprano</span></p>
+        <p><b>Voice provider</b>: Unknown</p>
+        <p><b>Release</b>: December 12, 2022</p>
+        <z--frag-resource-voices-links wiki="Cong_Zheng" vocadb="76109" eula="dreamtonics" />
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-bilibili video="BV1Q24y117RC" lazy />
+    </div>
+    <div data-voice="dlin">
+        <h3 class="text-center">D-Lin</h3>
+        <p><b>Range</b>: Unspecified</p>
+        <p><b>Voice provider</b>: Unknown</p>
+        <p><b>Release</b>: July 4, 2023</p>
+        <z--frag-resource-voices-links wiki="D-Lin" vocadb="119025" eula="dreamtonics" />
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="x9ZscYg4xCU" lazy />
+    </div>
+    <div data-voice="eri">
+        <h3 class="text-center">Eri (エリ)</h3>
+        <p><b>Range</b>: Unspecified</p>
+        <p><b>Voice provider</b>: Unknown</p>
+        <p><b>Release</b>: October 26, 2023</p>
+        <z--frag-resource-voices-links wiki="Eri" vocadb="125668" eula="dreamtonics" />
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="Yrs4rF_V92s" lazy />
+    </div>
+    <div data-voice="fengyi">
+        <h3 class="text-center">Feng Yi (沨漪)</h3>
+        <p><b>Range</b>: <span searchable>Mezzo-soprano</span></p>
+        <p><b>Voice provider</b>: Unknown</p>
+        <p><b>Release</b>: May 27, 2022</p>
+        <z--frag-resource-voices-links wiki="Feng_Yi" vocadb="76186" eula="dreamtonics" />
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="AyjA3K3pHtc" lazy />
+    </div>
+    <div data-voice="hayden">
+        <h3 class="text-center">Hayden</h3>
+        <p><b>Range</b>: Unspecified</p>
+        <p><b>Voice provider</b>: Unknown</p>
+        <p><b>Release</b>: October 26, 2023</p>
+        <z--frag-resource-voices-links wiki="Hayden" vocadb="125666" eula="dreamtonics" />
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="IuXgUWXcdFY" lazy />
+    </div>
+    <div data-voice="jin">
+        <h3 class="text-center">Jin (ジン)</h3>
+        <p><b>Range</b>: Unspecified</p>
+        <p><b>Voice provider</b>: Unknown</p>
+        <p><b>Release</b>: December 7, 2023</p>
+        <z--frag-resource-voices-links wiki="Jin" vocadb="129003" eula="dreamtonics" />
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="nnUSL-RcwZo" lazy />
+    </div>
+    <div data-voice="kevin">
+        <h3 class="text-center">Kevin</h3>
+        <p><b>Range</b>: Unspecified</p>
+        <p><b>Voice provider</b>: Unknown</p>
+        <p><b>Release</b>: February 4, 2022</p>
+        <z--frag-resource-voices-links wiki="Kevin" vocadb="99147" eula="dreamtonics" />
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="3R4TKDV2Jf0" lazy />
+    </div>
+    <div data-voice="linlai">
+        <h3 class="text-center">Lin Lai (林籁)</h3>
+        <p><b>Range</b>: Unspecified</p>
+        <p><b>Voice provider</b>: Unknown</p>
+        <p><b>Release</b>: June 17, 2023</p>
+        <z--frag-resource-voices-links wiki="Lin_Lai" vocadb="120528" eula="dreamtonics" />
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-bilibili video="BV1yh4y1s796" lazy />
+    </div>
+    <div data-voice="mai">
+        <h3 class="text-center">Mai</h3>
+        <p><b>Range</b>: Unspecified</p>
+        <p><b>Voice provider</b>: <a href="https://www.youtube.com/channel/UCmajm_1py09dxWL5wniXWfQ" target="_blank"><span searchable>Kitta Honoka (きったほのか)</span></a></p>
+        <p><b>Release</b>: November 10, 2022</p>
+        <z--frag-resource-voices-links wiki="Mai" vocadb="110703" eula="dreamtonics" />
+        <p><b>Notes</b>:</p>
+        <ul>
+            <li>Mai is free for all owners of Synthesizer V Studio Pro.</li>
+        </ul>
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="lkel9YC3m68" lazy />
+    </div>
+    <div data-voice="mochen">
+        <h3 class="text-center">Mo Chen (默辰)</h3>
+        <p><b>Range</b>: <span searchable>Baritone</span></p>
+        <p><b>Voice provider</b>: Unknown</p>
+        <p><b>Release</b>: April 9, 2022</p>
+        <z--frag-resource-voices-links wiki="Mo_Chen" vocadb="76210" eula="dreamtonics" />
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="8xDw0f1p59U" lazy />
+    </div>
+    <div data-voice="natalie">
+        <h3 class="text-center">Natalie</h3>
+        <p><b>Range</b>: Unspecified</p>
+        <p><b>Voice provider</b>: Unknown</p>
+        <p><b>Release</b>: October 7, 2022</p>
+        <z--frag-resource-voices-links wiki="Natalie" vocadb="109075" eula="dreamtonics" />
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="AX7qpxEhf2c" lazy />
+    </div>
+    <div data-voice="ninezero">
+        <h3 class="text-center">Ninezero</h3>
+        <p><b>Range</b>: Unspecified</p>
+        <p><b>Voice provider</b>: <a href="https://www.youtube.com/@NinezeroRocks" target="_blank"><span searchable>Ninezero</span></a></p>
+        <p><b>Release</b>: February 16, 2023</p>
+        <z--frag-resource-voices-links wiki="Ninezero" vocadb="115724" eula="dreamtonics" />
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="6kzGgaTz3n8" lazy />
+    </div>
+    <div data-voice="qingsu">
+        <h3 class="text-center">Qing Su (青溯)</h3>
+        <p><b>Range</b>: Unspecified</p>
+        <p><b>Voice provider</b>: Unknown</p>
+        <p><b>Release</b>: December 1, 2021</p>
+        <z--frag-resource-voices-links wiki="Qing_Su" vocadb="76272" eula="dreamtonics" />
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="x_uGcrPOUtY" lazy />
+    </div>
+    <div data-voice="ritchy">
+        <h3 class="text-center">Ritchy</h3>
+        <p><b>Range</b>: Unspecified</p>
+        <p><b>Voice provider</b>: <a href="https://www.youtube.com/@mbanjaritchya.k.ab-bandj9956" target="_blank"><span searchable>B-Bandj (Mbanja Ritchy)</span></a></p>
+        <p><b>Release</b>: July 4, 2023</p>
+        <z--frag-resource-voices-links wiki="Ritchy" vocadb="119026" eula="dreamtonics" />
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="zwpPWb_3O0Y" lazy />
+    </div>
+    <div data-voice="ryo">
+        <h3 class="text-center">Ryo (リョウ)</h3>
+        <p><b>Range</b>: <span searchable>Tenor</span></p>
+        <p><b>Voice provider</b>: Unknown</p>
+        <p><b>Release</b>: February 4, 2022</p>
+        <z--frag-resource-voices-links wiki="Ryo" vocadb="99167" eula="dreamtonics" />
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="5T2WE07naz4" lazy />
+    </div>
+    <div data-voice="saki">
+        <h3 class="text-center">Saki (サキ)</h3>
+        <p><b>Range</b>: Unspecified</p>
+        <p><b>Voice provider</b>: Unknown</p>
+        <p><b>Release</b>: December 25, 2020</p>
+        <z--frag-resource-voices-links wiki="Saki" vocadb="85852" eula="dreamtonics" />
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="vEW-Ym3HGdE" lazy />
+    </div>
+    <div data-voice="sheena">
+        <h3 class="text-center">Sheena (シーナ)</h3>
+        <p><b>Range</b>: Unspecified</p>
+        <p><b>Voice provider</b>: Unknown</p>
+        <p><b>Release</b>: October 26, 2023</p>
+        <z--frag-resource-voices-links wiki="Sheena" vocadb="125665" eula="dreamtonics" />
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="Hnh9ba44T1E" lazy />
+    </div>
+    <div data-voice="weina">
+        <h3 class="text-center">Weina</h3>
+        <p><b>Range</b>: <span searchable>Mezzo-soprano</span></p>
+        <p><b>Voice provider</b>: <a href="https://space.bilibili.com/508625691" target="_blank"><span searchable>Hu Wei Na (胡维纳)</span></a></p>
+        <p><b>Release</b>: July 21, 2022</p>
+        <z--frag-resource-voices-links wiki="Weina" vocadb="76161" eula="dreamtonics" />
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-bilibili video="BV18G411W7sK" lazy />
+    </div>
+    <div data-voice="weishu">
+        <h3 class="text-center">Wei Shu (未抒)</h3>
+        <p><b>Range</b>: Unspecified</p>
+        <p><b>Voice provider</b>: Unknown</p>
+        <p><b>Release</b>: October 25, 2023</p>
+        <z--frag-resource-voices-links wiki="Wei_Shu" vocadb="125661" eula="dreamtonics" />
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="BnJ9IezsUTc" lazy />
+    </div>
+    <div data-voice="xuanyu">
+        <h3 class="text-center">Xuan Yu (煊宇)</h3>
+        <p><b>Range</b>: Unspecified</p>
+        <p><b>Voice provider</b>: Unknown</p>
+        <p><b>Release</b>: December 12, 2022</p>
+        <z--frag-resource-voices-links wiki="Xuan_Yu" vocadb="76108" eula="dreamtonics" />
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-bilibili video="BV18P4y1R7HC" lazy />
+    </div>
+    <div data-voice="yuma">
+        <h3 class="text-center">Yuma (ユウマ)</h3>
+        <p><b>Range</b>: Unspecified</p>
+        <p><b>Voice provider</b>: Unknown</p>
+        <p><b>Release</b>: October 7, 2022</p>
+        <z--frag-resource-voices-links wiki="Yuma" vocadb="109074" eula="dreamtonics" />
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="5hBCi7GbLpU" lazy />
+    </div>
+    <div data-voice="yunquan">
+        <h3 class="text-center">Yun Quan (韵泉)</h3>
+        <p><b>Range</b>: Unspecified</p>
+        <p><b>Voice provider</b>: Unknown</p>
+        <p><b>Release</b>: June 17, 2023</p>
+        <z--frag-resource-voices-links wiki="Yun_Quan" vocadb="120529" eula="dreamtonics" />
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-bilibili video="BV1yh4y1s796" lazy />
+    </div>
+
+    <!-- ECLIPSED SOUNDS -->
+
+    <div data-voice="asterian">
+        <h3 class="text-center">ASTERIAN</h3>
+        <p><b>Range</b>: E2-D4 (main), G4-C5 (falsetto)</p>
+        <p><b>Voice provider</b>: <a href="https://www.thatbassvoice.com/" target="_blank"><span searchable>Eric Hollaway</span></a></p>
+        <p><b>Release</b>: December 2, 2022</p>
+        <z--frag-resource-voices-links wiki="ASTERIAN" vocadb="111548" eula="https://www.eclipsedsounds.com/asterian-license" />
+        <p><b>Demos</b>: <a href="https://www.youtube.com/@eclipsedsounds/videos?query=asterian" target="_blank">Eclipsed Sounds - YouTube</a> (7+ videos)</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="7OsdbfpYuwg" lazy />
+    </div>
+    <div data-voice="saros">
+        <h3 class="text-center">SAROS</h3>
+        <p><b>Range</b>: <span searchable>Tenor (B2-C5)</span></p>
+        <p><b>Voice provider</b>: Unknown</p>
+        <p><b>Release</b>: November 24, 2023</p>
+        <z--frag-resource-voices-links wiki="SAROS" vocadb="118795" eula="https://www.eclipsedsounds.com/saros-license" />
+        <p><b>Notes</b>:</p>
+        <ul>
+            <li>"SAROS' voice provider studied voice and music at one of the premiere music colleges in the world, and is currently a successful working musician in NYC. They have toured the world performing for thousands, and these days are singing in multiple bands." - <a href="https://www.eclipsedsounds.com/saros" target="_blank">Eclipsed Sounds</a></li>
+        </ul>
+        <p><b>Demos</b>: <a href="https://www.youtube.com/@eclipsedsounds/videos?query=saros" target="_blank">Eclipsed Sounds - YouTube</a> (9+ videos)</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="W7sMCySLJN4" lazy />
+    </div>
+    <div data-voice="solaria">
+        <h3 class="text-center">SOLARIA</h3>
+        <p><b>Range</b>: E3-G5</p>
+        <p><b>Voice provider</b>: <a href="https://www.youtube.com/channel/UCsgVcPrluRDr7sqYUh0mAXw" target="_blank"><span searchable>Emma Rowley</span></a></p>
+        <p><b>Release</b>: January 19, 2022</p>
+        <z--frag-resource-voices-links wiki="SOLARIA" vocadb="76317" eula="https://www.eclipsedsounds.com/solaria-license" />
+        <p><b>Demos</b>: <a href="https://www.youtube.com/@eclipsedsounds/videos?query=solaria" target="_blank">Eclipsed Sounds - YouTube</a> (9+ videos)</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="v6wdIuIRtM0" lazy />
+    </div>
+
+    <!-- AHS - FIRST PARTY -->
+
+    <div data-voice="sora">
+        <h3 class="text-center">Haruno Sora (桜乃そら)</h3>
+        <p><b>Range</b>: C3-E5</p>
+        <p><b>Voice provider</b>: <a href="https://www.animenewsnetwork.com/encyclopedia/people.php?id=542" target="_blank"><span searchable>Inoue Kikuko (井上喜久子)</span></a></p>
+        <p><b>Release</b>: August 24, 2023</p>
+        <z--frag-resource-voices-links wiki="Haruno_Sora" vocadb="121429" eula="ahs" />
+        <p><b>Demos</b>: <a href="https://www.youtube.com/playlist?list=PLcaQGMZkZxmsCyGQKxT6vXni_jE00nIox" target="_blank">株式会社AHS - YouTube</a> (4+ videos)</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="TULzxhyA04c" lazy />
+    </div>
+    <div data-voice="seika">
+        <h3 class="text-center">Kyomachi Seika (京町セイカ)</h3>
+        <p><b>Range</b>: B3-D5</p>
+        <p><b>Voice provider</b>: <a href="https://www.animenewsnetwork.com/encyclopedia/people.php?id=134506" target="_blank"><span searchable>Tachibana Rika (立花理香)</span></a></p>
+        <p><b>Release</b>: January 27, 2022</p>
+        <z--frag-resource-voices-links wiki="Kyomachi_Seika" vocadb="97769" eula="ahs" />
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="j1AQJ6nenRI" lazy />
+    </div>
+    <div data-voice="tsuina">
+        <h3 class="text-center">Tsuina-chan (ついなちゃん)</h3>
+        <p><b>Range</b>: B3-C5</p>
+        <p><b>Voice provider</b>: <a href="https://www.animenewsnetwork.com/encyclopedia/people.php?id=15636" target="_blank"><span searchable>Kadowaki Mai (門脇舞以)</span></a></p>
+        <p><b>Release</b>: November 26, 2021</p>
+        <z--frag-resource-voices-links wiki="Tsuina-chan" vocadb="96162" eula="ahs" />
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="Qkg6nEf5VEo" lazy />
+    </div>
+    <div data-voice="maki-jp">
+        <h3 class="text-center">Tsurumaki Maki (JP) (弦巻マキ)</h3>
+        <p><b>Range</b>: A3-D#5</p>
+        <p><b>Voice provider</b>: <a href="https://www.animenewsnetwork.com/encyclopedia/people.php?id=98263" target="_blank"><span searchable>Tanaka Manami (田中真奈美)</span></a></p>
+        <p><b>Release</b>: June 18, 2021</p>
+        <z--frag-resource-voices-links wiki="Tsurumaki_Maki" vocadb="85855" eula="ahs" />
+        <p><b>Demos</b>: <a href="https://www.youtube.com/playlist?list=PLcaQGMZkZxmtu652YA8gTxD4K8qbzyKAP" target="_blank">株式会社AHS - YouTube</a> (15+ videos)</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="mFih47l1pVI" lazy />
+    </div>
+    <div data-voice="maki-en">
+        <h3 class="text-center">Tsurumaki Maki (EN) (弦巻マキ)</h3>
+        <p><b>Range</b>: G#3-E5</p>
+        <p><b>Voice provider</b>: <a href="https://www.animenewsnetwork.com/encyclopedia/people.php?id=98263" target="_blank"><span searchable>Tanaka Manami (田中真奈美)</span></a></p>
+        <p><b>Release</b>: June 18, 2021</p>
+        <z--frag-resource-voices-links wiki="Tsurumaki_Maki" vocadb="85838" eula="ahs" />
+        <p><b>Notes</b>:</p>
+        <ul>
+            <li>While Maki's voice provider is Japanese, this English AI voice database was made with exclusively English-language recordings.</li>
+        </ul>
+        <p><b>Demo</b>:</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="ClReSGi9lbM" lazy />
+    </div>
+
+    <!-- AHS - THIRD PARTY -->
+
+    <div data-voice="chifuyu">
+        <h3 class="text-center">Hanakuma Chifuyu (花隈千冬)</h3>
+        <p><b>Range</b>: F3-G5</p>
+        <p><b>Voice provider</b>: <a href="https://www.animenewsnetwork.com/encyclopedia/people.php?id=123093" target="_blank"><span searchable>Okuno Kaya (奥野香耶)</span></a></p>
+        <p><b>Release</b>: October 20, 2022</p>
+        <z--frag-resource-voices-links wiki="Hanakuma_Chifuyu" vocadb="103592" eula="ahs" characterguidelines="https://tokyo6.tokyo/guidelines/" />
+        <p><b>Demos</b>: <a href="https://www.youtube.com/@TOKYO6" target="_blank"><span searchable>Tokyo6</span> Entertainment - YouTube</a></p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="m1JaFPWGKRc" lazy />
+    </div>
+    <div data-voice="karin">
+        <h3 class="text-center">Natsuki Karin (夏色花梨)</h3>
+        <p><b>Range</b>: G3-C6</p>
+        <p><b>Voice provider</b>: <a href="https://www.animenewsnetwork.com/encyclopedia/people.php?id=123094" target="_blank"><span searchable>Takagi Miyu (高木美佑)</span></a></p>
+        <p><b>Release</b>: April 13, 2022</p>
+        <z--frag-resource-voices-links wiki="Natsuki_Karin" vocadb="94959" eula="ahs" characterguidelines="https://tokyo6.tokyo/guidelines/" />
+        <p><b>Demos</b>: <a href="https://www.youtube.com/playlist?list=PLAENQJRMLymIs5mCLqAa8fB7bXqtgnlHu" target="_blank"><span searchable>Tokyo6</span> Entertainment - YouTube</a> (4+ videos)</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="iCnoQv8STv0" lazy />
+    </div>
+    <div data-voice="rikka">
+        <h3 class="text-center">Koharu Rikka (小春六花)</h3>
+        <p><b>Range</b>: G3-F#5</p>
+        <p><b>Voice provider</b>: <a href="https://www.animenewsnetwork.com/encyclopedia/people.php?id=123095" target="_blank"><span searchable>Aoyama Yoshino (青山吉能)</span></a></p>
+        <p><b>Release</b>: March 18, 2021</p>
+        <z--frag-resource-voices-links wiki="Koharu_Rikka" vocadb="85853" eula="ahs" characterguidelines="https://tokyo6.tokyo/guidelines/" />
+        <p><b>Demos</b>: <a href="https://www.youtube.com/playlist?list=PLAENQJRMLymKUmrIjtRi5zsw0DukKTrwn" target="_blank"><span searchable>Tokyo6</span> Entertainment - YouTube</a> (13+ videos)</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="Go0HOEVn83E" lazy />
+    </div>
+    <div data-voice="teto">
+        <h3 class="text-center">Kasane Teto (重音テト)</h3>
+        <p><b>Range</b>: D3-G5</p>
+        <p><b>Voice provider</b>: <a href="https://chimeramusic.weebly.com/mayo-oyamano.html" target="_blank"><span searchable>Oyamano Mayo (小山乃舞世)</span></a></p>
+        <p><b>Release</b>: April 27, 2023</p>
+        <z--frag-resource-voices-links wiki="Kasane_Teto" vocadb="118397" eula="ahs" />
+        <p><b>Demos</b>: <a href="https://www.youtube.com/playlist?list=PLw4tLFQTmo_tyTSIhbqOgHk0xtnpQvg-r" target="_blank">Teto Official 「Twindrill」 - YouTube</a> (6+ videos)</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="N1E3rh4R8eE" lazy />
+    </div>
+
+    <!-- AUDIOLOGIE -->
+
+    <div data-voice="anriarcane">
+        <h3 class="text-center">ANRI Arcane</h3>
+        <p><b>Range</b>: A3-F#5</p>
+        <p><b>Voice provider</b>: kurapichu</p>
+        <p><b>Release</b>: December 11, 2023</p>
+        <z--frag-resource-voices-links wiki="https://synthv.fandom.com/wiki/ANRI_Arcane" vocadb="125564" eula="https://rentry.co/nnucek" />
+        <p><b>Demos</b>: <a href="https://www.youtube.com/playlist?list=PL6lolwXpFuXzOxp2hvZXQ5w-nvUYAHKuA" target="_blank">AUDIOLOGIE - YouTube</a> (17+ videos)</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="Gor8n5Ire08" lazy />
+    </div>
+    <div data-voice="jun">
+        <h3 class="text-center">JUN</h3>
+        <p><b>Range</b>: B2-A4</p>
+        <p><b>Voice provider</b>: Lavy</p>
+        <p><b>Release</b>: January 19, 2022</p>
+        <z--frag-resource-voices-links wiki="JUN" vocadb="116048" eula="https://rentry.co/z68d8" />
+        <p><b>Demos</b>: <a href="https://www.youtube.com/playlist?list=PL6lolwXpFuXzwNwpDHZsiI6JHZPjJxzIi" target="_blank">AUDIOLOGIE - YouTube</a> (14+ videos)</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="a2Ur21vUs7g" lazy />
+    </div>
+
+    <!-- VOLOR -->
+
+    <div data-voice="eleanor">
+        <h3 class="text-center">Eleanor Forte</h3>
+        <p><b>Range</b>: Unspecified</p>
+        <p><b>Voice provider</b>: Unknown</p>
+        <p><b>Release</b>: December 6, 2021</p>
+        <z--frag-resource-voices-links wiki="Eleanor_Forte" vocadb="92247" eula="https://rentry.co/apm7w" />
+        <p><b>Demos</b>: <a href="https://www.youtube.com/playlist?list=PL93oL9ZDSQMpIcf15Y4-ZFB9_pJj-7AgF" target="_blank">VOLOR - YouTube</a> (14+ videos)</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="AzYx8watDnM" lazy />
+    </div>
+
+    <!-- QUADIMENSION -->
+
+    <div data-voice="stardust">
+        <h3 class="text-center">Stardust Infinity (星尘)</h3>
+        <p><b>Range</b>: Unspecified</p>
+        <p><b>Voice provider</b>: <a href="https://www.youtube.com/user/chalili0w0" target="_blank"><span searchable>Chalili (茶理理)</span></a></p>
+        <p><b>Release</b>: February 20, 2022</p>
+        <z--frag-resource-voices-links wiki="Xingchen" vocadb="76283" eula="https://rentry.co/ez2cx" />
+        <p><b>Demos</b>: <a href="https://space.bilibili.com/15817819" target="_blank">星尘Official - Bilibili</a></p>
+        <z--frag-embed-loading /><z--frag-embed-bilibili video="BV1uP4y1g7c3" lazy />
+    </div>
+
+    <!-- VOICEMITH -->
+
+    <div data-voice="yao">
+        <h3 class="text-center">Xia Yu Yao (夏语遥)</h3>
+        <p><b>Range</b>: D3~G4</p>
+        <p><b>Voice provider</b>: <span searchable>Mi Yang (迷漾)</span></p>
+        <p><b>Release</b>: January 30, 2023</p>
+        <z--frag-resource-voices-links wiki="XIA_YU_YAO" vocadb="113812" eula="https://rentry.co/vr3bk" />
+        <p><b>Demos</b>: <a href="https://www.youtube.com/playlist?list=PL93oL9ZDSQMpIcf15Y4-ZFB9_pJj-7AgF" target="_blank">VOLOR - YouTube</a> (14+ videos)</p>
+        <z--frag-embed-loading /><z--frag-embed-youtube video="AzYx8watDnM" lazy />
+    </div>
+
 </div>
 </div>
