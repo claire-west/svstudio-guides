@@ -93,7 +93,12 @@
             'Kagamine Len (all versions)': 15,
             'Kagamine Rin (all versions)': 14,
             'Kasane Teto (UTAU)': 116,
-            'Kiyoteru (all versions)': 246,
+            'Kiyoteru (V2 & V4)': {
+                'V2': 246,
+                'V4 (Unknown)': 48894,
+                'V4 (Natural)': 28165,
+                'V4 (Rock)': 41773
+            },
             'Luo Tianyi (all versions)': 1778,
             'MEIKO (all versions)': 176,
             'Megpoid/GUMI (all versions)': 3,
@@ -101,7 +106,10 @@
             'Oscar (UTAU)': 50238,
             'POPY (CeVIO AI)': 111837,
             'ROSE (CeVIO AI)': 111839,
-            'SF-A2 miki (all versions)': 146,
+            'SF-A2 miki (V2 & V4)': {
+                'V2': 146,
+                'V4': 28167
+            },
             'Xia Yu Yao (UTAU)': 27056,
             'Xingchen/Stardust (Vocaloid4)': 35966
         };
@@ -110,12 +118,11 @@
             return b.songCount - a.songCount;
         };
 
+        var aRequestQueue;
         var oByCharacter;
-        var aBySVD;
-        var fetchSongCounts = function() {
+        var enqueueSongCounts = function() {
             var promises = [];
             oByCharacter = {};
-            aBySVD = [];
             for (let name in vocaDbIds) {
                 if (typeof(vocaDbIds[name]) === 'number') {
                     vocaDbIds[name] = {
@@ -125,32 +132,87 @@
 
                 for (let suffix in vocaDbIds[name]) {
                     let id = vocaDbIds[name][suffix];
-                    promises.push($.ajax(vocaDbBaseUrl + id).done((resp) => {
-                        oByCharacter[name] = oByCharacter[name] || 0;
-                        oByCharacter[name] += resp.totalCount;
-                        aBySVD.push({
-                            name: name + ' ' + suffix,
-                            url: 'https://vocadb.net/Ar/' + id,
-                            songCount: resp.totalCount
+                    let promise = $.Deferred();
+
+                    aRequestQueue.push(() => {
+                        return $.ajax(vocaDbBaseUrl + id).done((resp) => {
+                            oByCharacter[name] = oByCharacter[name] || 0;
+                            oByCharacter[name] += resp.totalCount;
+                            promise.resolve();
                         });
-                    }));
+                    });
+                    promises.push(promise);
                 }
             }
             return promises;
         };
 
         var oOther;
-        var fetchOtherSongCounts = function() {
+        var enqueueOtherSongCounts = function() {
             var promises = [];
             oOther = {};
+
             for (let name in otherVocaDbIds) {
-                let id = otherVocaDbIds[name];
-                promises.push($.ajax(vocaDbBaseUrl + id + '&childVoicebanks=true').done((resp) => {
-                    oOther[name] = oOther[name] || 0;
-                    oOther[name] += resp.totalCount;
-                }));
+                if (typeof(otherVocaDbIds[name]) === 'number') {
+                    otherVocaDbIds[name] = {
+                        '': otherVocaDbIds[name]
+                    };
+                }
+
+                for (let suffix in otherVocaDbIds[name]) {
+                    let id = otherVocaDbIds[name][suffix];
+                    let promise = $.Deferred();
+                    let url = vocaDbBaseUrl + id;
+                    if (suffix === '') {
+                        url += '&childVoicebanks=true';
+                    }
+
+                    aRequestQueue.push(() => {
+                        return $.ajax(url).done((resp) => {
+                            oOther[name] = oOther[name] || 0;
+                            oOther[name] += resp.totalCount;
+                            promise.resolve();
+                        });
+                    });
+                    promises.push(promise);
+                }
             }
             return promises;
+        };
+
+        var batchSize = 10;
+        function processQueue(model) {
+            return processInitialBatch(model, aRequestQueue.splice(0, batchSize));
+        };
+
+        function processInitialBatch(model, fns) {
+            let promises = [];
+            for (let fn of fns) {
+                model.incrementStarted();
+                promises.push(fn().done(() => {
+                    promises.push(onRequestComplete(model));
+                }));
+            }
+            return $.when.apply(this, promises);
+        };
+
+        function onRequestComplete(model) {
+            model.incrementResolved();
+            if (aRequestQueue.length) {
+                return processNext(model);
+            } else {
+                return $.Deferred().resolve();
+            }
+        };
+
+        function processNext(model) {
+            let promise = $.Deferred();
+            let fn = aRequestQueue.splice(0, 1)[0];
+            model.incrementStarted();
+            fn().done(() => {
+                onRequestComplete(model).done(promise.resolve);
+            });
+            return promise;
         };
 
         var onFetchSuccess = function(model) {
@@ -176,29 +238,25 @@
             });
 
             aByCharacter.sort(songCountCompare);
-            aBySVD.sort(songCountCompare);
             aOther.sort(songCountCompare);
 
             model.aByCharacter = aByCharacter;
-            model.aBySVD = aBySVD;
             model.aOther = aOther;
             model._refresh();
         };
 
         var checkCache = function(model) {
             var aByCharacter = localStorage.getItem('songCount.byCharacter');
-            var aBySVD = localStorage.getItem('songCount.bySVD');
             var aOther = localStorage.getItem('songCount.other');
             var fetched = localStorage.getItem('songCount.fetched');
 
-            if (!aByCharacter || !aBySVD || !fetched) {
+            if (!aByCharacter || !fetched) {
                 model._set('stale', true);
                 return;
             }
 
             try {
                 model.aByCharacter = JSON.parse(aByCharacter);
-                model.aBySVD = JSON.parse(aBySVD);
                 model.aOther = JSON.parse(aOther);
                 fetched = new Date(fetched);
             } catch (e) {
@@ -216,16 +274,19 @@
             model: {
                 oByCharacter: {},
                 aByCharacter: [],
-                aBySVD: [],
                 aOther: [],
 
                 fetch: function(model) {
-                    var promises = fetchSongCounts().concat(fetchOtherSongCounts());
+                    aRequestQueue = [];
+                    var promises = enqueueSongCounts().concat(enqueueOtherSongCounts());
                     model._set('fetching', true);
+                    model._set('pendingCount', promises.length);
+                    model._set('startedCount', 0);
+                    model._set('resolvedCount', 0);
+
                     $.when.apply(this, promises).then(() => {
                         onFetchSuccess(model);
                         localStorage.setItem('songCount.byCharacter', JSON.stringify(model.aByCharacter));
-                        localStorage.setItem('songCount.bySVD', JSON.stringify(model.aBySVD));
                         localStorage.setItem('songCount.other', JSON.stringify(model.aOther));
                         localStorage.setItem('songCount.fetched', new Date().toISOString());
                     }, () => {
@@ -234,11 +295,21 @@
                     }).always(() => {
                         model._set('fetching', false);
                     });
+
+                    processQueue(model);
                 },
 
                 onFetch: function(model) {
                     model._set('stale', false);
                     model.fetch(model);
+                },
+
+                incrementStarted: function() {
+                    this._set('startedCount', this._get('startedCount') + 1);
+                },
+
+                incrementResolved: function() {
+                    this._set('resolvedCount', this._get('resolvedCount') + 1);
                 },
 
                 getName: function(name) {

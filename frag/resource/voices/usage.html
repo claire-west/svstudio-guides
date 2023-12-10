@@ -10,7 +10,7 @@
         <button z--click="onFetch">Fetch Latest Data</button>
     </div>
     <div class="col" z--visible="!!fetching">
-        <h4 class="text-center"><span>Loading...</span>&nbsp;<i class="fa fa-refresh fa-spin"></i></h4>
+        <h4 class="text-center"><span>Loading...&nbsp;<span z--bind="resolvedCount"></span>/<span z--bind="pendingCount"></span></span>&nbsp;<i class="fa fa-refresh fa-spin"></i><!-- &nbsp;(<span z--bind="startedCount"></span> started) --></h4>
     </div>
     <div class="col s12 m6">
         <table z--visible="aByCharacter.length">
