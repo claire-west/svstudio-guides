@@ -218,6 +218,10 @@ body.light .top-bar a:hover {
 }
 
 .modal {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -232,16 +236,12 @@ body.light .top-bar a:hover {
     background: #2f3136;
     width: 97.5%;
     max-width: 40rem;
-    max-height: 82.5%;
+    max-height: 85%;
     overflow-y: auto;
     position: relative;
-    /*top: 20vh;*/
     padding: 1rem;
     border-radius: 0.25rem;
-    margin-top: calc(20vh - 1rem);
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0.5rem;
+    margin: auto;
     padding-bottom: 0;
 }
 

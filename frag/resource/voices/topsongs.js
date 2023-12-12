@@ -39,7 +39,7 @@
             {
                 title: 'SCAPEG♾AT',
                 artist: 'GHOST',
-                vocals: 'Yuma, Stardust, Asterian, Kevin',
+                vocals: 'Yuma, Stardust Infinity, Asterian, Kevin',
                 video: 'vqe2WMZYYvQ',
                 mviews: 1.7
             },
@@ -154,7 +154,7 @@
             {
                 title: 'バベル (BABEL)',
                 artist: 'Iyowa',
-                vocals: 'Kasane Teto (SV and UTAU)',
+                vocals: 'Kasane Teto (SV and UTAU versions)',
                 video: 'zSKwxQqrac0',
                 mviews: 2.2
             },
