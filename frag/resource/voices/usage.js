@@ -9,6 +9,7 @@
             'AiKO': 69866,
             'An Xiao': 102955,
             'ANRI': 76270,
+            'ANRI Arcane': 125564,
             'ASTERIAN': 111548,
             'Ayame': 129002,
             'Cangqiong': 73875,
@@ -89,7 +90,9 @@
 
         var otherVocaDbIds = {
             'flower (all)': 21165,
-            'Haruno Sora (Vocaloid5)': 67089,
+            'Haruno Sora (Vocaloid5)': {
+                'V5': 67089
+            },
             'Hatsune Miku (all)': 1,
             'KAITO (all)': 71,
             'KAFU (CeVIO AI)': {
@@ -97,7 +100,9 @@
             },
             'Kagamine Len (all)': 15,
             'Kagamine Rin (all)': 14,
-            'Kasane Teto (UTAU)': 116,
+            'Kasane Teto (UTAU)': {
+                'UTAU': 116
+            },
             'Kiyoteru (V2 & V4)': {
                 'V2': 246,
                 'V4 (Unknown)': 48894,
@@ -108,7 +113,9 @@
             'MEIKO (all)': 176,
             'Megpoid/GUMI (all)': 3,
             'Megurine Luka (all)': 2,
-            'Oscar (UTAU)': 50238,
+            'Oscar (UTAU)': {
+                'UTAU': 50238
+            },
             'POPY (CeVIO AI)': {
                 'CeVIO AI': 111837
             },
@@ -119,8 +126,12 @@
                 'V2': 146,
                 'V4': 28167
             },
-            'Xia Yu Yao (UTAU)': 27056,
-            'Xingchen/Stardust (Vocaloid4)': 35966
+            'Xia Yu Yao (UTAU)': {
+                'UTAU': 27056
+            },
+            'Xingchen/Stardust (Vocaloid4)': {
+                'V4': 35966
+            }
         };
 
         var songCountCompare = function(a, b) {
