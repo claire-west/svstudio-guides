@@ -27,6 +27,7 @@
             'Hayden': 125666,
             'Jin': 129003,
             'JUN': 116048,
+            'KAFU': 129923,
             'Kasane Teto': 118397,
             'Kevin': 99147,
             'Koharu Rikka': {
@@ -42,7 +43,8 @@
             },
             'Lin Lai': 120528,
             'Mai': 110703,
-            'Minus': 76428,
+            'Megpoid (GUMI)': 128632,
+            '星尘Minus': 76428,
             'Mo Chen': 76210,
             'Muxin': 76429,
             'Natalie': 109075,
@@ -80,18 +82,21 @@
             'Xia Yu Yao': 113812,
             'Xuan Yu': 76108,
             'Yamine Renri': 69286,
+            'Yongye Minus': 129591,
             'Yuma': 109074,
             'Yun Quan': 120529
         };
 
         var otherVocaDbIds = {
-            'flower (all versions)': 21165,
+            'flower (all)': 21165,
             'Haruno Sora (Vocaloid5)': 67089,
-            'Hatsune Miku (all versions)': 1,
-            'KAITO (all versions)': 71,
-            'KAFU (CeVIO AI)': 83928,
-            'Kagamine Len (all versions)': 15,
-            'Kagamine Rin (all versions)': 14,
+            'Hatsune Miku (all)': 1,
+            'KAITO (all)': 71,
+            'KAFU (CeVIO AI)': {
+                'CeVIO AI': 83928
+            },
+            'Kagamine Len (all)': 15,
+            'Kagamine Rin (all)': 14,
             'Kasane Teto (UTAU)': 116,
             'Kiyoteru (V2 & V4)': {
                 'V2': 246,
@@ -99,13 +104,17 @@
                 'V4 (Natural)': 28165,
                 'V4 (Rock)': 41773
             },
-            'Luo Tianyi (all versions)': 1778,
-            'MEIKO (all versions)': 176,
-            'Megpoid/GUMI (all versions)': 3,
-            'Megurine Luka (all versions)': 2,
+            'Luo Tianyi (all)': 1778,
+            'MEIKO (all)': 176,
+            'Megpoid/GUMI (all)': 3,
+            'Megurine Luka (all)': 2,
             'Oscar (UTAU)': 50238,
-            'POPY (CeVIO AI)': 111837,
-            'ROSE (CeVIO AI)': 111839,
+            'POPY (CeVIO AI)': {
+                'CeVIO AI': 111837
+            },
+            'ROSE (CeVIO AI)': {
+                'CeVIO AI': 111839
+            },
             'SF-A2 miki (V2 & V4)': {
                 'V2': 146,
                 'V4': 28167
@@ -317,7 +326,7 @@
                 },
 
                 getPlatform: function(name) {
-                    return name ? name.split('(')[1].slice(0, -1).trim() : '';
+                    return name && name.includes('(') ? name.split('(')[1].slice(0, -1).trim() : '';
                 }
             },
 
