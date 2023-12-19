@@ -429,6 +429,13 @@
                 vocals: 'Stardust Infinity',
                 video: 'av234794791',
                 mviews: 1.3
+            },
+            {
+                title: '旷古回响 (Kuànggǔ Huíxiǎng)',
+                artist: 'Chenyiming (忘川风华录 series)',
+                vocals: 'Cangqiong, Chiyu, Stardust Infinity, Haiyi, Shian, 星尘Minus, Muxin',
+                video: 'BV1wH4y1m7Pc',
+                mviews: 1.1
             }
             // {
             //     title: '',
