@@ -62,6 +62,15 @@
                     });
                 },
 
+                getInfoTitle: function(model) {
+                    let infoDiv = model.info.get(this.get(0).parentElement.parentElement);
+                    return infoDiv ? 'Click for more information about ' + infoDiv.querySelector(':scope > h3').textContent : '';
+                },
+
+                getInfoTextSr: function(model) {
+                    return model.getInfoTitle.apply(this.parent(), arguments);
+                },
+
                 hasInfo: function(infoMap) {
                     return this && this.length && Boolean(infoMap.get(this[0].parentElement.parentElement));
                 },
