@@ -14,10 +14,6 @@
             <h2 z--text="/title.pitchdeviation"></h2>
             <p class="small"><i>2022/11/17 (updated 2022/11/27)</i></p>
             <p>The focus of this guide is on pitch deviation, and how to modify pitch in Synthesizer V Studio. It is assumed that you know the basics of adding notes and <a href="/guide-phonemes">entering lyrics/phonemes</a>. This is not a guide on tuning or writing melodies, as those are separate topics.</p>
-            <!-- <div class="callout">
-                <i class="bi bi-info-circle"></i>
-                <p>The examples in this guide will start with Instant Mode disabled. If you are trying to follow along, make sure you also <b>disable Instant Mode</b> before adding notes to the piano roll.</p>
-            </div> -->
         </div>
     </div>
     <div class="row">
@@ -65,7 +61,7 @@
             <img src="/img/guide/pitchdeviation/pitchline.png" alt="The white pitch line in the piano roll" />
         </div>
         <div class="col">
-            <div class="callout">
+            <div class="callout" role="note" aria-label="Info">
                 <i class="bi bi-info-circle"></i>
                 <p><b>Standard</b> (non-AI) voice databases will also show a blue line that closely follows the white pitch line. While the white line shows the user's desired pitch, this blue line indicates the resulting pitch once the synthesis engine has finished rendering.</p>
                 <p>Since Standard voices are based on actual audio samples that are pitch-shifted and stretched to match the user's input, they often do not exactly match it. This is rarely an issue from a user perspective, as the blue line is usually within a few cents of the target pitch.</p>
@@ -93,7 +89,7 @@
             <p>Even if human-like realism is not your goal, learning to effectively use the pitch deviation tools available within Synthesizer V Studio will be a major step in achieving your desired sound.</p>
             <br/>
 
-            <div class="callout">
+            <div class="callout" role="note" aria-label="Info">
                 <i class="bi bi-info-circle"></i>
                 <p>The focus of this guide is explaining the pitch deviation tools and the effects they have on the rendered output so that you can achieve your own goals. This guide will not tell you which settings or pitch curves are "best", since the desired results will be different for every song and each producer has different preferences.</p>
                 <p>Just like how different vocalists have their own singing styles, different vocal synth producers tend to have their own tuning styles. You are encouraged to experiment with the options available in order to find the type of pitch deviations that sound best for you and your musical aesthetic.</p>
@@ -155,7 +151,7 @@
 
             <p>In many cases the limitations listed above will not be significant enough to be problematic, and you can always make adjustments later to add variation to the vibrato.</p>
 
-            <div class="callout">
+            <div class="callout" role="note" aria-label="Info">
                 <i class="bi bi-info-circle"></i>
                 <p>The "Jitter" option is supposed introduce minor fluctuations in vibrato to help it adhere less to a perfect sine wave, however in my experience this has had minimal effect when using AI voice databases.</p>
             </div>
@@ -211,7 +207,7 @@
             <p>SynthV Studio has a much simpler tool for achieving the desired pitch line. Using the pencil tool on the piano roll will allow you to draw your desired pitch directly on the notes. Personally, I prefer to use the pencil tool to draw a pitch line in the piano roll, followed by fine adjustments using the pointer tool to move the individual nodes.</p>
 
             <p>In this example I have added attack and release pitch bends and adjusted a transition by drawing directly on the piano roll with the pencil tool.</p>
-            <div class="callout">
+            <div class="callout" role="note" aria-label="Info">
                 <i class="bi bi-info-circle"></i>
                 <p>If you are finding that the pitch line is changing slightly after you finish drawing, consider disabling the "Simplify freehand-drawn curves" option in the settings panel. This setting is helpful for people with shaky hands, but you can always manually simplify the curves by selecting a cluster of nodes with the pointer tool and pressing <code>alt</code>+<code>S</code>.</p>
             </div>
@@ -240,7 +236,7 @@
             <img src="/img/guide/pitchdeviation/auto-pitch-tuning-option.png" alt="The auto pitch tuning options in the Auto-process menu" />
 
             <p>Executing auto pitch tuning will use the AI engine to add pitch deviations to the parameters panel for the currently-selected notes. These pitch deviations will be different based on the currently selected voice database, and are based on machine learning analysis of the voice provider's singing style.</p>
-            <div class="callout">
+            <div class="callout" role="note" aria-label="Warning">
                 <i class="bi bi-exclamation-triangle"></i>
                 <p>Executing auto pitch tuning on notes will overwrite any existing pitch bends you have added to the parameters panel for the selected notes, and will set the vibrato depth for all selected notes to zero.</p>
             </div>
