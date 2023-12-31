@@ -72,7 +72,7 @@ i.bi {
     font-size: 1.5rem;
 }
 
-button i.bi {
+button:not(.bare) i.bi {
     font-size: 1rem;
 }
 
@@ -125,6 +125,16 @@ button.active {
     color: #2a2a2a;
     font-weight: bold;
     background-color: #85BC38;
+}
+
+button.bare {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    font-size: inherit;
+    line-height: inherit;
+    -webkit-appearance: none;
 }
 
 a {

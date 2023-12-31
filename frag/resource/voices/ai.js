@@ -59,6 +59,8 @@
                         // move selected info content into the dialog
                         let fragmentContent = $fragment.filter('section').get(0);
                         fragmentContent.append(infoDiv);
+                        $fragment.find('*').removeAttr('tabindex');
+                        $fragment.find('button').focus();
                     });
                 },
 
@@ -76,7 +78,7 @@
                 },
 
                 closeModal: function() {
-                    let fragmentContent = this.parentElement.previousElementSibling;
+                    let fragmentContent = this.parentElement.nextElementSibling;
                     let infoDiv = fragmentContent.firstChild;
                     if (infoDiv) {
                         // kill iframe content

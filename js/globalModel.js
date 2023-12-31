@@ -36,6 +36,7 @@
 
         // track loaded modal fragments for reuse if opened more than once
         var modalFragments = {};
+        var previousFocus = null;
         globalModel._set('openModal', (fragmentName, model) => {
             $('.modal .dialog').children().hide();
             var promise = $.Deferred();
@@ -52,7 +53,11 @@
                 $fragment.show();
                 $('body').addClass('noscroll');
                 $('.modal').show().find('.dialog').scrollTop(0);
+                previousFocus = document.activeElement;
+                $('body > :not(.modal)').attr('aria-hidden', 'true');
+                $('body > :not(.modal) *').attr('tabindex', -1);
                 promise.resolve($fragment);
+                $fragment.find('button').focus();
             });
             return promise;
         });
@@ -63,6 +68,12 @@
                 if ($element.hasClass('modal')) {
                     $('body').removeClass('noscroll');
                     $element.hide();
+                    $('body > :not(.modal)').removeAttr('aria-hidden');
+                    $('body > :not(.modal) *').removeAttr('tabindex');
+                    if (previousFocus) {
+                        previousFocus.focus();
+                        previousFocus = null;
+                    }
                     break;
                 }
                 $element = $element.parent();
