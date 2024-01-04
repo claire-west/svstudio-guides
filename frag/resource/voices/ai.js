@@ -36,7 +36,7 @@
                 search: '',
 
                 onSelectLanguage: function() {
-                    delayedAction(filterTable, 'resource-voices-ai-filter');
+                    filterTable();
                 },
                 onSearch: function(text) {
                     delayedAction(filterTable, 'resource-voices-ai-filter');

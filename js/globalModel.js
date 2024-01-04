@@ -51,8 +51,16 @@
             }
             modalFragments[fragmentName].done(function($fragment) {
                 $fragment.show();
+                var $modal = $('.modal');
                 $('body').addClass('noscroll');
-                $('.modal').show().find('.dialog').scrollTop(0);
+                var escapeHandler = function(e) {
+                    if (e.key == "Escape") {
+                        globalModel.closeModal.call($fragment);
+                        $modal.off('keyup', escapeHandler);
+                    }
+                };
+                $modal.on('keyup', escapeHandler);
+                $modal.show().find('.dialog').scrollTop(0);
                 previousFocus = document.activeElement;
                 $('body > :not(.modal)').attr('aria-hidden', 'true');
                 $('body > :not(.modal) *').attr('tabindex', -1);
