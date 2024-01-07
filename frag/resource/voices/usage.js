@@ -111,7 +111,7 @@
             },
             'Luo Tianyi (all)': 1778,
             'MEIKO (all)': 176,
-            'Megpoid/GUMI (all)': 3,
+            'Megpoid/GUMI (all, incl. SV)': 3,
             'Megurine Luka (all)': 2,
             'Oscar (UTAU)': {
                 'UTAU': 50238
