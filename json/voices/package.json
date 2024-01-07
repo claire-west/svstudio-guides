@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "axios": "^1.6.5",
+    "dotenv": "^16.3.1"
+  },
+  "scripts": {
+    "start": "node update-viewcounts.js"
+  }
+}
