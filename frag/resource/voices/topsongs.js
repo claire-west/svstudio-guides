@@ -13,34 +13,17 @@
             return b.mviews - a.mviews;
         };
 
-        let youtubeEn = json.youtube.english.sort(byViews);
-        let youtubeOther = json.youtube.other.sort(byViews);
-        // {
-        //     title: 'Uncanny',
-        //     artist: 'GHOST',
-        //     vocals: 'Kevin',
-        //     video: 'qK62up6otZU',
-        //     mviews: 0.9
-        // },
-        // {
-        //     title: 'ATARAXIA',
-        //     artist: 'Patterns',
-        //     vocals: 'Eleanor Forte',
-        //     video: 'bUh2W3jjapA',
-        //     mviews: 0.9
-        // }
-        // {
-        //     title: '',
-        //     artist: '',
-        //     vocals: '',
-        //     video: '',
-        //     mviews:
-        // }
+        function over1MViews(v) {
+            return v.mviews >= 1;
+        }
 
-        let niconico = [].sort(byViews);
+        let youtubeEn = json.youtube.english.filter(over1MViews).sort(byViews);
+        let youtubeOther = json.youtube.other.filter(over1MViews).sort(byViews);
+
+        // let niconico = [].filter(over1MViews).sort(byViews);
 
         // https://docs.google.com/spreadsheets/d/e/2PACX-1vTbatdv4kUIv8Y0EJPo6bAzI4T9PkSY96DWkTPmB1MUQ2b1jNlb9YJCgTbJo9eahi2Bf8hhCHwa0Viu/pubhtml#
-        let bilibili = json.bilibili.sort(byViews);
+        let bilibili = json.bilibili.filter(over1MViews).sort(byViews);
 
         let songModel = modules.lib.model({
             closeModal: function() {
@@ -55,7 +38,7 @@
         fragment.controller('frag.resource.voices.topsongs', {
             model: {
                 showYouTubeEmbed: function(song, model) {
-                    model.showVideoEmbed(song, 'embed-youtubedialog', 'https://www.youtube-nocookie.com/embed/' + song.video + '?t=0&autoplay=1');
+                    model.showVideoEmbed(song, 'embed-youtubedialog', 'https://www.youtube-nocookie.com/embed/' + song.video + '?t=0&autoplay=0');
                 },
 
                 showBilibiliEmbed: function(song, model) {
@@ -67,7 +50,7 @@
                     } else {
                         video = 'aid=' + song.video;
                     }
-                    model.showVideoEmbed(song, 'embed-bilibilidialog', '//player.bilibili.com/player.html?' + video + '&p=1&t=0&autoplay=1');
+                    model.showVideoEmbed(song, 'embed-bilibilidialog', '//player.bilibili.com/player.html?' + video + '&p=1&t=0&autoplay=0');
                 },
 
                 showVideoEmbed: function(song, dialog, src) {

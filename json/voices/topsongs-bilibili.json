@@ -179,7 +179,7 @@
         "artist": "PokeR (忘川风华录 series)",
         "vocals": "Cangqiong, Chiyu, Stardust Infinity, Haiyi",
         "video": "BV1JG4y1b7oB",
-        "mviews": 2.8
+        "mviews": 2.9
     },
     {
         "title": "临川浮梦 (Línchuān Fú Mèng)",
@@ -207,7 +207,7 @@
         "artist": "Chenyiming (忘川风华录 series)",
         "vocals": "Stardust Infinity, Haiyi, Cangqiong,Shian, 星尘Minus, Chiyu, Muxin",
         "video": "av823926177",
-        "mviews": 2.4
+        "mviews": 2.5
     },
     {
         "title": "问剑春秋 (Wèn Jiàn Chūnqiū)",
@@ -221,7 +221,7 @@
         "artist": "KBShinya",
         "vocals": "Stardust Infinity",
         "video": "av234794791",
-        "mviews": 1.5
+        "mviews": 1.6
     },
     {
         "title": "旷古回响 (Kuànggǔ Huíxiǎng)",
@@ -229,5 +229,33 @@
         "vocals": "Cangqiong, Chiyu, Stardust Infinity, Haiyi, Shian, 星尘Minus, Muxin",
         "video": "BV1wH4y1m7Pc",
         "mviews": 1.4
+    },
+    {
+        "title": "风起甘露 (Fēng Qǐ Gānlù)",
+        "artist": "Ta Ku (忘川风华录 series)",
+        "vocals": "Cangqiong",
+        "video": "BV1Xi4y1L7wL",
+        "mviews": 0.9
+    },
+    {
+        "title": "归钓吟 (Guī Diào Yín)",
+        "artist": "Chen Yiming (忘川风华录 series)",
+        "vocals": "Cangqiong",
+        "video": "BV1eG4y1e76P",
+        "mviews": 0.9
+    },
+    {
+        "title": "牡丹乱 (Mǔdān Luàn)",
+        "artist": "Huiyuanqiong (忘川风华录 series)",
+        "vocals": "Chiyu",
+        "video": "BV1aL41137rN",
+        "mviews": 0.9
+    },
+    {
+        "title": "起战令 (Qǐ Zhàn Lìng)",
+        "artist": "静雯 (忘川风华录 series)",
+        "vocals": "星尘Minus, Chiyu",
+        "video": "BV1fg4y1c7pD",
+        "mviews": 0.8
     }
 ]

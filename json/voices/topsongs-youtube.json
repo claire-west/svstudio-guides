@@ -55,6 +55,20 @@
             "vocals": "Tsurumaki Maki",
             "video": "gmEqkdl4wEA",
             "mviews": 3.8
+        },
+        {
+            "title": "Uncanny",
+            "artist": "GHOST",
+            "vocals": "Kevin",
+            "video": "qK62up6otZU",
+            "mviews": 0.9
+        },
+        {
+            "title": "ATARAXIA",
+            "artist": "Patterns",
+            "vocals": "Eleanor Forte",
+            "video": "bUh2W3jjapA",
+            "mviews": 0.9
         }
     ],
     "other": [
@@ -105,7 +119,7 @@
             "artist": "Nakiso",
             "vocals": "Hanakuma Chifuyu",
             "video": "zxYdPypVQvQ",
-            "mviews": 4.7
+            "mviews": 4.8
         },
         {
             "title": "大女優さん (actress)",
@@ -144,7 +158,7 @@
         },
         {
             "title": "Liar Dancer",
-            "artist": "Masarada",
+            "artist": "masarada",
             "vocals": "Kasane Teto",
             "video": "UHbmkxv-874",
             "mviews": 2.3
@@ -154,14 +168,14 @@
             "artist": "Daibakuhashin",
             "vocals": "Kasane Teto, Hatsune Miku (Vocaloid), Zundamon (Neutrino)",
             "video": "vY8iwpN3GXQ",
-            "mviews": 4.1
+            "mviews": 4.2
         },
         {
             "title": "あいのうた (Song of \"AI\")",
             "artist": "Daibakuhashin",
             "vocals": "Kasane Teto, Hatsune Miku (Vocaloid)",
             "video": "LyZk53_5GwM",
-            "mviews": 1.7
+            "mviews": 1.8
         },
         {
             "title": "頭上注意の歌",
@@ -169,6 +183,20 @@
             "vocals": "Natsuki Karin, Saki",
             "video": "L-AlI-y7Kc8",
             "mviews": 1
+        },
+        {
+            "title": "ちっちゃな私 (Tiny Me)",
+            "artist": "masarada",
+            "vocals": "Kasane Teto",
+            "video": "4aFC2oC-wHA",
+            "mviews": 0.8
+        },
+        {
+            "title": "ウルトラトレーラー (Ultra Trailer)",
+            "artist": "masarada",
+            "vocals": "Kasane Teto",
+            "video": "Fhg3KsDkMJM",
+            "mviews": 0.7
         }
     ]
 }
