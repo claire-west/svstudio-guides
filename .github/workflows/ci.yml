@@ -36,12 +36,12 @@ jobs:
       run: |
         npm i
         grunt
-    - name: Push to gh-pages
-      uses: stefanzweifel/git-auto-commit-action@v4
-      with:
-        branch: gh-pages
-        push_options: '--force'
-        commit_message: Generate templated files
+    # - name: Push to gh-pages
+    #   uses: stefanzweifel/git-auto-commit-action@v4
+    #   with:
+    #     branch: gh-pages
+    #     push_options: '--force'
+    #     commit_message: Generate templated files
     - name: Fix permissions
       run: |
         chmod -c -R +rX "deploy/" | while read line; do
