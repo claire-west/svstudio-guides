@@ -9,6 +9,7 @@ module.exports = function(grunt) {
           'html/**',
           'img/**',
           'js/**',
+          'json/**',
           '*.html',
           '*.ico',
           'sitemap.txt'
