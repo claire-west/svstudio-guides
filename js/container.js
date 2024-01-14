@@ -35,7 +35,9 @@
                     title = namespace + '.' + title;
                 }
                 var promise = pending[title] = $.Deferred();
-                dynCore.js(title).fail(promise.reject);
+                if (!dynCore.initPreload(title)) {
+                    dynCore.js(title).fail(promise.reject);
+                }
             },
             getPending: function(title) {
                 return pending[title];

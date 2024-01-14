@@ -22,7 +22,7 @@ jobs:
     - name: Install deps and build
       run: |
         npm i
-        grunt prepare-neocities
+        grunt
     - name: Deploy to Neocities
       uses: bcomnes/deploy-to-neocities@v1.1.13
       with:
