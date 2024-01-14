@@ -102,6 +102,7 @@
             let $info = controller.$fragment.find('#resource-voices-ai-info');
 
             // premap info dialog for each row
+            const infoMap = new Map();
             for (let row of $rows) {
                 let key = row.dataset.voice;
                 delete row.dataset.voice;
@@ -109,11 +110,13 @@
                 if (key) {
                     let infoDiv = $info.find('div[data-voice="' + key + '"]').get(0);
                     if (infoDiv) {
-                        model.info.set(row, infoDiv);
+                        infoMap.set(row, infoDiv);
                         delete infoDiv.dataset.voice;
                     }
                 }
             }
+            // replace the Map object entirely to force model refresh
+            model._set('info', infoMap);
         });
     });
 })(window.dynCore);

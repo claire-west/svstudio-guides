@@ -2,7 +2,8 @@
     dynCore.declare('app.container', dynCore.require([
         'lib.hashlessNav',
         'lib.bind',
-        'app.globalModel'
+        'app.globalModel',
+        'app.fragPreload'
     ]), (modules, nav, bind, globalModel) => {
         var apps = {};
         var pending = {};

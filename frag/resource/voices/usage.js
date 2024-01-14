@@ -21,6 +21,7 @@
             'Eleanor Forte Standard (R1 & lite)': 66906,
             'Eri': 125668,
             'Feng Yi': 76186,
+            'Frimomen': 131564,
             'Genbu': 70241,
             'Haiyi': 74324,
             'Hanakuma Chifuyu': 103592,
