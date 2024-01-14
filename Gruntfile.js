@@ -67,7 +67,7 @@ module.exports = function(grunt) {
     },
     watch: {
       testapp: {
-        files: [ 'frag/**/*.html', 'template/**' ],
+        files: [ 'frag/**/*.html', 'template/**', 'js/**/*.js', 'frag/**/*.js' ],
         tasks: [ 'preload' ],
         options: {
           spawn: false,

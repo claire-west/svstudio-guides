@@ -9,8 +9,10 @@ module.exports = function(grunt) {
   var htmlExt = '.html';
 
   grunt.registerMultiTask('build_templated_pages', 'Uses manifest.json to perform template substitution for web hosts that don\'t support URL rewriting', function() {
-    manifest = grunt.file.read(manifest);
-    manifest = JSON.parse(manifest);
+    if (typeof manifest === 'string') {
+      manifest = grunt.file.read(manifest);
+      manifest = JSON.parse(manifest);
+    }
 
     for (let route in manifest) {
       let dest = route;
@@ -22,6 +24,7 @@ module.exports = function(grunt) {
       if (!grunt.file.exists(template)) {
         template = defaultTemplate;
       }
+
       let content = grunt.file.read(template);
       let thisRoute = manifest[route];
 

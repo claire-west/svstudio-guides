@@ -60,12 +60,13 @@
                     }
                 };
                 $modal.on('keyup', escapeHandler);
-                $modal.show().find('.dialog').scrollTop(0);
                 previousFocus = document.activeElement;
                 $('body > :not(.modal)').attr('aria-hidden', 'true');
                 $('body > :not(.modal) *').attr('tabindex', -1);
                 promise.resolve($fragment);
                 $fragment.find('button').focus();
+                $modal.find('.dialog').scrollTop(0);
+                $modal.show();
             });
             return promise;
         });
