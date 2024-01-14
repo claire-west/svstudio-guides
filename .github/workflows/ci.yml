@@ -15,15 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-      with:
-        ref: gh-pages
-    - name: Merge main to gh-pages
-      uses: devmasx/merge-branch@master
-      with:
-        type: now
-        from_branch: main
-        target_branch: gh-pages
-        github_token: ${{ secrets.GITHUB_TOKEN }}
     - name: Use Node.js
       uses: actions/setup-node@v3
       with:
@@ -32,9 +23,26 @@ jobs:
       run: |
         npm i
         grunt
-    - name: Push to gh-pages
-      uses: stefanzweifel/git-auto-commit-action@v4
+    - name: Fix permissions
+      run: |
+        chmod -c -R +rX "deploy/" | while read line; do
+          echo "::warning title=Invalid file permissions automatically fixed::$line"
+        done
+    - name: Upload Pages artifact
+      uses: actions/upload-pages-artifact@v2
       with:
-        branch: gh-pages
-        push_options: '--force'
-        commit_message: Generate templated files
+        path: deploy/
+
+  deploy:
+    needs: build
+    permissions:
+      id-token: write
+      pages: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v3
