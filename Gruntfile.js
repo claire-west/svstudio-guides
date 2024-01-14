@@ -9,6 +9,7 @@ module.exports = function(grunt) {
           'html/**',
           'img/**',
           'js/**',
+          'json/**',
           '*.html',
           '*.ico',
           'sitemap.txt'
@@ -46,7 +47,7 @@ module.exports = function(grunt) {
   grunt.loadTasks('./grunt');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.registerTask('default', [ 'build_templated_pages', 'generate_fragment_preload' ]);
+  grunt.registerTask('default', [ 'build_templated_pages', 'generate_fragment_preload', 'copy' ]);
   grunt.registerTask('preload', [ 'generate_fragment_preload' ]);
   grunt.registerTask('prepare-neocities', [ 'build_templated_pages', 'generate_fragment_preload', 'copy' ]);
 };
