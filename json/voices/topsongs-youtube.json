@@ -12,7 +12,7 @@
             "artist": "KIRA, Asteroid Music Team",
             "vocals": "Kasane Teto",
             "video": "v1TaIfKctPo",
-            "mviews": 1.3
+            "mviews": 1.4
         },
         {
             "title": "Pathological Facade",
@@ -26,7 +26,7 @@
             "artist": "team 6x111",
             "vocals": "Solaria, Kevin",
             "video": "cPN75z580GE",
-            "mviews": 1.9
+            "mviews": 2
         },
         {
             "title": "SCAPEG♾AT",
@@ -69,6 +69,13 @@
             "vocals": "Eleanor Forte",
             "video": "bUh2W3jjapA",
             "mviews": 0.9
+        },
+        {
+            "title": "Lucky Me",
+            "artist": "Mcki Robyns-P",
+            "vocals": "Yuma",
+            "video": "IZW99GWmjA4",
+            "mviews": 1
         }
     ],
     "other": [
@@ -132,8 +139,8 @@
             "title": "一千光年 (1000 Light Years)",
             "artist": "Iyowa",
             "vocals": "Vocal synth chorus (incl. Hanakuma Chifuyu, Solaria)",
-            "video": "wdNjJ3eh8EQ",
-            "mviews": 1.5
+            "video": "uB_jQ8H2Yeg",
+            "mviews": 1.7
         },
         {
             "title": "バベル (BABEL)",
@@ -161,14 +168,14 @@
             "artist": "masarada",
             "vocals": "Kasane Teto",
             "video": "UHbmkxv-874",
-            "mviews": 2.3
+            "mviews": 2.4
         },
         {
             "title": "のだ (The Reason Is)",
             "artist": "Daibakuhashin",
             "vocals": "Kasane Teto, Hatsune Miku (Vocaloid), Zundamon (Neutrino)",
             "video": "vY8iwpN3GXQ",
-            "mviews": 4.2
+            "mviews": 4.3
         },
         {
             "title": "あいのうた (Song of \"AI\")",
@@ -196,7 +203,7 @@
             "artist": "masarada",
             "vocals": "Kasane Teto",
             "video": "Fhg3KsDkMJM",
-            "mviews": 0.7
+            "mviews": 0.8
         }
     ]
 }
