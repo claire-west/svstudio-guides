@@ -15,15 +15,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-      with:
-        ref: gh-pages
-    - name: Merge main to gh-pages
-      uses: devmasx/merge-branch@master
-      with:
-        type: now
-        from_branch: main
-        target_branch: gh-pages
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+    #   with:
+    #     ref: gh-pages
+    # - name: Merge main to gh-pages
+    #   uses: devmasx/merge-branch@master
+    #   with:
+    #     type: now
+    #     from_branch: main
+    #     target_branch: gh-pages
+    #     github_token: ${{ secrets.GITHUB_TOKEN }}
     - name: Use Node.js
       uses: actions/setup-node@v3
       with:

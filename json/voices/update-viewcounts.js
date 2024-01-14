@@ -13,6 +13,10 @@ fs.copyFileSync(bilibiliFile, `${bilibiliFile}.bak`);
 const youtube = JSON.parse(fs.readFileSync(youtubeFile, 'utf8'));
 const bilibili = JSON.parse(fs.readFileSync(bilibiliFile, 'utf8'));
 
+function byViews(a,b) {
+    return b.mviews - a.mviews;
+};
+
 function getYoutube() {
     const promises = [];
     for (const s of [ ...youtube.english, ...youtube.other ]) {
@@ -28,6 +32,8 @@ function getYoutube() {
     }
 
     return Promise.all(promises).then(() => {
+        youtube.english.sort(byViews);
+        youtube.other.sort(byViews);
         console.log(`Saving ${youtubeFile}...`);
         fs.writeFileSync(youtubeFile, JSON.stringify(youtube, null, 4));
     });
@@ -54,6 +60,7 @@ function getBilibili() {
     }
 
     return Promise.all(promises).then(() => {
+        bilibili.sort(byViews);
         console.log(`Saving ${bilibiliFile}...`);
         fs.writeFileSync(bilibiliFile, JSON.stringify(bilibili, null, 4));
     });

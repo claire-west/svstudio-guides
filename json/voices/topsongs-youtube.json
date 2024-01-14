@@ -1,25 +1,25 @@
 {
     "english": [
         {
+            "title": "Aura",
+            "artist": "GHOST",
+            "vocals": "Solaria",
+            "video": "EKOSQGKn5Cw",
+            "mviews": 4.4
+        },
+        {
+            "title": "AUDIT",
+            "artist": "WeevilDoing",
+            "vocals": "Tsurumaki Maki",
+            "video": "gmEqkdl4wEA",
+            "mviews": 3.8
+        },
+        {
             "title": "Reckless Battery Burns",
             "artist": "team 6x111",
             "vocals": "Kevin",
             "video": "EYKrl61cUsY",
             "mviews": 3.5
-        },
-        {
-            "title": "Wildcard",
-            "artist": "KIRA, Asteroid Music Team",
-            "vocals": "Kasane Teto",
-            "video": "v1TaIfKctPo",
-            "mviews": 1.4
-        },
-        {
-            "title": "Pathological Facade",
-            "artist": "GHOST",
-            "vocals": "Kasane Teto",
-            "video": "inRXBlYgMGI",
-            "mviews": 1.7
         },
         {
             "title": "End-World Normopathy",
@@ -36,11 +36,18 @@
             "mviews": 1.8
         },
         {
-            "title": "Aura",
+            "title": "Pathological Facade",
             "artist": "GHOST",
-            "vocals": "Solaria",
-            "video": "EKOSQGKn5Cw",
-            "mviews": 4.4
+            "vocals": "Kasane Teto",
+            "video": "inRXBlYgMGI",
+            "mviews": 1.7
+        },
+        {
+            "title": "Wildcard",
+            "artist": "KIRA, Asteroid Music Team",
+            "vocals": "Kasane Teto",
+            "video": "v1TaIfKctPo",
+            "mviews": 1.4
         },
         {
             "title": "It Should've Been Me",
@@ -50,11 +57,11 @@
             "mviews": 1
         },
         {
-            "title": "AUDIT",
-            "artist": "WeevilDoing",
-            "vocals": "Tsurumaki Maki",
-            "video": "gmEqkdl4wEA",
-            "mviews": 3.8
+            "title": "Lucky Me",
+            "artist": "Mcki Robyns-P",
+            "vocals": "Yuma",
+            "video": "IZW99GWmjA4",
+            "mviews": 1
         },
         {
             "title": "Uncanny",
@@ -69,21 +76,84 @@
             "vocals": "Eleanor Forte",
             "video": "bUh2W3jjapA",
             "mviews": 0.9
-        },
-        {
-            "title": "Lucky Me",
-            "artist": "Mcki Robyns-P",
-            "vocals": "Yuma",
-            "video": "IZW99GWmjA4",
-            "mviews": 1
         }
     ],
     "other": [
+        {
+            "title": "ハルノ寂寞 (Loneliness of Spring)",
+            "artist": "inabakumori",
+            "vocals": "Tsurumaki Maki",
+            "video": "mFih47l1pVI",
+            "mviews": 8
+        },
+        {
+            "title": "MIRA",
+            "artist": "Kanaria",
+            "vocals": "Koharu Rikka",
+            "video": "QF-PvlyheVc",
+            "mviews": 7.7
+        },
+        {
+            "title": "お呪い (The Spell)",
+            "artist": "Nakiso",
+            "vocals": "Hanakuma Chifuyu",
+            "video": "zxYdPypVQvQ",
+            "mviews": 4.8
+        },
+        {
+            "title": "のだ (The Reason Is)",
+            "artist": "Daibakuhashin",
+            "vocals": "Kasane Teto, Hatsune Miku (Vocaloid), Zundamon (Neutrino)",
+            "video": "vY8iwpN3GXQ",
+            "mviews": 4.3
+        },
+        {
+            "title": "ずんだもんの朝食 (Zundamon's Breakfast)",
+            "artist": "Hiraumi",
+            "vocals": "Koharu Rikka, Zundamon (Voicevox)",
+            "video": "YTn37zK4Hck",
+            "mviews": 2.6
+        },
+        {
+            "title": "バベル (BABEL)",
+            "artist": "Iyowa",
+            "vocals": "Kasane Teto (SV and UTAU versions)",
+            "video": "zSKwxQqrac0",
+            "mviews": 2.4
+        },
+        {
+            "title": "Liar Dancer",
+            "artist": "masarada",
+            "vocals": "Kasane Teto",
+            "video": "UHbmkxv-874",
+            "mviews": 2.4
+        },
+        {
+            "title": "Post Shelter",
+            "artist": "inabakumori",
+            "vocals": "Tsurumaki Maki",
+            "video": "kYwB-kZyNU4",
+            "mviews": 2.1
+        },
+        {
+            "title": "あいのうた (Song of \"AI\")",
+            "artist": "Daibakuhashin",
+            "vocals": "Kasane Teto, Hatsune Miku (Vocaloid)",
+            "video": "LyZk53_5GwM",
+            "mviews": 1.8
+        },
         {
             "title": "ミィハー (Miihaa)",
             "artist": "Chinozo",
             "vocals": "Kasane Teto",
             "video": "oePX92KTE_M",
+            "mviews": 1.7
+        },
+        {
+            "title": "一千光年 (1000 Light Years)",
+            "artist": "Iyowa",
+            "vocals": "Vocal synth chorus (incl. Hanakuma Chifuyu, Solaria)",
+            "video": "uB_jQ8H2Yeg",
             "mviews": 1.7
         },
         {
@@ -94,67 +164,11 @@
             "mviews": 1.5
         },
         {
-            "title": "ハルノ寂寞 (Loneliness of Spring)",
-            "artist": "inabakumori",
-            "vocals": "Tsurumaki Maki",
-            "video": "mFih47l1pVI",
-            "mviews": 8
-        },
-        {
-            "title": "Post Shelter",
-            "artist": "inabakumori",
-            "vocals": "Tsurumaki Maki",
-            "video": "kYwB-kZyNU4",
-            "mviews": 2.1
-        },
-        {
-            "title": "MIRA",
-            "artist": "Kanaria",
-            "vocals": "Koharu Rikka",
-            "video": "QF-PvlyheVc",
-            "mviews": 7.7
-        },
-        {
-            "title": "SICK (full EP reupload)",
-            "artist": "Yuyoyuppe",
-            "vocals": "Natsuki Karin",
-            "video": "aEtwA-iwoCQ",
-            "mviews": 1.2
-        },
-        {
-            "title": "お呪い (The Spell)",
-            "artist": "Nakiso",
-            "vocals": "Hanakuma Chifuyu",
-            "video": "zxYdPypVQvQ",
-            "mviews": 4.8
-        },
-        {
             "title": "大女優さん (actress)",
             "artist": "Iyowa",
             "vocals": "Hanakuma Chifuyu",
             "video": "wdNjJ3eh8EQ",
             "mviews": 1.5
-        },
-        {
-            "title": "一千光年 (1000 Light Years)",
-            "artist": "Iyowa",
-            "vocals": "Vocal synth chorus (incl. Hanakuma Chifuyu, Solaria)",
-            "video": "uB_jQ8H2Yeg",
-            "mviews": 1.7
-        },
-        {
-            "title": "バベル (BABEL)",
-            "artist": "Iyowa",
-            "vocals": "Kasane Teto (SV and UTAU versions)",
-            "video": "zSKwxQqrac0",
-            "mviews": 2.4
-        },
-        {
-            "title": "ずんだもんの朝食 (Zundamon's Breakfast)",
-            "artist": "Hiraumi",
-            "vocals": "Koharu Rikka, Zundamon (Voicevox)",
-            "video": "YTn37zK4Hck",
-            "mviews": 2.6
         },
         {
             "title": "蛋餅好朋友之歌 (Dàn Bǐng Hǎo Péngyǒu zhī Gē)",
@@ -164,25 +178,11 @@
             "mviews": 1.3
         },
         {
-            "title": "Liar Dancer",
-            "artist": "masarada",
-            "vocals": "Kasane Teto",
-            "video": "UHbmkxv-874",
-            "mviews": 2.4
-        },
-        {
-            "title": "のだ (The Reason Is)",
-            "artist": "Daibakuhashin",
-            "vocals": "Kasane Teto, Hatsune Miku (Vocaloid), Zundamon (Neutrino)",
-            "video": "vY8iwpN3GXQ",
-            "mviews": 4.3
-        },
-        {
-            "title": "あいのうた (Song of \"AI\")",
-            "artist": "Daibakuhashin",
-            "vocals": "Kasane Teto, Hatsune Miku (Vocaloid)",
-            "video": "LyZk53_5GwM",
-            "mviews": 1.8
+            "title": "SICK (full EP reupload)",
+            "artist": "Yuyoyuppe",
+            "vocals": "Natsuki Karin",
+            "video": "aEtwA-iwoCQ",
+            "mviews": 1.2
         },
         {
             "title": "頭上注意の歌",
