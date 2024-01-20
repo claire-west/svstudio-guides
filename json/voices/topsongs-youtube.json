@@ -66,7 +66,7 @@
         {
             "title": "I AM THE MANGLE",
             "artist": "StardustLegend",
-            "vocals": "Eleanor Forte",
+            "vocals": "Eleanor Forte (Synthesizer V R1)",
             "video": "oKHXSFmrHek",
             "mviews": 1
         },
@@ -80,9 +80,51 @@
         {
             "title": "ATARAXIA",
             "artist": "Patterns",
-            "vocals": "Eleanor Forte",
+            "vocals": "Eleanor Forte AI",
             "video": "bUh2W3jjapA",
             "mviews": 0.9
+        },
+        {
+            "title": "The History of Burning Drafts",
+            "artist": "StardustLegend",
+            "vocals": "Eleanor Forte (Synthesizer V R1)",
+            "video": "v4uiqOjrYA8",
+            "mviews": 0.7
+        },
+        {
+            "title": "Why Does a Heart Break?",
+            "artist": "KIRA",
+            "vocals": "Saki",
+            "video": "Hle_adE6vqc",
+            "mviews": 0.7
+        },
+        {
+            "title": "DEATHBODY",
+            "artist": "GHOST",
+            "vocals": "Mai, Asterian",
+            "video": "hiN2gLLTX84",
+            "mviews": 0.6
+        },
+        {
+            "title": "Six Feet Under",
+            "artist": "Vane",
+            "vocals": "SOLARIA",
+            "video": "7gmGYDxlg20",
+            "mviews": 0.5
+        },
+        {
+            "title": "Wicked",
+            "artist": "Crusher",
+            "vocals": "Eleanor Forte AI",
+            "video": "DtKXThAkQnk",
+            "mviews": 0.5
+        },
+        {
+            "title": "Collared",
+            "artist": "Vane",
+            "vocals": "SAROS",
+            "video": "8_a0tCSKomw",
+            "mviews": 0.4
         }
     ],
     "other": [
@@ -211,6 +253,27 @@
             "vocals": "Kasane Teto",
             "video": "Fhg3KsDkMJM",
             "mviews": 0.8
+        },
+        {
+            "title": "オーバーライド (Override)",
+            "artist": "Yoshida Yasei",
+            "vocals": "Kasane Teto",
+            "video": "LLjfal8jCYI",
+            "mviews": 0.6
+        },
+        {
+            "title": "吉原ラメント-再来盤- (Yoshiwara Lament)",
+            "artist": "亜沙 (asa)",
+            "vocals": "Kasane Teto",
+            "video": "Gm2Tc0-2Q34",
+            "mviews": 0.5
+        },
+        {
+            "title": "だって君には彼氏がいるでしょ (After All, You Have a Boyfriend)",
+            "artist": "Kasamura Tota",
+            "vocals": "Tsuina-chan",
+            "video": "yrW2i4magt4",
+            "mviews": 0.5
         }
     ]
 }
