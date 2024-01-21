@@ -18,7 +18,7 @@
         "artist": "ilem",
         "vocals": "Chiyu",
         "video": "av456679355",
-        "mviews": 7.2
+        "mviews": 7.3
     },
     {
         "title": "天下局 (Tiānxià Jú)",
@@ -42,17 +42,17 @@
         "mviews": 4.4
     },
     {
-        "title": "不可道 (Bùkě Dào)",
-        "artist": "Ta Ku (忘川风华录 series)",
-        "vocals": "Chiyu",
-        "video": "BV1xD4y127im",
-        "mviews": 3.2
-    },
-    {
         "title": "不赴 (Bùfù)",
         "artist": "Ice-Paper (忘川风华录 series)",
         "vocals": "Cangqiong, Chiyu",
         "video": "av889794346",
+        "mviews": 3.3
+    },
+    {
+        "title": "不可道 (Bùkě Dào)",
+        "artist": "Ta Ku (忘川风华录 series)",
+        "vocals": "Chiyu",
+        "video": "BV1xD4y127im",
         "mviews": 3.2
     },
     {
@@ -140,6 +140,13 @@
         "mviews": 1.7
     },
     {
+        "title": "剑与雪 (Jiàn yǔ Xuě)",
+        "artist": "KBShinya",
+        "vocals": "Stardust Infinity",
+        "video": "av234794791",
+        "mviews": 1.7
+    },
+    {
         "title": "是非 (Shìfēi)",
         "artist": "Chenyiming (忘川风华录 series)",
         "vocals": "Cangqiong",
@@ -151,13 +158,6 @@
         "artist": "Ke Li Ke",
         "vocals": "Stardust Infinity",
         "video": "BV1dP4y1T7TU",
-        "mviews": 1.6
-    },
-    {
-        "title": "剑与雪 (Jiàn yǔ Xuě)",
-        "artist": "KBShinya",
-        "vocals": "Stardust Infinity",
-        "video": "av234794791",
         "mviews": 1.6
     },
     {

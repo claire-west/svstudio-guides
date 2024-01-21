@@ -60,8 +60,8 @@
 
         var prevScroll = 0;
         var onScroll;
-        $(window).on('scroll', (e) => {
-            var currScroll = window.pageYOffset
+        window.addEventListener('scroll', () => {
+            let currScroll = window.pageYOffset
             // if user scrolls more than 50 pixels, queue hash update
             // if scrolling continuously, wait until scrolling stops by resetting the timeout
             if (Math.abs(currScroll - prevScroll) > 50) {
@@ -69,7 +69,7 @@
                 onScroll = window.setTimeout(setHash, 200);
                 prevScroll = currScroll;
             }
-        });
+        }, { passive: true });
 
         var scrollOnRefresh = function() {
             if (scrollY && pageAccessedByReload) {
