@@ -47,7 +47,7 @@
             "artist": "KIRA, Asteroid Music Team",
             "vocals": "Kasane Teto",
             "video": "v1TaIfKctPo",
-            "mviews": 1.4
+            "mviews": 1.5
         },
         {
             "title": "It Should've Been Me",
@@ -131,7 +131,7 @@
             "artist": "Vane",
             "vocals": "SAROS",
             "video": "8_a0tCSKomw",
-            "mviews": 0.4
+            "mviews": 0.5
         }
     ],
     "other": [
@@ -154,20 +154,27 @@
             "artist": "Nakiso",
             "vocals": "Hanakuma Chifuyu",
             "video": "zxYdPypVQvQ",
-            "mviews": 4.9
+            "mviews": 5
         },
         {
             "title": "のだ (The Reason Is)",
             "artist": "Daibakuhashin",
             "vocals": "Kasane Teto, Hatsune Miku (Vocaloid), Zundamon (Neutrino)",
             "video": "vY8iwpN3GXQ",
-            "mviews": 4.6
+            "mviews": 4.8
         },
         {
             "title": "ずんだもんの朝食 (Zundamon's Breakfast)",
             "artist": "Hiraumi",
             "vocals": "Koharu Rikka, Zundamon (Voicevox)",
             "video": "YTn37zK4Hck",
+            "mviews": 2.6
+        },
+        {
+            "title": "Liar Dancer",
+            "artist": "masarada",
+            "vocals": "Kasane Teto",
+            "video": "UHbmkxv-874",
             "mviews": 2.6
         },
         {
@@ -178,18 +185,11 @@
             "mviews": 2.5
         },
         {
-            "title": "Liar Dancer",
-            "artist": "masarada",
-            "vocals": "Kasane Teto",
-            "video": "UHbmkxv-874",
-            "mviews": 2.5
-        },
-        {
             "title": "Post Shelter",
             "artist": "inabakumori",
             "vocals": "Tsurumaki Maki",
             "video": "kYwB-kZyNU4",
-            "mviews": 2.1
+            "mviews": 2.2
         },
         {
             "title": "あいのうた (Song of \"AI\")",
@@ -213,17 +213,17 @@
             "mviews": 1.8
         },
         {
-            "title": "ムシ (Insect)",
-            "artist": "Chinozo",
-            "vocals": "Kotonoha Akane/Aoi ",
-            "video": "j4ZuoUOkjSY",
-            "mviews": 1.5
-        },
-        {
             "title": "大女優さん (actress)",
             "artist": "Iyowa",
             "vocals": "Hanakuma Chifuyu",
             "video": "wdNjJ3eh8EQ",
+            "mviews": 1.6
+        },
+        {
+            "title": "ムシ (Insect)",
+            "artist": "Chinozo",
+            "vocals": "Kotonoha Akane/Aoi ",
+            "video": "j4ZuoUOkjSY",
             "mviews": 1.5
         },
         {
@@ -248,25 +248,25 @@
             "mviews": 1
         },
         {
-            "title": "ちっちゃな私 (Tiny Me)",
-            "artist": "masarada",
+            "title": "オーバーライド (Override)",
+            "artist": "Yoshida Yasei",
             "vocals": "Kasane Teto",
-            "video": "4aFC2oC-wHA",
-            "mviews": 0.8
+            "video": "LLjfal8jCYI",
+            "mviews": 1
         },
         {
             "title": "ウルトラトレーラー (Ultra Trailer)",
             "artist": "masarada",
             "vocals": "Kasane Teto",
             "video": "Fhg3KsDkMJM",
-            "mviews": 0.8
+            "mviews": 0.9
         },
         {
-            "title": "オーバーライド (Override)",
-            "artist": "Yoshida Yasei",
+            "title": "ちっちゃな私 (Tiny Me)",
+            "artist": "masarada",
             "vocals": "Kasane Teto",
-            "video": "LLjfal8jCYI",
-            "mviews": 0.7
+            "video": "4aFC2oC-wHA",
+            "mviews": 0.8
         },
         {
             "title": "吉原ラメント-再来盤- (Yoshiwara Lament)",
