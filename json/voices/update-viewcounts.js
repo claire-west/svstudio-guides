@@ -14,7 +14,7 @@ const youtube = JSON.parse(fs.readFileSync(youtubeFile, 'utf8'));
 const bilibili = JSON.parse(fs.readFileSync(bilibiliFile, 'utf8'));
 
 function byViews(a,b) {
-    return b.mviews - a.mviews;
+    return b.views - a.views;
 };
 
 function getYoutube() {
@@ -22,8 +22,8 @@ function getYoutube() {
     for (const s of [ ...youtube.english, ...youtube.other ]) {
         const url = `https://www.googleapis.com/youtube/v3/videos?part=statistics&id=${s.video}&key=${YOUTUBE_API_KEY}`;
         promises.push(axios.get(url).then(v => {
-            const viewCount = v.data.items[0].statistics.viewCount;
-            const mviews = Math.floor(viewCount / 100000) / 10;
+            s.views = Number(v.data.items[0].statistics.viewCount);
+            const mviews = Math.floor(s.views / 100000) / 10;
             if (s.mviews !== mviews) {
                 console.log(`${s.mviews} -> ${mviews} - ${s.title} (YouTube)`);
                 s.mviews = mviews;
@@ -50,8 +50,8 @@ function getBilibili() {
         }
         const url = `https://api.bilibili.com/x/web-interface/wbi/view?${query}`;
         promises.push(axios.get(url).then(v => {
-            const viewCount = v.data.data.stat.view;
-            const mviews = Math.floor(viewCount / 100000) / 10;
+            s.views = Number(v.data.data.stat.view);
+            const mviews = Math.floor(s.views / 100000) / 10;
             if (s.mviews !== mviews) {
                 console.log(`${s.mviews} -> ${mviews} - ${s.title} (Bilibili)`);
                 s.mviews = mviews;

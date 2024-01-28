@@ -26,7 +26,9 @@
                     <td class="text-center"><i class="bi bi-play-btn" z--click='{ "path": "showYouTubeEmbed", "args": [ ">/" ] }' title="Watch Video"></i></td>
                     <td z--bind=">artist"></td>
                     <td z--bind=">vocals"></td>
-                    <td class="text-right"><span z--bind=">mviews"></span>M+</td>
+                    <td class="text-right"
+                        z--bind='{ "path": ">mviews", "fn": "formatMViews" }'
+                        z--title='{ "path": ">views", "fn": "formatViews" }'></td>
                 </tr>
             </tbody>
         </table>
@@ -54,7 +56,9 @@
                     <td class="text-center"><i class="bi bi-play-btn" z--click='{ "path": "showYouTubeEmbed", "args": [ ">/" ] }' title="Watch Video"></i></td>
                     <td z--bind=">artist"></td>
                     <td z--bind=">vocals"></td>
-                    <td class="text-right"><span z--bind=">mviews"></span>M+</td>
+                    <td class="text-right"
+                        z--bind='{ "path": ">mviews", "fn": "formatMViews" }'
+                        z--title='{ "path": ">views", "fn": "formatViews" }'></td>
                 </tr>
             </tbody>
         </table>
@@ -101,7 +105,9 @@
                     <td class="text-center"><i class="bi bi-play-btn" z--click='{ "path": "showBilibiliEmbed", "args": [ ">/" ] }' title="Watch Video"></i></td>
                     <td z--bind=">artist"></td>
                     <td z--bind=">vocals"></td>
-                    <td class="text-right"><span z--bind=">mviews"></span>M+</td>
+                    <td class="text-right"
+                        z--bind='{ "path": ">mviews", "fn": "formatMViews" }'
+                        z--title='{ "path": ">views", "fn": "formatViews" }'></td>
                 </tr>
             </tbody>
         </table>

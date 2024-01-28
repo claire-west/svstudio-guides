@@ -5,133 +5,152 @@
             "artist": "GHOST",
             "vocals": "Solaria",
             "video": "EKOSQGKn5Cw",
-            "mviews": 4.4
+            "mviews": 4.4,
+            "views": 4478276
         },
         {
             "title": "AUDIT",
             "artist": "WeevilDoing",
             "vocals": "Tsurumaki Maki",
             "video": "gmEqkdl4wEA",
-            "mviews": 3.9
+            "mviews": 3.9,
+            "views": 3932642
         },
         {
             "title": "Reckless Battery Burns",
             "artist": "team 6x111",
             "vocals": "Kevin",
             "video": "EYKrl61cUsY",
-            "mviews": 3.6
+            "mviews": 3.6,
+            "views": 3642661
         },
         {
             "title": "End-World Normopathy",
             "artist": "team 6x111",
             "vocals": "Solaria, Kevin",
             "video": "cPN75z580GE",
-            "mviews": 2
-        },
-        {
-            "title": "SCAPEG♾AT",
-            "artist": "GHOST",
-            "vocals": "Yuma, Stardust Infinity, Asterian, Kevin",
-            "video": "vqe2WMZYYvQ",
-            "mviews": 1.8
+            "mviews": 2,
+            "views": 2073868
         },
         {
             "title": "Pathological Facade",
             "artist": "GHOST",
             "vocals": "Kasane Teto",
             "video": "inRXBlYgMGI",
-            "mviews": 1.8
+            "mviews": 1.8,
+            "views": 1875051
+        },
+        {
+            "title": "SCAPEG♾AT",
+            "artist": "GHOST",
+            "vocals": "Yuma, Stardust Infinity, Asterian, Kevin",
+            "video": "vqe2WMZYYvQ",
+            "mviews": 1.8,
+            "views": 1864801
         },
         {
             "title": "Wildcard",
             "artist": "KIRA, Asteroid Music Team",
             "vocals": "Kasane Teto",
             "video": "v1TaIfKctPo",
-            "mviews": 1.5
+            "mviews": 1.5,
+            "views": 1565856
         },
         {
             "title": "It Should've Been Me",
             "artist": "R.I.P",
             "vocals": "Solaria",
             "video": "ttrb6MuXkok",
-            "mviews": 1
+            "mviews": 1,
+            "views": 1070674
         },
         {
             "title": "Lucky Me",
             "artist": "Mcki Robyns-P",
             "vocals": "Yuma",
             "video": "IZW99GWmjA4",
-            "mviews": 1
+            "mviews": 1,
+            "views": 1047770
         },
         {
             "title": "I AM THE MANGLE",
             "artist": "StardustLegend",
             "vocals": "Eleanor Forte (Synthesizer V R1)",
             "video": "oKHXSFmrHek",
-            "mviews": 1
-        },
-        {
-            "title": "Uncanny",
-            "artist": "GHOST",
-            "vocals": "Kevin",
-            "video": "qK62up6otZU",
-            "mviews": 0.9
+            "mviews": 1,
+            "views": 1003315
         },
         {
             "title": "ATARAXIA",
             "artist": "Patterns",
             "vocals": "Eleanor Forte AI",
             "video": "bUh2W3jjapA",
-            "mviews": 1
+            "mviews": 1,
+            "views": 1000173
+        },
+        {
+            "title": "Uncanny",
+            "artist": "GHOST",
+            "vocals": "Kevin",
+            "video": "qK62up6otZU",
+            "mviews": 0.9,
+            "views": 989139
         },
         {
             "title": "The History of Burning Drafts",
             "artist": "StardustLegend",
             "vocals": "Eleanor Forte (Synthesizer V R1)",
             "video": "v4uiqOjrYA8",
-            "mviews": 0.7
+            "mviews": 0.7,
+            "views": 772216
         },
         {
             "title": "Why Does a Heart Break?",
             "artist": "KIRA",
             "vocals": "Saki",
             "video": "Hle_adE6vqc",
-            "mviews": 0.7
-        },
-        {
-            "title": "DEATHBODY",
-            "artist": "GHOST",
-            "vocals": "Mai, Asterian",
-            "video": "hiN2gLLTX84",
-            "mviews": 0.6
+            "mviews": 0.7,
+            "views": 709378
         },
         {
             "title": "Self Proclaimed Angel",
             "artist": "KAT",
             "vocals": "Tsurumaki Maki",
             "video": "oKyqHbk_WlU",
-            "mviews": 0.6
+            "mviews": 0.6,
+            "views": 690369
         },
         {
-            "title": "Six Feet Under",
-            "artist": "Vane",
-            "vocals": "SOLARIA",
-            "video": "7gmGYDxlg20",
-            "mviews": 0.5
+            "title": "DEATHBODY",
+            "artist": "GHOST",
+            "vocals": "Mai, Asterian",
+            "video": "hiN2gLLTX84",
+            "mviews": 0.6,
+            "views": 617011
         },
         {
             "title": "Wicked",
             "artist": "Crusher",
             "vocals": "Eleanor Forte AI",
             "video": "DtKXThAkQnk",
-            "mviews": 0.5
+            "mviews": 0.5,
+            "views": 559664
+        },
+        {
+            "title": "Six Feet Under",
+            "artist": "Vane",
+            "vocals": "SOLARIA",
+            "video": "7gmGYDxlg20",
+            "mviews": 0.5,
+            "views": 547654
         },
         {
             "title": "Collared",
             "artist": "Vane",
             "vocals": "SAROS",
             "video": "8_a0tCSKomw",
-            "mviews": 0.5
+            "mviews": 0.5,
+            "views": 530102
         }
     ],
     "other": [
@@ -140,147 +159,168 @@
             "artist": "inabakumori",
             "vocals": "Tsurumaki Maki",
             "video": "mFih47l1pVI",
-            "mviews": 8.1
+            "mviews": 8.1,
+            "views": 8100908
         },
         {
             "title": "MIRA",
             "artist": "Kanaria",
             "vocals": "Koharu Rikka",
             "video": "QF-PvlyheVc",
-            "mviews": 7.7
+            "mviews": 7.7,
+            "views": 7769062
         },
         {
             "title": "お呪い (The Spell)",
             "artist": "Nakiso",
             "vocals": "Hanakuma Chifuyu",
             "video": "zxYdPypVQvQ",
-            "mviews": 5
+            "mviews": 5,
+            "views": 5025636
         },
         {
             "title": "のだ (The Reason Is)",
             "artist": "Daibakuhashin",
             "vocals": "Kasane Teto, Hatsune Miku (Vocaloid), Zundamon (Neutrino)",
             "video": "vY8iwpN3GXQ",
-            "mviews": 4.8
+            "mviews": 4.8,
+            "views": 4889100
         },
         {
             "title": "Liar Dancer",
             "artist": "masarada",
             "vocals": "Kasane Teto",
             "video": "UHbmkxv-874",
-            "mviews": 2.7
+            "mviews": 2.7,
+            "views": 2705915
         },
         {
             "title": "ずんだもんの朝食 (Zundamon's Breakfast)",
             "artist": "Hiraumi",
             "vocals": "Koharu Rikka, Zundamon (Voicevox)",
             "video": "YTn37zK4Hck",
-            "mviews": 2.6
+            "mviews": 2.6,
+            "views": 2682659
         },
         {
             "title": "バベル (BABEL)",
             "artist": "Iyowa",
             "vocals": "Kasane Teto (SV and UTAU versions)",
             "video": "zSKwxQqrac0",
-            "mviews": 2.5
+            "mviews": 2.5,
+            "views": 2543443
         },
         {
             "title": "Post Shelter",
             "artist": "inabakumori",
             "vocals": "Tsurumaki Maki",
             "video": "kYwB-kZyNU4",
-            "mviews": 2.2
+            "mviews": 2.2,
+            "views": 2201203
         },
         {
             "title": "あいのうた (Song of \"AI\")",
             "artist": "Daibakuhashin",
             "vocals": "Kasane Teto, Hatsune Miku (Vocaloid)",
             "video": "LyZk53_5GwM",
-            "mviews": 1.9
+            "mviews": 1.9,
+            "views": 1959202
         },
         {
             "title": "一千光年 (1000 Light Years)",
             "artist": "Iyowa",
             "vocals": "Vocal synth chorus (incl. Hanakuma Chifuyu, Solaria)",
             "video": "uB_jQ8H2Yeg",
-            "mviews": 1.9
+            "mviews": 1.9,
+            "views": 1902920
         },
         {
             "title": "ミィハー (Miihaa)",
             "artist": "Chinozo",
             "vocals": "Kasane Teto",
             "video": "oePX92KTE_M",
-            "mviews": 1.8
+            "mviews": 1.8,
+            "views": 1826252
         },
         {
             "title": "大女優さん (actress)",
             "artist": "Iyowa",
             "vocals": "Hanakuma Chifuyu",
             "video": "wdNjJ3eh8EQ",
-            "mviews": 1.6
+            "mviews": 1.6,
+            "views": 1605664
         },
         {
             "title": "ムシ (Insect)",
             "artist": "Chinozo",
             "vocals": "Kotonoha Akane/Aoi ",
             "video": "j4ZuoUOkjSY",
-            "mviews": 1.5
+            "mviews": 1.5,
+            "views": 1551674
         },
         {
             "title": "蛋餅好朋友之歌 (Dàn Bǐng Hǎo Péngyǒu zhī Gē)",
             "artist": "NiceChord",
             "vocals": "AiKO",
             "video": "SrGCmZqjz7o",
-            "mviews": 1.3
+            "mviews": 1.3,
+            "views": 1323114
         },
         {
             "title": "SICK (full EP reupload)",
             "artist": "Yuyoyuppe",
             "vocals": "Natsuki Karin",
             "video": "aEtwA-iwoCQ",
-            "mviews": 1.2
-        },
-        {
-            "title": "頭上注意の歌",
-            "artist": "Gobunme Satoru",
-            "vocals": "Natsuki Karin, Saki",
-            "video": "L-AlI-y7Kc8",
-            "mviews": 1
+            "mviews": 1.2,
+            "views": 1277500
         },
         {
             "title": "オーバーライド (Override)",
             "artist": "Yoshida Yasei",
             "vocals": "Kasane Teto",
             "video": "LLjfal8jCYI",
-            "mviews": 1
+            "mviews": 1,
+            "views": 1092950
+        },
+        {
+            "title": "頭上注意の歌",
+            "artist": "Gobunme Satoru",
+            "vocals": "Natsuki Karin, Saki",
+            "video": "L-AlI-y7Kc8",
+            "mviews": 1,
+            "views": 1054870
         },
         {
             "title": "ウルトラトレーラー (Ultra Trailer)",
             "artist": "masarada",
             "vocals": "Kasane Teto",
             "video": "Fhg3KsDkMJM",
-            "mviews": 0.9
+            "mviews": 0.9,
+            "views": 945527
         },
         {
             "title": "ちっちゃな私 (Tiny Me)",
             "artist": "masarada",
             "vocals": "Kasane Teto",
             "video": "4aFC2oC-wHA",
-            "mviews": 0.8
-        },
-        {
-            "title": "吉原ラメント-再来盤- (Yoshiwara Lament)",
-            "artist": "亜沙 (asa)",
-            "vocals": "Kasane Teto",
-            "video": "Gm2Tc0-2Q34",
-            "mviews": 0.5
+            "mviews": 0.8,
+            "views": 892018
         },
         {
             "title": "だって君には彼氏がいるでしょ (After All, You Have a Boyfriend)",
             "artist": "Kasamura Tota",
             "vocals": "Tsuina-chan",
             "video": "yrW2i4magt4",
-            "mviews": 0.5
+            "mviews": 0.5,
+            "views": 560790
+        },
+        {
+            "title": "吉原ラメント-再来盤- (Yoshiwara Lament)",
+            "artist": "亜沙 (asa)",
+            "vocals": "Kasane Teto",
+            "video": "Gm2Tc0-2Q34",
+            "mviews": 0.5,
+            "views": 539152
         }
     ]
 }

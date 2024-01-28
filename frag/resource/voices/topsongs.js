@@ -71,6 +71,14 @@
 
                 getBilibiliHref: function(video) {
                     return 'https://www.bilibili.com/video/' + video;
+                },
+
+                formatMViews: function(mviews) {
+                    return mviews + 'M+';
+                },
+
+                formatViews: function(views) {
+                    return views.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 }
             },
 
