@@ -84,6 +84,7 @@
             'Xia Yu Yao': 113812,
             'Xuan Yu': 76108,
             'Yamine Renri': 69286,
+            'Yi Xi': 132680,
             'Yongye Minus': 129591,
             'Yuma': 109074,
             'Yun Quan': 120529
