@@ -1,0 +1,25 @@
+name: view-counts
+
+on:
+  schedule:
+    - cron: "40 3 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: lts/*
+    - name: Install deps and run job
+      working-directory: ./json/voices
+      run: |
+        npm i
+        npm start
+    - name: Commit file
+      run: |
+        git add ./json/voices
+        git commit -m "Update view counts"
+        git push

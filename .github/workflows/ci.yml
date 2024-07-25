@@ -5,6 +5,10 @@ on:
   push:
     branches:
       - main
+  workflow_run:
+    workflows: [ view-counts ]
+    types:
+      - completed
 
 concurrency: # prevent concurrent deploys doing strange things
   group: build-and-push
