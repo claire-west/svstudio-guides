@@ -9,6 +9,7 @@ on:
     workflows: [ view-counts ]
     types:
       - completed
+  workflow_dispatch:
 
 concurrency: # prevent concurrent deploys doing strange things
   group: build-and-push
