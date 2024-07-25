@@ -23,6 +23,8 @@ jobs:
         npm start
     - name: Commit file
       run: |
+        git config --global user.name "Claire West"
+        git config --global user.email "bokthaku@gmail.com"
         git add ./json/voices
         git commit -m "Update view counts"
         git push
