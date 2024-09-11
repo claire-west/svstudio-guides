@@ -22,6 +22,12 @@ function getYoutube() {
     for (const s of [ ...youtube.english, ...youtube.other ]) {
         const url = `https://www.googleapis.com/youtube/v3/videos?part=statistics&id=${s.video}&key=${YOUTUBE_API_KEY}`;
         promises.push(axios.get(url).then(v => {
+            // if video was privated
+            if (!v.data.items.length) {
+                console.log(`${s.title} (https://youtu.be/${s.video}) is unavailable (last seen with ${s.mviews}M views)`);
+                return;
+            }
+
             s.views = Number(v.data.items[0].statistics.viewCount);
             const mviews = Math.floor(s.views / 100000) / 10;
             if (s.mviews !== mviews) {
